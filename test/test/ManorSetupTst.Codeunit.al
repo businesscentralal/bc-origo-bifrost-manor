@@ -453,7 +453,8 @@ codeunit 98202 "Manor Setup Tst ori"
         Secrets.SetApiKey(TestKey);
         // Denied writes must be tested against an already-persisted key.
         Commit();
-        LowerPermissions.SetExactPermissionSet('BIFROST MnrRead ori');
+        LowerPermissions.SetExactPermissionSet('Manor Setup Test ori');
+        LowerPermissions.AddPermissionSet('BIFROST MnrRead ori');
         // [WHEN] The read role opens the actual card and attempts both data and secret changes.
         SetupPage.OpenView();
         Assert.IsFalse(SetupPage.Editable(), 'The read role cannot edit the card.');
@@ -467,7 +468,8 @@ codeunit 98202 "Manor Setup Tst ori"
         asserterror Secrets.ClearApiKey();
         Assert.IsTrue(Secrets.HasApiKey(), 'Denied writes must preserve the secret.');
         // [THEN] Full can edit and remove the key.
-        LowerPermissions.SetExactPermissionSet('BIFROST MnrFull ori');
+        LowerPermissions.SetExactPermissionSet('Manor Setup Test ori');
+        LowerPermissions.AddPermissionSet('BIFROST MnrFull ori');
         SetupPage.OpenEdit();
         Assert.IsTrue(SetupPage.Editable(), 'Full can edit the card.');
         SetupPage.Enabled.SetValue(true);
@@ -513,7 +515,8 @@ codeunit 98202 "Manor Setup Tst ori"
         Setup.GetRecordOnce();
         // Expected errors roll back the current transaction; retain the self-seeded fixture.
         Commit();
-        LowerPermissions.SetExactPermissionSet('BIFROST MnrFull ori');
+        LowerPermissions.SetExactPermissionSet('Manor Setup Test ori');
+        LowerPermissions.AddPermissionSet('BIFROST MnrFull ori');
     end;
 
     local procedure Cleanup()
