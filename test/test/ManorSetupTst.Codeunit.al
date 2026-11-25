@@ -205,6 +205,8 @@ codeunit 98202 "Manor Setup Tst ori"
         TestKey := Format(CreateGuid(), 0, 4);
         Secrets.SetApiKey(TestKey);
         Clear(TestKey);
+        // Preserve valid configuration across the expected path-validation errors.
+        Commit();
         Transport := Environment::Production;
         Paths.Add('');
         Paths.Add('/projects');
@@ -449,6 +451,8 @@ codeunit 98202 "Manor Setup Tst ori"
         Setup.Modify(true);
         TestKey := Format(CreateGuid(), 0, 4);
         Secrets.SetApiKey(TestKey);
+        // Denied writes must be tested against an already-persisted key.
+        Commit();
         LowerPermissions.SetExactPermissionSet('BIFROST MnrRead ori');
         // [WHEN] The read role opens the actual card and attempts both data and secret changes.
         SetupPage.OpenView();
@@ -507,6 +511,8 @@ codeunit 98202 "Manor Setup Tst ori"
         Secrets.ClearApiKey();
         Setup.DeleteAll(true);
         Setup.GetRecordOnce();
+        // Expected errors roll back the current transaction; retain the self-seeded fixture.
+        Commit();
         LowerPermissions.SetExactPermissionSet('BIFROST MnrFull ori');
     end;
 
