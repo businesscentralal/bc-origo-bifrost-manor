@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Manor">
+    <body>
+      <group id="body">
+        <trans-unit id="PermissionSet 3604939376 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Manor</source>
+          <target>Bifröst - Manor</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Manor ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 1678782083 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Manor Full</source>
+          <target>Bifröst - Manor (fullt)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor (fullt)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST MnrFull ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 826421492 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Manor Read</source>
+          <target>Bifröst - Manor (lestur)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor (lestur)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST MnrRead ori - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

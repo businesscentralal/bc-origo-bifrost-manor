@@ -1,0 +1,58 @@
+{
+  "id": "b5ea6876-e337-4f58-a79e-cd15d6c157a8",
+  "name": "Bifrost Manor",
+  "publisher": "Origo",
+  "version": "28.0.0.0",
+  "brief": "Bifrost Manor - connect Business Central with the Manor practice-management system",
+  "description": "Bifröst message types that let an agent read and update data in Manor (projects, clients, time entries, rates, invoices and inbound invoices) through the Manor external API, with setup, environment selection and secrets kept in Business Central.",
+  "url": "https://www.origo.is/",
+  "help": "https://docs.bifrost.origo.is/en-us/manor/",
+  "privacyStatement": "https://docs.bifrost.origo.is/en-us/licensing/privacy/",
+  "EULA": "https://docs.bifrost.origo.is/en-us/licensing/eula/",
+  "applicationInsightsConnectionString": "InstrumentationKey=af411133-5e22-486f-b23a-081b79ed4168;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/;ApplicationId=c4476f32-5dfb-490a-8ad0-fb8ffad1c050",
+  "contextSensitiveHelpUrl": "https://docs.bifrost.origo.is/{0}/manor/",
+  "keyVaultUrls": [],
+  "supportedLocales": [
+    "en-US",
+    "is-IS"
+  ],
+  "logo": "assets/Logo250x250.png",
+  "dependencies": [
+    {
+      "id": "7505e808-6e52-4b96-a328-82573391297a",
+      "name": "Bifrost Foundation",
+      "publisher": "Origo",
+      "version": "28.0.16.0"
+    }
+  ],
+  "internalsVisibleTo": [
+    {
+      "id": "722dcc26-ef33-4e28-abe0-4da350b5d240",
+      "name": "Bifrost Manor - Tests",
+      "publisher": "Origo"
+    }
+  ],
+  "screenshots": [],
+  "platform": "28.0.0.0",
+  "application": "28.0.0.0",
+  "idRanges": [
+    {
+      "from": 10035635,
+      "to": 10035684
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "target": "Cloud",
+  "features": [
+    "TranslationFile"
+  ],
+  "propagateDependencies": false,
+  "runtime": "17.0",
+  "suppressWarnings": [
+    "AS0081"
+  ]
+}
