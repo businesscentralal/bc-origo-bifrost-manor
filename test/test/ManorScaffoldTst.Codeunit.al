@@ -1,6 +1,7 @@
 namespace Origo.Bifrost.Manor.Test;
 
 using Origo.Bifrost;
+using Origo.Bifrost.Manor;
 using System.TestLibraries.Security.AccessControl;
 using System.TestLibraries.Utilities;
 
@@ -39,7 +40,7 @@ codeunit 98200 "Manor Scaffold Tst ori"
         // [THEN] Bifrost Manor is in it, under its own module id and name
         Assert.IsTrue(TempApps.Get(AppUnderTestId), 'Bifrost Manor should register itself with the Bifrost application registry.');
         Assert.AreEqual(AppNameTok, TempApps."App Name", 'The registry should carry the app display name.');
-        Assert.AreEqual(0, TempApps."Setup Page Id", 'This app has no setup page of its own.');
+        Assert.AreEqual(Page::"Manor Setup ori", TempApps."Setup Page Id", 'The registry must link to Manor Setup.');
     end;
 
     /// <summary>Rebuilding the registry retains exactly one entry for this app.</summary>
@@ -60,7 +61,7 @@ codeunit 98200 "Manor Scaffold Tst ori"
         TempApps.SetRange("App Id", AppUnderTestId);
         Assert.AreEqual(1, TempApps.Count(), 'Repeated discovery must not duplicate the application.');
         TempApps.FindFirst();
-        Assert.AreEqual(0, TempApps."Setup Page Id", 'The scaffold has no setup page.');
+        Assert.AreEqual(Page::"Manor Setup ori", TempApps."Setup Page Id", 'The registry must retain the setup page.');
     end;
 
     /// <summary>Exercises licence-administrator setup access in English.</summary>

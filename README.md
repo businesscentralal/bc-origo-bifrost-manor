@@ -9,9 +9,22 @@ Bifrost Manor connects Business Central with Manor, the practice-management syst
 an agent can read Manor clients, projects, time entries, rates and invoices, and (after confirmation) create or update
 them, through Bifröst message types. Nothing is ever deleted in Manor.
 
-**Status:** scaffold. Setup, the Manor API client and the message types are built in this repository's issues.
+**Status:** setup and transport abstraction. Message types are tracked separately in this repository's issues.
 API notes: [docs/manor-api-summary.md](docs/manor-api-summary.md).
 
 Foundation discovers this app on **Bifrost Setup** through its application registry. Assign `BIFROST Manor ori`,
 `BIFROST MnrFull ori` or `BIFROST MnrRead ori` alongside the appropriate Foundation role. The object allocation is
 recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
+
+## Connection setup
+
+1. Open **Manor Setup** from search or Bifröst Setup.
+2. Keep **Mock** for connection-free development, or select **Production**/**Test** and enter an instance identifier (letters A–Z, digits, hyphens and underscores; maximum 100 characters).
+3. Use **Set API Key** to enter a new key in the masked dialog. Only key presence is displayed afterwards. **Clear API Key** removes it for the current company.
+4. Enable the connection when configuration is complete. A test environment is a separate instance on the same fixed Manor host.
+
+`BIFROST MnrRead ori` reads existing setup and key presence. `BIFROST MnrFull ori` creates and edits setup and manages keys. Keys are `SecretText` in company-scoped IsolatedStorage; deleting setup through its table trigger removes the key. No URL or key field is stored in the setup table.
+
+AL integrations select `Manor Transport ori` through `Manor Environment ori`. The mock uses `Manor Mock Store ori.RegisterResponse`, records method/path/query/body, and returns 404 for unregistered routes. Call `Reset` before and after each test. `Send` returns true for a 2xx response and false for other statuses. The response codeunit exposes status and body; no transport exposes the stored API key.
+
+The test app targets OnPrem because AL's native `HttpClientHandler` is available only there. Product code remains Cloud-targeted. The tests intercept HTTP responses and set `TestHttpRequestPolicy = BlockOutboundRequests`; they never contact Manor. The setup scenarios run in LCIDs 1033 and 1039.

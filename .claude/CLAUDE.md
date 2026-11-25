@@ -24,6 +24,18 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Test codeunit | 98200 | Manor Scaffold Tst ori |
 | Test permission set | 98201 | Manor Setup Test ori |
 
+| Table | 10035641 | Manor Setup ori |
+| Page | 10035642 | Manor Setup ori |
+| Enum | 10035643 | Manor Environment ori |
+| Interface | (no ID) | Manor Transport ori |
+| Codeunit | 10035644 | Manor HTTP Impl ori |
+| Codeunit | 10035645 | Manor Mock Impl ori |
+| Codeunit | 10035646 | Manor Response ori |
+| Page | 10035647 | Manor API Key ori |
+| Codeunit | 10035648 | Manor Secrets ori |
+| Codeunit | 10035649 | Manor Mock Store ori |
+| Test codeunit | 98202 | Manor Setup Tst ori |
+
 Every new object is added to this table in the same PR.
 
 ## Product scope (Gunnar 25.11.2026: scaffold Bifrost Manor on https://api.manor.is/)
