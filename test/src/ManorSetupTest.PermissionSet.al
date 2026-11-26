@@ -19,6 +19,7 @@ permissionset 98201 "Manor Setup Test ori"
         tabledata "Setup ori" = R,
         codeunit "Manor Setup Tst ori" = X,
         codeunit "Manor Scaffold Tst ori" = X,
+        codeunit "Manor Client Tst ori" = X,
         codeunit "Library Assert" = X,
         codeunit "Library - Lower Permissions" = X,
         codeunit "Permissions Mock" = X;
