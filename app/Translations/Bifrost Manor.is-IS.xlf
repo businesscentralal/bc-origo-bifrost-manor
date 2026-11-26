@@ -3,6 +3,228 @@
   <file datatype="xml" source-language="en-US" target-language="is-IS" original="Bifrost Manor">
     <body>
       <group id="body">
+        <trans-unit id="Table 1256322096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor Setup</source>
+          <target>Uppsetning Manor</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppsetning Manor</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - NamedType 496693286" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the company before deleting its Manor Setup.</source>
+          <target>Opnaðu fyrirtækið áður en uppsetningu Manor þess er eytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Opnaðu fyrirtækið áður en uppsetningu Manor þess er eytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - NamedType CompanyErr</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - NamedType 3791449231" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enable the Manor connection in Manor Setup.</source>
+          <target>Virkjaðu tenginguna við Manor í uppsetningu Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Virkjaðu tenginguna við Manor í uppsetningu Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - NamedType DisabledErr</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - NamedType 157828223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Manor instance may contain only letters A-Z, digits, hyphens and underscores, up to 100 characters.</source>
+          <target>Manor-tilvikið má aðeins innihalda stafina A-Z, tölustafi, bandstrik og undirstrik, að hámarki 100 stafi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor-tilvikið má aðeins innihalda stafina A-Z, tölustafi, bandstrik og undirstrik, að hámarki 100 stafi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - NamedType InvalidInstanceErr</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - NamedType 3963040884" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the Manor instance in Manor Setup.</source>
+          <target>Sláðu inn Manor-tilvikið í uppsetningu Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sláðu inn Manor-tilvikið í uppsetningu Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - NamedType MissingInstanceErr</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - NamedType 1575191754" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set the API key in Manor Setup.</source>
+          <target>Stilltu API-lykilinn í uppsetningu Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stilltu API-lykilinn í uppsetningu Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - NamedType MissingKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - NamedType 3741606150" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor Setup must use a single record per company.</source>
+          <target>Uppsetning Manor verður að nota eina færslu fyrir hvert fyrirtæki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppsetning Manor verður að nota eina færslu fyrir hvert fyrirtæki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - NamedType SingletonErr</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 2891538263 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the Manor connection is enabled.</source>
+          <target>Tilgreinir hvort tengingin við Manor sé virk.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir hvort tengingin við Manor sé virk.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Enabled - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 2891538263 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+          <target>Virkt</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Virkt</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Enabled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 1317552199 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether to use production, a test instance, or mock responses.</source>
+          <target>Tilgreinir hvort nota á raun umhverfi, prófunartilvik eða sýndarsvör.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir hvort nota á raun umhverfi, prófunartilvik eða sýndarsvör.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Environment - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 1317552199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Environment</source>
+          <target>Umhverfi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Umhverfi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Environment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 4276979203 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Manor instance identifier. Use only letters A-Z, digits, hyphens and underscores.</source>
+          <target>Tilgreinir auðkenni Manor-tilviks. Notið aðeins stafina A-Z, tölustafi, bandstrik og undirstrik.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir auðkenni Manor-tilviks. Notið aðeins stafina A-Z, tölustafi, bandstrik og undirstrik.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Instance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 4276979203 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instance</source>
+          <target>Tilvik</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilvik</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Instance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 3623135238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies when the connection was last tested.</source>
+          <target>Tilgreinir hvenær tengingin var síðast prófuð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir hvenær tengingin var síðast prófuð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Last Connection Test - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 3623135238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Connection Test</source>
+          <target>Síðasta tengiprófun</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Síðasta tengiprófun</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Last Connection Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1256322096 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Aðallykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1122848597 - NamedType 1849499635" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select Production or Test before using the Manor HTTP transport.</source>
+          <target>Veldu raunumhverfi eða prófunarumhverfi áður en HTTP-tenging við Manor er notuð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Veldu raunumhverfi eða prófunarumhverfi áður en HTTP-tenging við Manor er notuð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor HTTP Impl ori - NamedType InvalidEnvironmentErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1122848597 - NamedType 1361799667" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use a relative Manor API path without a host, query, fragment or parent segment.</source>
+          <target>Notaðu afstæða Manor API-slóð án hýsils, fyrirspurnar, brots eða yfirslóðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Notaðu afstæða Manor API-slóð án hýsils, fyrirspurnar, brots eða yfirslóðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor HTTP Impl ori - NamedType InvalidPathErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1122848597 - NamedType 3963040884" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the Manor instance in Manor Setup.</source>
+          <target>Sláðu inn Manor-tilvikið í uppsetningu Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sláðu inn Manor-tilvikið í uppsetningu Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor HTTP Impl ori - NamedType MissingInstanceErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3219478106 - NamedType 2637544473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter an API key.</source>
+          <target>Sláðu inn API-lykil.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sláðu inn API-lykil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType EmptyKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3219478106 - NamedType 1575191754" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set the API key in Manor Setup.</source>
+          <target>Stilltu API-lykilinn í uppsetningu Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stilltu API-lykilinn í uppsetningu Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType MissingKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3219478106 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You need permission to edit Manor Setup to manage or use its API key.</source>
+          <target>Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Page 1387375200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set API Key</source>
+          <target>Stilla API-lykil</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stilla API-lykil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1387375200 - Control 2293178051 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the new API key. The stored key is never displayed.</source>
+          <target>Tilgreinir nýja API-lykilinn. Vistaði lykillinn er aldrei birtur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir nýja API-lykilinn. Vistaði lykillinn er aldrei birtur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Control ApiKeyInput - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1387375200 - Control 2293178051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Key</source>
+          <target>API-lykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=API-lykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Control ApiKeyInput - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor Setup</source>
+          <target>Uppsetning Manor</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppsetning Manor</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target>Almennt</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Almennt</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Control 4229563359 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether an API key is stored for this company.</source>
+          <target>Tilgreinir hvort API-lykill sé vistaður fyrir þetta fyrirtæki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir hvort API-lykill sé vistaður fyrir þetta fyrirtæki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control HasApiKey - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Control 4229563359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Has API Key</source>
+          <target>API-lykill til staðar</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=API-lykill til staðar</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control HasApiKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 3370348682 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Removes the API key stored for this company.</source>
+          <target>Fjarlægir API-lykilinn sem vistaður er fyrir þetta fyrirtæki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjarlægir API-lykilinn sem vistaður er fyrir þetta fyrirtæki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action ClearApiKey - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 3370348682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear API Key</source>
+          <target>Fjarlægja API-lykil</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjarlægja API-lykil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action ClearApiKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 926141975 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stores a new API key for this company without showing the existing key.</source>
+          <target>Vistar nýjan API-lykil fyrir þetta fyrirtæki án þess að birta eldri lykil.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Vistar nýjan API-lykil fyrir þetta fyrirtæki án þess að birta eldri lykil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action SetApiKey - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 926141975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set API Key</source>
+          <target>Stilla API-lykil</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stilla API-lykil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action SetApiKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <target>Vinna</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Vinna</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 689737130 - EnumValue 1417814126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mock</source>
+          <target>Sýndarumhverfi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sýndarumhverfi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Mock - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 689737130 - EnumValue 1065337893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Production</source>
+          <target>Raunumhverfi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Raunumhverfi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Production - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 689737130 - EnumValue 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <target>Prófunarumhverfi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Prófunarumhverfi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Test - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PermissionSet 3604939376 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
           <source>Bifrost Manor</source>
           <target>Bifröst - Manor</target>

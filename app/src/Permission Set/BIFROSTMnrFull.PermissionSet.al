@@ -1,12 +1,17 @@
 namespace Origo.Bifrost.Manor;
 
 /// <summary>
-/// Full Bifrost Manor role. In the scaffold it grants registration only; write message types add their grants here.
+/// Full Bifrost Manor role. Grants setup editing, key management and transport execution.
 /// </summary>
 permissionset 10035637 "BIFROST MnrFull ori"
 {
     Assignable = true;
     Access = Public;
     Caption = 'Bifrost Manor Full', MaxLength = 30, Comment = 'is-IS=Bifröst - Manor (fullt)';
-    IncludedPermissionSets = "BIFROST Manor ori";
+    IncludedPermissionSets = "BIFROST MnrRead ori";
+    Permissions = tabledata "Manor Setup ori" = RIMD,
+                  page "Manor API Key ori" = X,
+                  codeunit "Manor HTTP Impl ori" = X,
+                  codeunit "Manor Mock Impl ori" = X,
+                  codeunit "Manor Mock Store ori" = X;
 }
