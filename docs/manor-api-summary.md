@@ -2,6 +2,7 @@
 
 Source: the public reference at https://api.manor.is/ (Manor API, OpenAPI 3.1, version 1.0.3), read 25.11.2026.
 Knowledge base: https://adstod.manor.is. Contact on the spec: manor@manor.is.
+Functional rules from Manor's public site and knowledge base (lifecycle, locked states, Icelandic terms): [manor-functional-notes.md](manor-functional-notes.md).
 Nothing here comes from an authenticated call. No account was created, and no credentials were used.
 
 ## What Manor is
