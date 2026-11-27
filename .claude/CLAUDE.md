@@ -48,7 +48,7 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Enum extension | 10035680 | Manor Read Msg Type ori |
 | Codeunit | 10035681 | Manor Read Parts ori |
 | Codeunit | 10035682 | Manor Read Mgt ori |
-| Test codeunit | 98240 | Manor Read Tst ori |
+| Test codeunit | 98240 | Manor Read Msg Tst ori |
 
 Every new object is added to this table in the same PR.
 

@@ -6,7 +6,7 @@ using System.TestLibraries.Security.AccessControl;
 using System.TestLibraries.Utilities;
 
 /// <summary>Story D: the Manor read message types (clients, projects, activities) over the Mock transport in both languages.</summary>
-codeunit 98240 "Manor Read Tst ori"
+codeunit 98240 "Manor Read Msg Tst ori"
 {
     Subtype = Test;
     TestPermissions = Disabled;
