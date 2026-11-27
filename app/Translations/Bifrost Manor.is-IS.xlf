@@ -243,11 +243,11 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType FixTxt</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2586736681 - NamedType 1255087830" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2586736681 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
           <source>Manor, create, billable, dry run</source>
           <target>Manor, stofna, reikningsfærsla, prufukeyrsla</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType KeywordsTxt</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType KeywordsLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 2586736681 - NamedType 774924109" size-unit="char" translate="yes" xml:space="preserve">
           <source>Requires set_alternative_user_of_expenses. expectedCount is always 1. No project/user pre-reads. Creates cannot be undone through Bifrost; correct them in Manor before invoicing. Closed projects are rejected by Manor. Mileage is not supported. Creates are not retried automatically.</source>
@@ -381,11 +381,11 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType FixTxt</note>
         </trans-unit>
-        <trans-unit id="Codeunit 944344432 - NamedType 1255087830" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 944344432 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
           <source>Manor, create, billable, dry run</source>
           <target>Manor, stofna, reikningsfærsla, prufukeyrsla</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType KeywordsTxt</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType KeywordsLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 944344432 - NamedType 774924109" size-unit="char" translate="yes" xml:space="preserve">
           <source>Requires manage_products. expectedCount is always 1. No project/user pre-reads. Creates cannot be undone through Bifrost; correct them in Manor before invoicing. Closed projects are rejected by Manor. Mileage is not supported. Creates are not retried automatically.</source>
@@ -513,11 +513,11 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType FixTxt</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2769345886 - NamedType 1255087830" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2769345886 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
           <source>Manor, create, billable, dry run</source>
           <target>Manor, stofna, reikningsfærsla, prufukeyrsla</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType KeywordsTxt</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType KeywordsLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 2769345886 - NamedType 774924109" size-unit="char" translate="yes" xml:space="preserve">
           <source>Requires set_alternative_user_of_times. expectedCount is always 1. No project/user pre-reads. Creates cannot be undone through Bifrost; correct them in Manor before invoicing. Closed projects are rejected by Manor. Mileage is not supported. Creates are not retried automatically.</source>

@@ -9,7 +9,7 @@ codeunit 10035679 "Manor Product Create Impl ori" implements "Msg Interface ori"
 
     var
         DescriptionTxt: Label 'Create a Manor product entry.', Comment = 'is-IS=Stofna vörufærslu í Manor.';
-        KeywordsTxt: Label 'Manor, create, billable, dry run', Comment = 'is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla';
+        KeywordsLbl: Label 'Manor, create, billable, dry run', Comment = 'is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla';
         NotesTxt: Label 'Requires manage_products. expectedCount is always 1. No project/user pre-reads. Creates cannot be undone through Bifrost; correct them in Manor before invoicing. Closed projects are rejected by Manor. Mileage is not supported. Creates are not retried automatically.', Comment = 'is-IS=Krefst manage_products. expectedCount er alltaf 1. Verk og notendur eru ekki lesin fyrirfram. Ekki er hægt að afturkalla stofnun í Bifröst; leiðréttu í Manor fyrir reikningsfærslu. Manor hafnar lokuðum verkum. Akstur er ekki studdur. Stofnun er ekki endurreynd sjálfkrafa.';
         ResponseTxt: Label 'One canonical Manor resource in result; noOfRecords=1. A dry run has dryRun=true, noOfRecords=0, empty result, method, path and the exact payload.', Comment = 'is-IS=Ein færsla með staðlaðum Manor-reitum í result; noOfRecords=1. Prufukeyrsla hefur dryRun=true, noOfRecords=0, tómt result, method, path og nákvæm payload-gögn.';
         ErrorTxt: Label 'Invalid input or expectedCount; 401/403 includes the required permission, 404 means missing resource, 422 means Manor rejected the data. Provider text is not echoed.', Comment = 'is-IS=Ógild gögn eða expectedCount; 401/403 nefnir nauðsynlega heimild, 404 merkir að gögn vanti, 422 merkir að Manor hafnaði gögnunum. Texti þjónustuveitanda er ekki endurbirtur.';
@@ -51,7 +51,7 @@ codeunit 10035679 "Manor Product Create Impl ori" implements "Msg Interface ori"
     /// <summary>GetKeywords: Create a Manor product entry.</summary>
     procedure GetKeywords(): Text
     begin
-        exit(KeywordsTxt);
+        exit(KeywordsLbl);
     end;
 
     /// <summary>GetSelectionDescription: Create a Manor product entry.</summary>
@@ -70,8 +70,22 @@ codeunit 10035679 "Manor Product Create Impl ori" implements "Msg Interface ori"
     procedure ExecuteBifrostTask(var Argument: Record "Message Argument ori")
     var
         CreateMgt: Codeunit "Manor Create Mgt ori";
+        Request: JsonObject;
+        Payload: JsonObject;
     begin
-        CreateMgt.Execute(Argument, 'product', 'manage_products');
+        Request := Argument.GetRequestJson();
+        CreateMgt.CheckCommonRequest('description,activity_id,date,quantity,billable_quantity,price,custom_discount,user_id,rate_id,internal_note', Request);
+        CreateMgt.CopyField(Request, 'description', Payload, 'string', true);
+        CreateMgt.CopyField(Request, 'activity_id', Payload, 'integer', false);
+        CreateMgt.CopyField(Request, 'date', Payload, 'string', true);
+        CreateMgt.CopyField(Request, 'quantity', Payload, 'number', true);
+        CreateMgt.CopyField(Request, 'billable_quantity', Payload, 'number', false);
+        CreateMgt.CopyField(Request, 'price', Payload, 'number', false);
+        CreateMgt.CopyField(Request, 'custom_discount', Payload, 'number', false);
+        CreateMgt.CopyField(Request, 'user_id', Payload, 'integer', true);
+        CreateMgt.CopyField(Request, 'rate_id', Payload, 'integer', true);
+        CreateMgt.CopyField(Request, 'internal_note', Payload, 'string', false);
+        CreateMgt.Execute(Argument, 'product', 'manage_products', Payload);
     end;
 
     /// <summary>GetParameters: Create a Manor product entry.</summary>
@@ -107,7 +121,7 @@ codeunit 10035679 "Manor Product Create Impl ori" implements "Msg Interface ori"
     var
         ContractMgt: Codeunit "Msg Contract Mgt ori";
     begin
-        Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::InvalidParameter, ErrorTxt, FixTxt));
+        Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::BusinessCentralError, ErrorTxt, FixTxt));
         exit(true);
     end;
 

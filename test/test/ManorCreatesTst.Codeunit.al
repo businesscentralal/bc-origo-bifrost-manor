@@ -341,6 +341,37 @@ codeunit 98270 "Manor Creates Tst ori"
         VerifyReadRole(1039);
     end;
 
+    /// <summary>NG12: offsets are normalised to UTC before validation and the preview.</summary>
+    [Test]
+    procedure Scenario_NG12_UtcOffsetEnglish()
+    begin
+        VerifyUtcOffset(1033);
+    end;
+
+    /// <summary>NG12: offsets are normalised to UTC in Icelandic sessions too.</summary>
+    [Test]
+    procedure Scenario_NG12_UtcOffsetIcelandic()
+    begin
+        VerifyUtcOffset(1039);
+    end;
+
+    local procedure VerifyUtcOffset(LanguageId: Integer)
+    var
+        Request: JsonObject;
+        Response: JsonObject;
+    begin
+        Initialize(LanguageId);
+        Request := RequestFor(1);
+        Request.Replace('begins_at', '2026-11-20T22:00:00+02:00');
+        Request.Add('dryRun', true);
+        Response := RunCreate(Request, 1, LanguageId);
+        AssertSuccess(Response);
+        Assert.AreEqual('2026-11-20T20:00:00Z', Response.GetObject('payload').GetText('begins_at'), 'UTC payload.');
+        Request.Replace('begins_at', '2026-11-20T02:00:00+03:00');
+        AssertFailure(RunCreate(Request, 1, LanguageId), 0);
+        Cleanup();
+    end;
+
     local procedure Initialize(LanguageId: Integer)
     var
         Setup: Record "Manor Setup ori";
@@ -357,6 +388,8 @@ codeunit 98270 "Manor Creates Tst ori"
         Commit();
         LowerPermissions.SetExactPermissionSet('Manor Setup Test ori');
         LowerPermissions.AddPermissionSet('BIFROST Full ori');
+        // Foundation test subscribers require execute rights even when their override is inactive.
+        LowerPermissions.AddPermissionSet('BIFROST Tests ori');
         LowerPermissions.AddPermissionSet('BIFROST MnrFull ori');
     end;
 

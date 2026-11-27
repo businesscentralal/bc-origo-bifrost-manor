@@ -29,12 +29,11 @@ codeunit 10035650 "Manor Create Mgt ori"
     end;
 
     /// <summary>Executes a single create after validating every input and resolving permitted defaults.</summary>
-    procedure Execute(var Argument: Record "Message Argument ori"; Entity: Text; RequiredPermission: Text)
+    procedure Execute(var Argument: Record "Message Argument ori"; Entity: Text; RequiredPermission: Text; Payload: JsonObject)
     var
         Setup: Record "Manor Setup ori";
         Client: Codeunit "Manor Client ori";
         Request: JsonObject;
-        Payload: JsonObject;
         Response: JsonObject;
         Result: JsonArray;
         Created: JsonObject;
@@ -57,7 +56,7 @@ codeunit 10035650 "Manor Create Mgt ori"
         ValidateScalar(Request, 'dryRun', 'boolean', false);
         if Request.Get('dryRun', Token) then
             DryRun := Token.AsValue().AsBoolean();
-        Payload := BuildPayload(Request, Entity);
+        ValidatePayload(Payload, Entity);
         if not Setup.Get() then
             Error(DisabledErr);
         if not Setup.Enabled then
@@ -99,51 +98,39 @@ codeunit 10035650 "Manor Create Mgt ori"
         Argument.SetResponseJson(Response);
     end;
 
-    local procedure BuildPayload(Request: JsonObject; Entity: Text) Payload: JsonObject
+    /// <summary>Checks controls and refuses undeclared fields before copying the canonical payload.</summary>
+    procedure CheckCommonRequest(AllowedFields: Text; Request: JsonObject)
     var
         FieldName: Text;
-        Required: Text;
-        Strings: Text;
-        Numbers: Text;
+    begin
+        ValidateScalar(Request, 'expectedCount', 'integer', true);
+        if Request.GetInteger('expectedCount') <> 1 then
+            Error(CountErr);
+        ValidateScalar(Request, 'projectId', 'integer', true);
+        if Request.GetBigInteger('projectId') <= 0 then
+            Error(InvalidErr, 'projectId');
+        ValidateScalar(Request, 'dryRun', 'boolean', false);
+        foreach FieldName in Request.Keys() do
+            if not HasKey('projectId,expectedCount,dryRun,' + AllowedFields, FieldName) then
+                Error(InvalidErr, FieldName);
+    end;
+
+    local procedure ValidatePayload(Payload: JsonObject; Entity: Text)
+    var
+        FieldName: Text;
         Integers: Text;
         Token: JsonToken;
         ParsedDate: Date;
         ParsedDateTime: DateTime;
         DateText: Text;
     begin
-        Strings := 'description,internal_note';
         Integers := 'activity_id,user_id,rate_id';
-        case Entity of
-            'time': begin
-                Required := 'begins_at,hours,description,user_id';
-                Strings += ',begins_at';
-                Numbers := 'hours,billable_hours';
-            end;
-            'product': begin
-                Required := 'date,description,quantity,user_id,rate_id';
-                Strings += ',date';
-                Numbers := 'quantity,billable_quantity,price,custom_discount';
-            end;
-            'expense': begin
-                Required := 'description,amount,paid_at,paid_in_currency_code';
-                Strings := 'description,recipient,paid_at,paid_in_currency_code,document_number';
-                Numbers := 'amount,billable_amount';
-                Integers := 'activity_id,user_id,firm_id,vat_rate_id';
-            end;
-        end;
-        foreach FieldName in Request.Keys() do
-            if not HasKey('projectId,expectedCount,dryRun,' + Strings + ',' + Numbers + ',' + Integers, FieldName) then
-                Error(InvalidErr, FieldName);
-        foreach FieldName in Strings.Split(',') do
-            CopyField(Request, Payload, FieldName, 'string', HasKey(Required, FieldName));
-        foreach FieldName in Numbers.Split(',') do
-            CopyField(Request, Payload, FieldName, 'number', HasKey(Required, FieldName));
-        foreach FieldName in Integers.Split(',') do begin
-            CopyField(Request, Payload, FieldName, 'integer', HasKey(Required, FieldName));
+        if Entity = 'expense' then
+            Integers := 'activity_id,user_id,firm_id,vat_rate_id';
+        foreach FieldName in Integers.Split(',') do
             if Payload.Get(FieldName, Token) then
                 if Token.AsValue().AsBigInteger() <= 0 then
                     Error(InvalidErr, FieldName);
-        end;
         if Entity = 'product' then begin
             DateText := Payload.GetText('date');
             if not Evaluate(ParsedDate, DateText, 9) then
@@ -178,7 +165,8 @@ codeunit 10035650 "Manor Create Mgt ori"
             (StrPos(CopyStr(Value, 20), '+') > 0) or (StrPos(CopyStr(Value, 20), '-') > 0));
     end;
 
-    local procedure CopyField(Request: JsonObject; var Payload: JsonObject; KeyName: Text; Kind: Text; Required: Boolean)
+    /// <summary>Validates and copies one declared payload field, omitting optional nulls.</summary>
+    procedure CopyField(Request: JsonObject; KeyName: Text; var Payload: JsonObject; Kind: Text; Required: Boolean)
     var
         Token: JsonToken;
     begin
@@ -230,7 +218,7 @@ codeunit 10035650 "Manor Create Mgt ori"
         end;
     end;
 
-    local procedure ValidateTime(Payload: JsonObject)
+    local procedure ValidateTime(var Payload: JsonObject)
     var
         Token: JsonToken;
         StartsAt: DateTime;
@@ -249,6 +237,7 @@ codeunit 10035650 "Manor Create Mgt ori"
             Error(InvalidErr, 'begins_at');
         if not Evaluate(StartsAt, TextValue, 9) then
             Error(InvalidErr, 'begins_at');
+        Payload.Replace('begins_at', Format(StartsAt, 0, 9));
         // Compare UTC dates, independently of the BC session time zone. Ending at midnight is allowed.
         EndsAt := StartsAt + Round(Hours * 3600000, 1);
         if CopyStr(Format(StartsAt, 0, 9), 1, 10) <> CopyStr(Format(EndsAt - 1, 0, 9), 1, 10) then

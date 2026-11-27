@@ -9,7 +9,7 @@ codeunit 10035678 "Manor Expense Create Impl ori" implements "Msg Interface ori"
 
     var
         DescriptionTxt: Label 'Create a Manor expense.', Comment = 'is-IS=Stofna útlagðan kostnað í Manor.';
-        KeywordsTxt: Label 'Manor, create, billable, dry run', Comment = 'is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla';
+        KeywordsLbl: Label 'Manor, create, billable, dry run', Comment = 'is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla';
         NotesTxt: Label 'Requires set_alternative_user_of_expenses. expectedCount is always 1. No project/user pre-reads. Creates cannot be undone through Bifrost; correct them in Manor before invoicing. Closed projects are rejected by Manor. Mileage is not supported. Creates are not retried automatically.', Comment = 'is-IS=Krefst set_alternative_user_of_expenses. expectedCount er alltaf 1. Verk og notendur eru ekki lesin fyrirfram. Ekki er hægt að afturkalla stofnun í Bifröst; leiðréttu í Manor fyrir reikningsfærslu. Manor hafnar lokuðum verkum. Akstur er ekki studdur. Stofnun er ekki endurreynd sjálfkrafa.';
         ResponseTxt: Label 'One canonical Manor resource in result; noOfRecords=1. A dry run has dryRun=true, noOfRecords=0, empty result, method, path and the exact payload.', Comment = 'is-IS=Ein færsla með staðlaðum Manor-reitum í result; noOfRecords=1. Prufukeyrsla hefur dryRun=true, noOfRecords=0, tómt result, method, path og nákvæm payload-gögn.';
         ErrorTxt: Label 'Invalid input or expectedCount; 401/403 includes the required permission, 404 means missing resource, 422 means Manor rejected the data. Provider text is not echoed.', Comment = 'is-IS=Ógild gögn eða expectedCount; 401/403 nefnir nauðsynlega heimild, 404 merkir að gögn vanti, 422 merkir að Manor hafnaði gögnunum. Texti þjónustuveitanda er ekki endurbirtur.';
@@ -52,7 +52,7 @@ codeunit 10035678 "Manor Expense Create Impl ori" implements "Msg Interface ori"
     /// <summary>GetKeywords: Create a Manor expense.</summary>
     procedure GetKeywords(): Text
     begin
-        exit(KeywordsTxt);
+        exit(KeywordsLbl);
     end;
 
     /// <summary>GetSelectionDescription: Create a Manor expense.</summary>
@@ -71,8 +71,23 @@ codeunit 10035678 "Manor Expense Create Impl ori" implements "Msg Interface ori"
     procedure ExecuteBifrostTask(var Argument: Record "Message Argument ori")
     var
         CreateMgt: Codeunit "Manor Create Mgt ori";
+        Request: JsonObject;
+        Payload: JsonObject;
     begin
-        CreateMgt.Execute(Argument, 'expense', 'set_alternative_user_of_expenses');
+        Request := Argument.GetRequestJson();
+        CreateMgt.CheckCommonRequest('description,activity_id,amount,billable_amount,paid_at,paid_in_currency_code,vat_rate_id,firm_id,user_id,recipient,document_number', Request);
+        CreateMgt.CopyField(Request, 'description', Payload, 'string', true);
+        CreateMgt.CopyField(Request, 'activity_id', Payload, 'integer', false);
+        CreateMgt.CopyField(Request, 'amount', Payload, 'number', true);
+        CreateMgt.CopyField(Request, 'billable_amount', Payload, 'number', false);
+        CreateMgt.CopyField(Request, 'paid_at', Payload, 'string', true);
+        CreateMgt.CopyField(Request, 'paid_in_currency_code', Payload, 'string', true);
+        CreateMgt.CopyField(Request, 'vat_rate_id', Payload, 'integer', false);
+        CreateMgt.CopyField(Request, 'firm_id', Payload, 'integer', false);
+        CreateMgt.CopyField(Request, 'user_id', Payload, 'integer', false);
+        CreateMgt.CopyField(Request, 'recipient', Payload, 'string', false);
+        CreateMgt.CopyField(Request, 'document_number', Payload, 'string', false);
+        CreateMgt.Execute(Argument, 'expense', 'set_alternative_user_of_expenses', Payload);
     end;
 
     /// <summary>GetParameters: Create a Manor expense.</summary>
@@ -109,7 +124,7 @@ codeunit 10035678 "Manor Expense Create Impl ori" implements "Msg Interface ori"
     var
         ContractMgt: Codeunit "Msg Contract Mgt ori";
     begin
-        Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::InvalidParameter, ErrorTxt, FixTxt));
+        Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::BusinessCentralError, ErrorTxt, FixTxt));
         exit(true);
     end;
 
