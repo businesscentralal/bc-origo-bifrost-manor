@@ -473,41 +473,41 @@ codeunit 10035666 "Mnr Time List Impl ori" implements "Msg Interface ori", "Msg 
         if Inbound then
             case Name of
                 'updatedSince':
-                    exit(UpdatedRequiredTxt);
+                    exit(BilingualText('UpdatedRequiredTxt'));
                 'from':
-                    exit(AcceptedFromTxt);
+                    exit(BilingualText('AcceptedFromTxt'));
                 'to':
-                    exit(AcceptedToTxt);
+                    exit(BilingualText('AcceptedToTxt'));
             end;
         case Name of
             'projectId':
-                exit(ProjectIdTxt);
+                exit(BilingualText('ProjectIdTxt'));
             'userId':
-                exit(UserIdTxt);
+                exit(BilingualText('UserIdTxt'));
             'date':
-                exit(DateTxt);
+                exit(BilingualText('DateTxt'));
             'updatedSince':
-                exit(UpdatedTxt);
+                exit(BilingualText('UpdatedTxt'));
             'firmId':
-                exit(FirmIdTxt);
+                exit(BilingualText('FirmIdTxt'));
             'createdSince':
-                exit(CreatedTxt);
+                exit(BilingualText('CreatedTxt'));
             'from':
-                exit(FromTxt);
+                exit(BilingualText('FromTxt'));
             'to':
-                exit(ToTxt);
+                exit(BilingualText('ToTxt'));
             'invoiceId':
-                exit(InvoiceIdTxt);
+                exit(BilingualText('InvoiceIdTxt'));
             'invoiceNumber':
-                exit(InvoiceNumberTxt);
+                exit(BilingualText('InvoiceNumberTxt'));
             'mode':
-                exit(ModeTxt);
+                exit(BilingualText('ModeTxt'));
             'status':
-                exit(StatusTxt);
+                exit(BilingualText('StatusTxt'));
             'perPage':
-                exit(PerPageTxt);
+                exit(BilingualText('PerPageTxt'));
             'maxPages':
-                exit(MaxPagesTxt);
+                exit(BilingualText('MaxPagesTxt'));
         end;
     end;
 
@@ -519,38 +519,38 @@ codeunit 10035666 "Mnr Time List Impl ori" implements "Msg Interface ori", "Msg 
         Children: JsonArray;
         DataField: JsonObject;
     begin
-        Fields.Add(Contract.ResponseField('status', 'string', SuccessTxt));
+        Fields.Add(Contract.ResponseField('status', 'string', BilingualText('SuccessTxt')));
         if Kind <> 4 then
-            Fields.Add(Contract.ResponseField('count', 'integer', CountTxt));
+            Fields.Add(Contract.ResponseField('count', 'integer', BilingualText('CountTxt')));
         if Kind = 4 then
-            DataField := Contract.ResponseField('data', 'object', CanonicalTxt)
+            DataField := Contract.ResponseField('data', 'object', BilingualText('CanonicalTxt'))
         else
-            DataField := Contract.ResponseField('data', 'array', CanonicalTxt);
+            DataField := Contract.ResponseField('data', 'array', BilingualText('CanonicalTxt'));
         case Kind of
             1:
                 begin
-                    Children.Add(Contract.ResponseField('description', 'string', DescriptionTxt));
-                    Children.Add(Contract.ResponseField('internal_note', 'string', InternalNoteTxt));
-                    Children.Add(Contract.ResponseField('hours', 'number', HoursTxt));
-                    Children.Add(Contract.ResponseField('billable_hours', 'number', BillableHoursTxt));
+                    Children.Add(Contract.ResponseField('description', 'string', BilingualText('DescriptionTxt')));
+                    Children.Add(Contract.ResponseField('internal_note', 'string', BilingualText('InternalNoteTxt')));
+                    Children.Add(Contract.ResponseField('hours', 'number', BilingualText('HoursTxt')));
+                    Children.Add(Contract.ResponseField('billable_hours', 'number', BilingualText('BillableHoursTxt')));
                 end;
             2:
                 begin
-                    Children.Add(Contract.ResponseField('price', 'number', PriceTxt));
-                    Children.Add(Contract.ResponseField('quantity', 'number', QuantityTxt));
-                    Children.Add(Contract.ResponseField('billable_quantity', 'number', BillableQuantityTxt));
-                    Children.Add(Contract.ResponseField('custom_discount', 'number', DiscountTxt));
+                    Children.Add(Contract.ResponseField('price', 'number', BilingualText('PriceTxt')));
+                    Children.Add(Contract.ResponseField('quantity', 'number', BilingualText('QuantityTxt')));
+                    Children.Add(Contract.ResponseField('billable_quantity', 'number', BilingualText('BillableQuantityTxt')));
+                    Children.Add(Contract.ResponseField('custom_discount', 'number', BilingualText('DiscountTxt')));
                 end;
             3, 4:
                 begin
-                    Children.Add(Contract.ResponseField('is_credit', 'boolean', CreditTxt));
-                    Children.Add(Contract.ResponseField('original_invoice_number', 'integer', OriginalInvoiceTxt));
-                    Children.Add(Contract.ResponseField('currency_code', 'string', CurrencyTxt));
-                    Children.Add(Contract.ResponseField('exchange_rate', 'number', ExchangeRateTxt));
-                    Children.Add(Contract.ResponseField('invoice_lines', 'array', LinesTxt));
+                    Children.Add(Contract.ResponseField('is_credit', 'boolean', BilingualText('CreditTxt')));
+                    Children.Add(Contract.ResponseField('original_invoice_number', 'integer', BilingualText('OriginalInvoiceTxt')));
+                    Children.Add(Contract.ResponseField('currency_code', 'string', BilingualText('CurrencyTxt')));
+                    Children.Add(Contract.ResponseField('exchange_rate', 'number', BilingualText('ExchangeRateTxt')));
+                    Children.Add(Contract.ResponseField('invoice_lines', 'array', BilingualText('LinesTxt')));
                 end;
             5:
-                Children.Add(Contract.ResponseField('status', 'string', StatusTxt));
+                Children.Add(Contract.ResponseField('status', 'string', BilingualText('StatusTxt')));
         end;
         DataField.Add('children', Children);
         Fields.Add(DataField);
@@ -563,9 +563,9 @@ codeunit 10035666 "Mnr Time List Impl ori" implements "Msg Interface ori", "Msg 
     var
         Entry: JsonObject;
     begin
-        Entry.Add('error', ErrorsTxt);
-        Entry.Add('when', ErrorWhenTxt);
-        Entry.Add('fix', ErrorFixTxt);
+        Entry.Add('error', BilingualText('ErrorsTxt'));
+        Entry.Add('when', BilingualText('ErrorWhenTxt'));
+        Entry.Add('fix', BilingualText('ErrorFixTxt'));
         Errors.Add(Entry);
     end;
 
@@ -574,13 +574,118 @@ codeunit 10035666 "Mnr Time List Impl ori" implements "Msg Interface ori", "Msg 
     begin
         case Kind of
             1:
-                exit(PagingTxt + ' ' + TimeNotesTxt);
+                exit(BilingualText('PagingTxt') + ' ' + BilingualText('TimeNotesTxt'));
             2:
-                exit(PagingTxt + ' ' + ProductNotesTxt);
+                exit(BilingualText('PagingTxt') + ' ' + BilingualText('ProductNotesTxt'));
             3, 4:
-                exit(PagingTxt + ' ' + InvoiceNotesTxt);
+                exit(BilingualText('PagingTxt') + ' ' + BilingualText('InvoiceNotesTxt'));
             5:
-                exit(PagingTxt + ' ' + InboundNotesTxt);
+                exit(BilingualText('PagingTxt') + ' ' + BilingualText('InboundNotesTxt'));
+        end;
+    end;
+
+    local procedure BilingualText(TextKey: Text): Text
+    var
+        SavedLanguageId: Integer;
+        EnglishText: Text;
+        IcelandicText: Text;
+    begin
+        // Foundation deliberately builds contract chapters in English. Include the Icelandic
+        // wording explicitly so both versions survive that canonical-language boundary.
+        SavedLanguageId := GlobalLanguage();
+        GlobalLanguage(1033);
+        EnglishText := ContractText(TextKey);
+        GlobalLanguage(1039);
+        IcelandicText := ContractText(TextKey);
+        GlobalLanguage(SavedLanguageId);
+        exit(EnglishText + ' / ' + IcelandicText);
+    end;
+
+    local procedure ContractText(TextKey: Text): Text
+    begin
+        case TextKey of
+            'ProjectIdTxt':
+                exit(ProjectIdTxt);
+            'UserIdTxt':
+                exit(UserIdTxt);
+            'DateTxt':
+                exit(DateTxt);
+            'UpdatedTxt':
+                exit(UpdatedTxt);
+            'UpdatedRequiredTxt':
+                exit(UpdatedRequiredTxt);
+            'CreatedTxt':
+                exit(CreatedTxt);
+            'FirmIdTxt':
+                exit(FirmIdTxt);
+            'InvoiceIdTxt':
+                exit(InvoiceIdTxt);
+            'InvoiceNumberTxt':
+                exit(InvoiceNumberTxt);
+            'ModeTxt':
+                exit(ModeTxt);
+            'StatusTxt':
+                exit(StatusTxt);
+            'FromTxt':
+                exit(FromTxt);
+            'ToTxt':
+                exit(ToTxt);
+            'AcceptedFromTxt':
+                exit(AcceptedFromTxt);
+            'AcceptedToTxt':
+                exit(AcceptedToTxt);
+            'PerPageTxt':
+                exit(PerPageTxt);
+            'MaxPagesTxt':
+                exit(MaxPagesTxt);
+            'SuccessTxt':
+                exit(SuccessTxt);
+            'CountTxt':
+                exit(CountTxt);
+            'CanonicalTxt':
+                exit(CanonicalTxt);
+            'DescriptionTxt':
+                exit(DescriptionTxt);
+            'InternalNoteTxt':
+                exit(InternalNoteTxt);
+            'HoursTxt':
+                exit(HoursTxt);
+            'BillableHoursTxt':
+                exit(BillableHoursTxt);
+            'PriceTxt':
+                exit(PriceTxt);
+            'QuantityTxt':
+                exit(QuantityTxt);
+            'BillableQuantityTxt':
+                exit(BillableQuantityTxt);
+            'DiscountTxt':
+                exit(DiscountTxt);
+            'CreditTxt':
+                exit(CreditTxt);
+            'OriginalInvoiceTxt':
+                exit(OriginalInvoiceTxt);
+            'CurrencyTxt':
+                exit(CurrencyTxt);
+            'ExchangeRateTxt':
+                exit(ExchangeRateTxt);
+            'LinesTxt':
+                exit(LinesTxt);
+            'ErrorsTxt':
+                exit(ErrorsTxt);
+            'ErrorWhenTxt':
+                exit(ErrorWhenTxt);
+            'ErrorFixTxt':
+                exit(ErrorFixTxt);
+            'PagingTxt':
+                exit(PagingTxt);
+            'TimeNotesTxt':
+                exit(TimeNotesTxt);
+            'ProductNotesTxt':
+                exit(ProductNotesTxt);
+            'InvoiceNotesTxt':
+                exit(InvoiceNotesTxt);
+            'InboundNotesTxt':
+                exit(InboundNotesTxt);
         end;
     end;
 

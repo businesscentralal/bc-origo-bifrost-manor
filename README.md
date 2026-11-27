@@ -48,6 +48,6 @@ All lists read every upstream page. `perPage` defaults to 100 (1–100), `maxPag
 
 Updated inbound invoices are inclusive. Duplicate ids across pages collapse to the last occurrence before the optional BC status filter (`not_assigned`, `pending`, `accepted`, `rejected`). Omit `status` to return all states. De-duplicate across separate polling calls too.
 
-Time lists cannot distinguish invoiced from unbilled entries. Invoice endpoints are Beta and summarised invoice lines need not identify individual time entries. Read the bilingual runtime contracts for field meanings, visibility limits, parameters and errors.
+Time lists cannot distinguish invoiced from unbilled entries. Invoice endpoints are Beta and summarised invoice lines need not identify individual time entries. Read the bilingual runtime contracts for field meanings, visibility limits, parameters and errors. Foundation canonicalizes contract chapters to English, so their human descriptions include the Icelandic wording explicitly alongside English; catalogue descriptions and runtime errors follow the requested language.
 
 MCP verification uses disposable exact-route fixtures in the test app's `Manor Read Fixture ori` table. Its subscriber runs only for Mock transport in a CRONUS demo company; test code seeds and deletes its own fixtures. Product sessions without the test app keep the session-local mock behavior.

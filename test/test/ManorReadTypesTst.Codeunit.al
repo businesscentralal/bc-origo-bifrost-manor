@@ -812,6 +812,7 @@ codeunit 98250 "Manor Read Types Tst ori"
         Token: JsonToken;
         Impl: Interface "Msg Interface ori";
         Discovery: Interface "Msg Discovery ori";
+        ContractText: Text;
     begin
         Impl := MessageType(Kind);
         Discovery := MessageType(Kind);
@@ -824,6 +825,10 @@ codeunit 98250 "Manor Read Types Tst ori"
         Assert.IsTrue(Contract.Get('response', Token), 'Response chapter');
         Assert.IsTrue(Contract.Get('errors', Token), 'Errors chapter');
         Assert.IsTrue(Contract.Get('notes', Token), 'Notes chapter');
+        Contract.WriteTo(ContractText);
+        Assert.IsTrue(ContractText.Contains('JSON frá Manor'), 'Icelandic response help survives Foundation English canonicalization');
+        Assert.IsTrue(ContractText.Contains('Gagnaprófun fer fram'), 'Icelandic error guidance survives Foundation English canonicalization');
+        Assert.IsTrue(ContractText.Contains('Manor JSON with canonical'), 'English response help retained');
         if Kind in [3, 4] then
             Assert.IsTrue(Token.AsValue().AsText().Contains('Beta'), 'Beta is documented');
     end;
