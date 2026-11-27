@@ -41,6 +41,16 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Codeunit | 10035654 | Manor Telemetry ori |
 | Test codeunit | 98220 | Manor Client Tst ori |
 
+| Enum extension | 10035655 | Manor Message Type ori |
+| Codeunit | 10035656 | Manor Connection Test Impl ori |
+| Codeunit | 10035657 | Manor Firm List Impl ori |
+| Codeunit | 10035658 | Manor User List Impl ori |
+| Codeunit | 10035659 | Manor User Get Impl ori |
+| Codeunit | 10035660 | Manor Rate List Impl ori |
+| Test codeunit | 98230 | Manor Read Tst ori |
+| Test enum extension | 98231 | Manor Read Probe Type ori |
+| Test fixture codeunit | 98232 | Manor Read Probe ori |
+
 Every new object is added to this table in the same PR.
 
 ## Product scope (Gunnar 25.11.2026: scaffold Bifrost Manor on https://api.manor.is/)

@@ -28,3 +28,7 @@ recorded in [.claude/CLAUDE.md](.claude/CLAUDE.md).
 AL integrations select `Manor Transport ori` through `Manor Environment ori`. The mock uses `Manor Mock Store ori.RegisterResponse`, records method/path/query/body, and returns 404 for unregistered routes. Call `Reset` before and after each test. `Send` returns true for a 2xx response and false for other statuses. The response codeunit exposes status and body; no transport exposes the stored API key.
 
 The test app targets OnPrem because AL's native `HttpClientHandler` is available only there. Product code remains Cloud-targeted. The tests intercept HTTP responses and set `TestHttpRequestPolicy = BlockOutboundRequests`; they never contact Manor. The setup scenarios run in LCIDs 1033 and 1039.
+
+## Read message types
+
+The approved connection, firm, user and rate reads are documented in [English](docs/manor-read-messages.en-US.md) and [Icelandic](docs/manor-read-messages.is-IS.md). Use `BIFROST MnrRead ori` to invoke them; setup and API-key editing require the Full role. Lists return one page with Manor metadata. Local filters apply to that page, so an empty filtered result can still have a next page.
