@@ -20,6 +20,8 @@ permissionset 98201 "Manor Setup Test ori"
         codeunit "Manor Setup Tst ori" = X,
         codeunit "Manor Scaffold Tst ori" = X,
         codeunit "Manor Client Tst ori" = X,
+        codeunit "Manor Write Tst ori" = X,
+        codeunit "Msg Contract Mgt ori" = X,
         codeunit "Library Assert" = X,
         codeunit "Library - Lower Permissions" = X,
         codeunit "Permissions Mock" = X;

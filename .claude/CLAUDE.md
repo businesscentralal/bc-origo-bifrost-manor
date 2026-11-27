@@ -40,6 +40,16 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Codeunit | 10035653 | Manor Query Builder ori |
 | Codeunit | 10035654 | Manor Telemetry ori |
 | Test codeunit | 98220 | Manor Client Tst ori |
+| Codeunit | 10035671 | Manor Client Create Impl ori |
+| Codeunit | 10035672 | Manor Client Update Impl ori |
+| Codeunit | 10035673 | Manor Project Create Impl ori |
+| Codeunit | 10035674 | Manor Project Update Impl ori |
+| Codeunit | 10035675 | Manor Activity Create Impl ori |
+| Codeunit | 10035676 | Manor Activity Update Impl ori |
+| Enum extension | 10035677 | Manor Message Type ori |
+| Codeunit | 10035678 | Manor Write Handler ori |
+| Codeunit | 10035679 | Manor Contract Parts ori |
+| Test codeunit | 98260 | Manor Write Tst ori |
 
 Every new object is added to this table in the same PR.
 

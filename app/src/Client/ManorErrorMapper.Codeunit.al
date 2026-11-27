@@ -14,12 +14,20 @@ codeunit 10035652 "Manor Error Mapper ori"
         UnavailableErr: Label 'Manor is unavailable or busy (HTTP %1). Try again later.', Comment = '%1 = HTTP status; is-IS=Manor er ekki tiltækt eða of upptekið (HTTP %1). Reyndu aftur síðar.';
         UnreachableErr: Label 'Could not reach Manor. Try again later.', Comment = 'is-IS=Ekki náðist samband við Manor. Reyndu aftur síðar.';
         OtherErr: Label 'Manor returned HTTP status %1.', Comment = '%1 = HTTP status; is-IS=Manor skilaði HTTP-stöðu %1.';
-        PermissionNamesTxt: Label 'manage_inbound_invoices,manage_rates,set_alternative_user_of_times', Locked = true;
+        PermissionNamesTxt: Label 'manage_inbound_invoices,manage_rates,set_alternative_user_of_times,manage_activities', Locked = true;
 
     /// <summary>True for transport failures, 429 and 5xx, which are retried once.</summary>
     procedure IsRetryable(StatusCode: Integer): Boolean
     begin
         exit((StatusCode = 0) or (StatusCode = 429) or (StatusCode >= 500));
+    end;
+
+    /// <summary>Tells whether an error text is the mapped Manor "not found" message.</summary>
+    /// <param name="MessageText">The error text, normally GetLastErrorText().</param>
+    /// <returns>True when Manor answered 404.</returns>
+    procedure IsNotFoundMessage(MessageText: Text): Boolean
+    begin
+        exit(MessageText = NotFoundErr);
     end;
 
     /// <summary>Raises the documented error for a failed response.</summary>
@@ -32,7 +40,7 @@ codeunit 10035652 "Manor Error Mapper ori"
                 RaiseRejected(Body);
             StatusCode = 404:
                 Error(NotFoundErr);
-            StatusCode = 422:
+            (StatusCode = 400) or (StatusCode = 422):
                 RaiseValidation(Body);
             IsRetryable(StatusCode):
                 Error(UnavailableErr, StatusCode);
