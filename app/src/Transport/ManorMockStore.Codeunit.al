@@ -43,6 +43,7 @@ codeunit 10035649 "Manor Mock Store ori"
         end;
     end;
 
+    /// <summary>Records a mock request and resolves session fixtures before test-extension fixtures.</summary>
     procedure Send(Method: Text; RelativePath: Text; Query: Text; Body: Text; var Response: Codeunit "Manor Response ori"): Boolean
     var
         Request: JsonObject;
@@ -51,6 +52,7 @@ codeunit 10035649 "Manor Mock Store ori"
         Status: JsonToken;
         Content: JsonToken;
         Entry: JsonToken;
+        Handled: Boolean;
     begin
         Request.Add('method', UpperCase(Method));
         Request.Add('path', RelativePath);
@@ -68,6 +70,9 @@ codeunit 10035649 "Manor Mock Store ori"
             exit((Response.GetStatusCode() >= 200) and (Response.GetStatusCode() < 300));
         end;
         if not Responses.Get(UpperCase(Method) + ' ' + RelativePath, Token) then begin
+            OnBeforeResolve(Method, RelativePath, Query, Response, Handled);
+            if Handled then
+                exit((Response.GetStatusCode() >= 200) and (Response.GetStatusCode() < 300));
             Response.SetResponse(404, '{}');
             exit(false);
         end;
@@ -76,6 +81,12 @@ codeunit 10035649 "Manor Mock Store ori"
         Canned.Get('body', Content);
         Response.SetResponse(Status.AsValue().AsInteger(), Content.AsValue().AsText());
         exit((Response.GetStatusCode() >= 200) and (Response.GetStatusCode() < 300));
+    end;
+
+    /// <summary>Allows test extensions to supply company-scoped mock fixtures without network access.</summary>
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeResolve(Method: Text; RelativePath: Text; Query: Text; var Response: Codeunit "Manor Response ori"; var Handled: Boolean)
+    begin
     end;
 
     /// <summary>Returns a copy of the requests recorded in this session.</summary>
