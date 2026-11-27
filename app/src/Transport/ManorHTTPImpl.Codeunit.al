@@ -91,7 +91,8 @@ codeunit 10035644 "Manor HTTP Impl ori" implements "Manor Transport ori"
         if CopyStr(RelativePath, 1, 5) <> 'user/' then
             exit(false);
         Encoded := CopyStr(RelativePath, 6);
-        Email := TypeHelper.UrlDecode(Encoded);
+        Email := Encoded;
+        Email := TypeHelper.UrlDecode(Email);
         AtPosition := StrPos(Email, '@');
         if (AtPosition <= 1) or (AtPosition = StrLen(Email)) then
             exit(false);
