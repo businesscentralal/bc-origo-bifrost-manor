@@ -368,7 +368,7 @@ codeunit 98270 "Manor Creates Tst ori"
         AssertSuccess(Response);
         Assert.AreEqual('2026-11-20T20:00:00Z', Response.GetObject('payload').GetText('begins_at'), 'UTC payload.');
         Request.Replace('begins_at', '2026-11-20T02:00:00+03:00');
-        AssertFailure(RunCreate(Request, 1, LanguageId), 0);
+        AssertRejected(Request, 1, LanguageId, 0);
         Cleanup();
     end;
 
@@ -389,7 +389,7 @@ codeunit 98270 "Manor Creates Tst ori"
         LowerPermissions.SetExactPermissionSet('Manor Setup Test ori');
         LowerPermissions.AddPermissionSet('BIFROST Full ori');
         // Standard platform execute rights let Foundation test subscribers run; data rights remain the real Full roles.
-        // VerifyReadRole resets to exact permissions without All Objects before checking the write boundary.
+        // VerifyReadRole resets to Read data permissions and proves that execute rights cannot enable writes.
         LowerPermissions.AddPermissionSet('All Objects');
         LowerPermissions.AddPermissionSet('BIFROST MnrFull ori');
     end;
@@ -484,13 +484,30 @@ codeunit 98270 "Manor Creates Tst ori"
         Assert.AreEqual('Success', Response.GetText('status'), ResponseText);
     end;
 
-    local procedure AssertFailure(Response: JsonObject; Calls: Integer)
-    var
-        ResponseText: Text;
+    local procedure AssertRejected(Request: JsonObject; Entity: Integer; LanguageId: Integer; Calls: Integer)
     begin
-        Response.WriteTo(ResponseText);
-        Assert.AreEqual('Error', Response.GetText('status'), ResponseText);
+        // OmitCommit dispatcher calls raise the actual handler error; MCP wraps it in its error envelope.
+        asserterror RunCreate(Request, Entity, LanguageId);
+        Assert.IsTrue(GetLastErrorText() <> '', 'A specific refusal is required.');
         Assert.AreEqual(Calls, Store.GetRequests().Count(), 'Exact outbound request count.');
+    end;
+
+    local procedure AssertPayloadEquals(Expected: JsonObject; Actual: JsonObject)
+    var
+        KeyName: Text;
+        ExpectedToken: JsonToken;
+        ActualToken: JsonToken;
+        ExpectedText: Text;
+        ActualText: Text;
+    begin
+        Assert.AreEqual(Expected.Keys().Count(), Actual.Keys().Count(), 'Exact payload key count.');
+        foreach KeyName in Expected.Keys() do begin
+            Expected.Get(KeyName, ExpectedToken);
+            Assert.IsTrue(Actual.Get(KeyName, ActualToken), 'Expected payload key: ' + KeyName);
+            ExpectedToken.WriteTo(ExpectedText);
+            ActualToken.WriteTo(ActualText);
+            Assert.AreEqual(ExpectedText, ActualText, 'Exact payload value: ' + KeyName);
+        end;
     end;
 
     local procedure VerifyContracts(LanguageId: Integer)
@@ -576,7 +593,7 @@ codeunit 98270 "Manor Creates Tst ori"
             Request.Remove('dryRun');
             Request.Remove('projectId');
             Request.Remove('expectedCount');
-            Assert.AreEqual(Request.AsToken(), Payload.AsToken(), 'Exact outbound payload.');
+            AssertPayloadEquals(Request, Payload);
             Assert.AreEqual(0, Store.GetRequests().Count(), 'No Manor calls needed for explicit fields.');
         end;
         Cleanup();
@@ -591,9 +608,9 @@ codeunit 98270 "Manor Creates Tst ori"
         for Entity := 1 to 3 do begin
             Request := RequestFor(Entity);
             Request.Replace('expectedCount', 2);
-            AssertFailure(RunCreate(Request, Entity, LanguageId), 0);
+            AssertRejected(Request, Entity, LanguageId, 0);
             Request.Remove('expectedCount');
-            AssertFailure(RunCreate(Request, Entity, LanguageId), 0);
+            AssertRejected(Request, Entity, LanguageId, 0);
         end;
         Cleanup();
     end;
@@ -601,35 +618,38 @@ codeunit 98270 "Manor Creates Tst ori"
     local procedure VerifyInvalidScalars(LanguageId: Integer)
     var
         Request: JsonObject;
+        Response: JsonObject;
         Entity: Integer;
     begin
         Initialize(LanguageId);
         for Entity := 1 to 3 do begin
             Request := RequestFor(Entity);
             Request.Replace('projectId', '../other');
-            AssertFailure(RunCreate(Request, Entity, LanguageId), 0);
+            AssertRejected(Request, Entity, LanguageId, 0);
             Request := RequestFor(Entity);
             Request.Add('dryRun', 'true');
-            AssertFailure(RunCreate(Request, Entity, LanguageId), 0);
+            AssertRejected(Request, Entity, LanguageId, 0);
             Request := RequestFor(Entity);
             Request.Remove('description');
-            AssertFailure(RunCreate(Request, Entity, LanguageId), 0);
+            AssertRejected(Request, Entity, LanguageId, 0);
             Request := RequestFor(Entity);
             Request.Add('unexpected', true);
-            AssertFailure(RunCreate(Request, Entity, LanguageId), 0);
+            Response := RunCreate(Request, Entity, LanguageId);
+            Assert.AreEqual('Error', Response.GetText('status'), 'Foundation rejects undeclared parameters before dispatch.');
+            Assert.AreEqual('UnknownParameter', Response.GetText('code'), 'Structured contract guard error.');
+            Assert.AreEqual(0, Store.GetRequests().Count(), 'No request after unknown input.');
         end;
         Request := RequestFor(2);
         Request.Replace('paid_at', '2026-11-20T09:00:00');
-        AssertFailure(RunCreate(Request, 2, LanguageId), 0);
+        AssertRejected(Request, 2, LanguageId, 0);
         Request := RequestFor(3);
         Request.Replace('date', '20/11/2026');
-        AssertFailure(RunCreate(Request, 3, LanguageId), 0);
+        AssertRejected(Request, 3, LanguageId, 0);
         Cleanup();
     end;
 
     local procedure VerifyErrors(LanguageId: Integer)
     var
-        Response: JsonObject;
         ResponseText: Text;
         Entity: Integer;
         Status: Integer;
@@ -641,9 +661,9 @@ codeunit 98270 "Manor Creates Tst ori"
             foreach Status in Statuses do begin
                 Store.Reset();
                 Store.RegisterResponse('POST', PathFor(Entity), Status, '{"message":"DO-NOT-ECHO-MOCK-MARKER","errors":{"key":["DO-NOT-ECHO-MOCK-MARKER"]}}');
-                Response := RunCreate(RequestFor(Entity), Entity, LanguageId);
-                AssertFailure(Response, 1);
-                Response.WriteTo(ResponseText);
+                asserterror RunCreate(RequestFor(Entity), Entity, LanguageId);
+                Assert.AreEqual(1, Store.GetRequests().Count(), 'One refused POST.');
+                ResponseText := GetLastErrorText();
                 Assert.AreEqual(0, StrPos(ResponseText, 'DO-NOT-ECHO-MOCK-MARKER'), 'No raw provider messages.');
                 if Status in [401, 403] then
                     case Entity of
@@ -671,7 +691,7 @@ codeunit 98270 "Manor Creates Tst ori"
         for Entity := 1 to 3 do begin
             Store.Reset();
             Store.RegisterResponse('POST', PathFor(Entity), 503, '{}');
-            AssertFailure(RunCreate(RequestFor(Entity), Entity, LanguageId), 1);
+            AssertRejected(RequestFor(Entity), Entity, LanguageId, 1);
         end;
         Cleanup();
     end;
@@ -713,7 +733,7 @@ codeunit 98270 "Manor Creates Tst ori"
         for Entity := 1 to 3 do begin
             Store.Reset();
             Store.RegisterResponse('POST', PathFor(Entity), 201, '{"data":[]}');
-            AssertFailure(RunCreate(RequestFor(Entity), Entity, LanguageId), 1);
+            AssertRejected(RequestFor(Entity), Entity, LanguageId, 1);
         end;
         Cleanup();
     end;
@@ -725,9 +745,9 @@ codeunit 98270 "Manor Creates Tst ori"
         Initialize(LanguageId);
         Request := RequestFor(1);
         Request.Add('billable_hours', 3);
-        AssertFailure(RunCreate(Request, 1, LanguageId), 0);
+        AssertRejected(Request, 1, LanguageId, 0);
         Request.Replace('billable_hours', -1);
-        AssertFailure(RunCreate(Request, 1, LanguageId), 0);
+        AssertRejected(Request, 1, LanguageId, 0);
         Cleanup();
     end;
 
@@ -738,9 +758,9 @@ codeunit 98270 "Manor Creates Tst ori"
         Initialize(LanguageId);
         Request := RequestFor(1);
         Request.Replace('hours', 24.01);
-        AssertFailure(RunCreate(Request, 1, LanguageId), 0);
+        AssertRejected(Request, 1, LanguageId, 0);
         Request.Replace('hours', 0);
-        AssertFailure(RunCreate(Request, 1, LanguageId), 0);
+        AssertRejected(Request, 1, LanguageId, 0);
         Cleanup();
     end;
 
@@ -751,7 +771,7 @@ codeunit 98270 "Manor Creates Tst ori"
         Initialize(LanguageId);
         Request := RequestFor(1);
         Request.Replace('begins_at', '2026-11-20T23:00:00Z');
-        AssertFailure(RunCreate(Request, 1, LanguageId), 0);
+        AssertRejected(Request, 1, LanguageId, 0);
         Cleanup();
     end;
 
@@ -799,7 +819,7 @@ codeunit 98270 "Manor Creates Tst ori"
         Request := RequestFor(1);
         Request.Add('rate_id', 8);
         Store.RegisterResponse('GET', '/rate', 200, '{"data":[{"id":8,"type":"travel"}],"meta":{"last_page":1}}');
-        AssertFailure(RunCreate(Request, 1, LanguageId), 1);
+        AssertRejected(Request, 1, LanguageId, 1);
         Cleanup();
     end;
 
@@ -811,7 +831,7 @@ codeunit 98270 "Manor Creates Tst ori"
         Request := RequestFor(1);
         Request.Add('rate_id', 8);
         Store.RegisterResponse('GET', '/rate', 200, '{"data":[],"meta":{"last_page":1}}');
-        AssertFailure(RunCreate(Request, 1, LanguageId), 1);
+        AssertRejected(Request, 1, LanguageId, 1);
         Cleanup();
     end;
 
@@ -858,7 +878,7 @@ codeunit 98270 "Manor Creates Tst ori"
         Request := RequestFor(2);
         Request.Remove('vat_rate_id');
         Store.RegisterResponse('GET', '/firm', 200, '{"data":[{"id":4,"default_vat_rate_id":null}],"meta":{"last_page":1}}');
-        AssertFailure(RunCreate(Request, 2, LanguageId), 1);
+        AssertRejected(Request, 2, LanguageId, 1);
         Cleanup();
     end;
 
@@ -870,7 +890,7 @@ codeunit 98270 "Manor Creates Tst ori"
         Request := RequestFor(2);
         Request.Remove('vat_rate_id');
         Store.RegisterResponse('GET', '/firm', 200, '{"data":[{"id":4,"default_vat_rate_id":9},{"id":5,"default_vat_rate_id":10}],"meta":{"last_page":1}}');
-        AssertFailure(RunCreate(Request, 2, LanguageId), 1);
+        AssertRejected(Request, 2, LanguageId, 1);
         Cleanup();
     end;
 
@@ -904,10 +924,12 @@ codeunit 98270 "Manor Creates Tst ori"
         LowerPermissions.SetExactPermissionSet('Manor Setup Test ori');
         LowerPermissions.AddPermissionSet('BIFROST Read ori');
         LowerPermissions.AddPermissionSet('BIFROST MnrRead ori');
-        // Read callers do not receive execute rights for the create implementations.
+        // Even a read caller with platform execute rights cannot enable or run a create without data write rights.
+        LowerPermissions.AddPermissionSet('All Objects');
         for Entity := 1 to 3 do begin
             Impl := MessageTypeFor(Entity);
-            asserterror Impl.IsEnabled();
+            Assert.IsFalse(Impl.IsEnabled(), 'Read role does not enable writes.');
+            AssertRejected(RequestFor(Entity), Entity, LanguageId, 0);
         end;
         Cleanup();
     end;
