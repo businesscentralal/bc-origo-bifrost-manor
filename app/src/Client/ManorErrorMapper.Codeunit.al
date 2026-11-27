@@ -41,6 +41,15 @@ codeunit 10035652 "Manor Error Mapper ori"
         end;
     end;
 
+    /// <summary>Returns localised create errors without copying provider text, request values or credentials.</summary>
+    procedure RaiseCreateError(StatusCode: Integer; RequiredPermission: Text)
+    begin
+        if StatusCode in [401, 403] then
+            Error(RejectedPermissionErr, RequiredPermission);
+        // Empty provider text deliberately prevents reflected secrets in validation errors.
+        RaiseError(StatusCode, '');
+    end;
+
     local procedure RaiseRejected(Body: Text)
     var
         Names: Text;

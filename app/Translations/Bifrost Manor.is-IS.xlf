@@ -111,6 +111,72 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Manor skilaði svari sem er ekki gild skrá.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client ori - NamedType UnexpectedResponseErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 10804952" size-unit="char" translate="yes" xml:space="preserve">
+          <source>billable_hours cannot exceed hours or be negative.</source>
+          <target>billable_hours má ekki vera meira en hours eða neikvætt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=billable_hours má ekki vera meira en hours eða neikvætt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType BillableErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 1377788994" size-unit="char" translate="yes" xml:space="preserve">
+          <source>expectedCount must be 1. No Manor request was sent.</source>
+          <target>expectedCount verður að vera 1. Engin beiðni var send til Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=expectedCount verður að vera 1. Engin beiðni var send til Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType CountErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 3791449231" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enable the Manor connection in Manor Setup.</source>
+          <target>Virkjaðu tenginguna við Manor í uppsetningu Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Virkjaðu tenginguna við Manor í uppsetningu Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType DisabledErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 4256696815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Supply firm_id to select the firm whose default VAT rate should be used.</source>
+          <target>Tilgreindu firm_id til að velja fyrirtækið sem sjálfgefinn VSK-taxti er sóttur frá.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreindu firm_id til að velja fyrirtækið sem sjálfgefinn VSK-taxti er sóttur frá.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType FirmErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 3380328290" size-unit="char" translate="yes" xml:space="preserve">
+          <source>hours must be greater than zero and no more than 24.</source>
+          <target>hours verður að vera stærra en núll og ekki meira en 24.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=hours verður að vera stærra en núll og ekki meira en 24.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType HoursErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 3177803720" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid or missing parameter %1.</source>
+          <target>Ógild færibreyta eða færibreytu vantar: %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name; is-IS=Ógild færibreyta eða færibreytu vantar: %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType InvalidErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 3470483659" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The time entry cannot cross midnight UTC.</source>
+          <target>Tímafærslan má ekki ná yfir miðnætti UTC.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tímafærslan má ekki ná yfir miðnætti UTC.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType MidnightErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The BIFROST MnrFull ori permission set is required.</source>
+          <target>Heimildasamstæðan BIFROST MnrFull ori er nauðsynleg.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Heimildasamstæðan BIFROST MnrFull ori er nauðsynleg.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 1892836657" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The selected rate must exist and have type time.</source>
+          <target>Valinn taxti verður að vera til og hafa tegundina time.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Valinn taxti verður að vera til og hafa tegundina time.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType RateErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 2717262602" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor returned an unexpected response. Check Manor before retrying a create.</source>
+          <target>Manor skilaði óvæntu svari. Athugaðu Manor áður en stofnun er reynd aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor skilaði óvæntu svari. Athugaðu Manor áður en stofnun er reynd aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType ResponseErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 521644539 - NamedType 3075591506" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The firm has no default VAT rate. Supply vat_rate_id.</source>
+          <target>Fyrirtækið hefur engan sjálfgefinn VSK-taxta. Tilgreindu vat_rate_id.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fyrirtækið hefur engan sjálfgefinn VSK-taxta. Tilgreindu vat_rate_id.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Create Mgt ori - NamedType VatErr</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3605801948 - NamedType 3351274" size-unit="char" translate="yes" xml:space="preserve">
           <source>Manor could not find the requested resource.</source>
           <target>Manor fann ekki umbeðið gagn.</target>
@@ -159,6 +225,126 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Manor hafnaði gögnunum.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType ValidationNoDetailErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 1427565258" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a Manor expense.</source>
+          <target>Stofna útlagðan kostnað í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofna útlagðan kostnað í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType DescriptionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 848472796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid input or expectedCount; 401/403 includes the required permission, 404 means missing resource, 422 means Manor rejected the data. Provider text is not echoed.</source>
+          <target>Ógild gögn eða expectedCount; 401/403 nefnir nauðsynlega heimild, 404 merkir að gögn vanti, 422 merkir að Manor hafnaði gögnunum. Texti þjónustuveitanda er ekki endurbirtur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ógild gögn eða expectedCount; 401/403 nefnir nauðsynlega heimild, 404 merkir að gögn vanti, 422 merkir að Manor hafnaði gögnunum. Texti þjónustuveitanda er ekki endurbirtur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType ErrorTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 1419098945" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the parameter, permission or Manor data. Inspect Manor before retrying a failed create.</source>
+          <target>Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType FixTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 1255087830" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor, create, billable, dry run</source>
+          <target>Manor, stofna, reikningsfærsla, prufukeyrsla</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType KeywordsTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 774924109" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requires set_alternative_user_of_expenses. expectedCount is always 1. No project/user pre-reads. Creates cannot be undone through Bifrost; correct them in Manor before invoicing. Closed projects are rejected by Manor. Mileage is not supported. Creates are not retried automatically.</source>
+          <target>Krefst set_alternative_user_of_expenses. expectedCount er alltaf 1. Verk og notendur eru ekki lesin fyrirfram. Ekki er hægt að afturkalla stofnun í Bifröst; leiðréttu í Manor fyrir reikningsfærslu. Manor hafnar lokuðum verkum. Akstur er ekki studdur. Stofnun er ekki endurreynd sjálfkrafa.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Krefst set_alternative_user_of_expenses. expectedCount er alltaf 1. Verk og notendur eru ekki lesin fyrirfram. Ekki er hægt að afturkalla stofnun í Bifröst; leiðréttu í Manor fyrir reikningsfærslu. Manor hafnar lokuðum verkum. Akstur er ekki studdur. Stofnun er ekki endurreynd sjálfkrafa.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType NotesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 952012419" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor project ID; no project or user pre-read.</source>
+          <target>Auðkenni verks í Manor; verk og notendur eru ekki lesin fyrirfram.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni verks í Manor; verk og notendur eru ekki lesin fyrirfram.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter0Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 258855692" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Selects the firm for default VAT. May be omitted only when the firm list has one firm. No project lookup or setup mapping.</source>
+          <target>Velur fyrirtækið fyrir sjálfgefinn VSK. Má aðeins sleppa þegar eitt fyrirtæki er á listanum. Ekkert verk er flett upp og engin uppsetningarvörpun notuð.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Velur fyrirtækið fyrir sjálfgefinn VSK. Má aðeins sleppa þegar eitt fyrirtæki er á listanum. Ekkert verk er flett upp og engin uppsetningarvörpun notuð.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter10Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 963650763" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor user ID.</source>
+          <target>Auðkenni notanda í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni notanda í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter11Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 2885099598" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expense recipient.</source>
+          <target>Viðtakandi útlagðs kostnaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Viðtakandi útlagðs kostnaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter12Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 2827160717" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expense document number.</source>
+          <target>Skjalanúmer útlagðs kostnaðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skjalanúmer útlagðs kostnaðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter13Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 4221071364" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Must be 1, including dry run; checked before any Manor call.</source>
+          <target>Verður að vera 1, einnig í prufukeyrslu; athugað áður en kallað er á Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Verður að vera 1, einnig í prufukeyrslu; athugað áður en kallað er á Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter1Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 3557852997" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return the exact POST payload without writing to Manor. Default false. Permitted rate or firm reads still run.</source>
+          <target>Skila nákvæmum POST-gögnum án þess að skrifa í Manor. Sjálfgefið false. Heimilaður lestur taxta eða fyrirtækis er samt framkvæmdur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skila nákvæmum POST-gögnum án þess að skrifa í Manor. Sjálfgefið false. Heimilaður lestur taxta eða fyrirtækis er samt framkvæmdur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter2Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 2542146310" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description printed on the work report or invoice.</source>
+          <target>Lýsing sem birtist á vinnuskýrslu eða reikningi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lýsing sem birtist á vinnuskýrslu eða reikningi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter3Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 4113982527" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor activity ID.</source>
+          <target>Auðkenni verkþáttar í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni verkþáttar í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter4Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 3088074176" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount excluding VAT in the original currency.</source>
+          <target>Fjárhæð án VSK í upphaflegum gjaldmiðli.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjárhæð án VSK í upphaflegum gjaldmiðli.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter5Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 3146013057" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount to bill; omitted values are left to Manor.</source>
+          <target>Fjárhæð til reikningsfærslu; Manor ákvarðar gildi sem er sleppt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjárhæð til reikningsfærslu; Manor ákvarðar gildi sem er sleppt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter6Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 1409149122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ISO 8601 payment timestamp with a time zone.</source>
+          <target>ISO 8601 tímastimpill greiðslu með tímabelti.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=ISO 8601 tímastimpill greiðslu með tímabelti.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter7Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 2050379403" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Three-letter currency code, for example ISK.</source>
+          <target>Þriggja stafa gjaldmiðilskóði, til dæmis ISK.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þriggja stafa gjaldmiðilskóði, til dæmis ISK.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter8Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 1387161036" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT rate ID. If omitted, reads /firm pages and uses default_vat_rate_id; refuses if missing. Explicit values are sent unchanged.</source>
+          <target>Auðkenni VSK-taxta. Sé sleppt eru síður frá /firm lesnar og default_vat_rate_id notað; hafnað ef það vantar. Uppgefin gildi eru send óbreytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni VSK-taxta. Sé sleppt eru síður frá /firm lesnar og default_vat_rate_id notað; hafnað ef það vantar. Uppgefin gildi eru send óbreytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType Parameter9Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2586736681 - NamedType 2263593789" size-unit="char" translate="yes" xml:space="preserve">
+          <source>One canonical Manor resource in result; noOfRecords=1. A dry run has dryRun=true, noOfRecords=0, empty result, method, path and the exact payload.</source>
+          <target>Ein færsla með staðlaðum Manor-reitum í result; noOfRecords=1. Prufukeyrsla hefur dryRun=true, noOfRecords=0, tómt result, method, path og nákvæm payload-gögn.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ein færsla með staðlaðum Manor-reitum í result; noOfRecords=1. Prufukeyrsla hefur dryRun=true, noOfRecords=0, tómt result, method, path og nákvæm payload-gögn.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Expense Create Impl ori - NamedType ResponseTxt</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1122848597 - NamedType 1849499635" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select Production or Test before using the Manor HTTP transport.</source>
           <target>Veldu raunumhverfi eða prófunarumhverfi áður en HTTP-tenging við Manor er notuð.</target>
@@ -177,6 +363,120 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Sláðu inn Manor-tilvikið í uppsetningu Manor.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor HTTP Impl ori - NamedType MissingInstanceErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 1427565258" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a Manor product entry.</source>
+          <target>Stofna vörufærslu í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofna vörufærslu í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType DescriptionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 848472796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid input or expectedCount; 401/403 includes the required permission, 404 means missing resource, 422 means Manor rejected the data. Provider text is not echoed.</source>
+          <target>Ógild gögn eða expectedCount; 401/403 nefnir nauðsynlega heimild, 404 merkir að gögn vanti, 422 merkir að Manor hafnaði gögnunum. Texti þjónustuveitanda er ekki endurbirtur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ógild gögn eða expectedCount; 401/403 nefnir nauðsynlega heimild, 404 merkir að gögn vanti, 422 merkir að Manor hafnaði gögnunum. Texti þjónustuveitanda er ekki endurbirtur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType ErrorTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 1419098945" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the parameter, permission or Manor data. Inspect Manor before retrying a failed create.</source>
+          <target>Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType FixTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 1255087830" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor, create, billable, dry run</source>
+          <target>Manor, stofna, reikningsfærsla, prufukeyrsla</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType KeywordsTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 774924109" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requires manage_products. expectedCount is always 1. No project/user pre-reads. Creates cannot be undone through Bifrost; correct them in Manor before invoicing. Closed projects are rejected by Manor. Mileage is not supported. Creates are not retried automatically.</source>
+          <target>Krefst manage_products. expectedCount er alltaf 1. Verk og notendur eru ekki lesin fyrirfram. Ekki er hægt að afturkalla stofnun í Bifröst; leiðréttu í Manor fyrir reikningsfærslu. Manor hafnar lokuðum verkum. Akstur er ekki studdur. Stofnun er ekki endurreynd sjálfkrafa.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Krefst manage_products. expectedCount er alltaf 1. Verk og notendur eru ekki lesin fyrirfram. Ekki er hægt að afturkalla stofnun í Bifröst; leiðréttu í Manor fyrir reikningsfærslu. Manor hafnar lokuðum verkum. Akstur er ekki studdur. Stofnun er ekki endurreynd sjálfkrafa.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType NotesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 952012419" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor project ID; no project or user pre-read.</source>
+          <target>Auðkenni verks í Manor; verk og notendur eru ekki lesin fyrirfram.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni verks í Manor; verk og notendur eru ekki lesin fyrirfram.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter0Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 258855692" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor user ID.</source>
+          <target>Auðkenni notanda í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni notanda í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter10Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 963650763" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor product rate ID; Manor validates the rate.</source>
+          <target>Auðkenni vörutaxta í Manor; Manor sannprófar taxtann.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni vörutaxta í Manor; Manor sannprófar taxtann.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter11Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 2885099598" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Internal note, never printed for the client.</source>
+          <target>Innri athugasemd sem birtist aldrei viðskiptavininum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Innri athugasemd sem birtist aldrei viðskiptavininum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter12Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 4221071364" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Must be 1, including dry run; checked before any Manor call.</source>
+          <target>Verður að vera 1, einnig í prufukeyrslu; athugað áður en kallað er á Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Verður að vera 1, einnig í prufukeyrslu; athugað áður en kallað er á Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter1Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 3557852997" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return the exact POST payload without writing to Manor. Default false. Permitted rate or firm reads still run.</source>
+          <target>Skila nákvæmum POST-gögnum án þess að skrifa í Manor. Sjálfgefið false. Heimilaður lestur taxta eða fyrirtækis er samt framkvæmdur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skila nákvæmum POST-gögnum án þess að skrifa í Manor. Sjálfgefið false. Heimilaður lestur taxta eða fyrirtækis er samt framkvæmdur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter2Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 2542146310" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description printed on the work report or invoice.</source>
+          <target>Lýsing sem birtist á vinnuskýrslu eða reikningi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lýsing sem birtist á vinnuskýrslu eða reikningi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter3Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 4113982527" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor activity ID.</source>
+          <target>Auðkenni verkþáttar í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni verkþáttar í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter4Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 3088074176" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Product date in YYYY-MM-DD format.</source>
+          <target>Dagsetning vörufærslu á sniðinu YYYY-MM-DD.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Dagsetning vörufærslu á sniðinu YYYY-MM-DD.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter5Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 3146013057" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity; negative quantities are allowed for prepayment deductions.</source>
+          <target>Magn; neikvætt magn er leyft fyrir frádrátt fyrirframgreiðslna.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Magn; neikvætt magn er leyft fyrir frádrátt fyrirframgreiðslna.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter6Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 1409149122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Billable quantity; omission uses Manor default (quantity).</source>
+          <target>Reikningsfært magn; sé sleppt notar Manor sjálfgefið quantity.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Reikningsfært magn; sé sleppt notar Manor sjálfgefið quantity.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter7Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 2050379403" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Custom unit price; omission uses the rate price.</source>
+          <target>Sérstakt einingarverð; sé sleppt er verð taxtans notað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sérstakt einingarverð; sé sleppt er verð taxtans notað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter8Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 1387161036" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discount percentage from 0 through 100.</source>
+          <target>Afsláttarprósenta frá 0 til 100.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Afsláttarprósenta frá 0 til 100.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType Parameter9Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 944344432 - NamedType 2263593789" size-unit="char" translate="yes" xml:space="preserve">
+          <source>One canonical Manor resource in result; noOfRecords=1. A dry run has dryRun=true, noOfRecords=0, empty result, method, path and the exact payload.</source>
+          <target>Ein færsla með staðlaðum Manor-reitum í result; noOfRecords=1. Prufukeyrsla hefur dryRun=true, noOfRecords=0, tómt result, method, path og nákvæm payload-gögn.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ein færsla með staðlaðum Manor-reitum í result; noOfRecords=1. Prufukeyrsla hefur dryRun=true, noOfRecords=0, tómt result, method, path og nákvæm payload-gögn.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Product Create Impl ori - NamedType ResponseTxt</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3219478106 - NamedType 2637544473" size-unit="char" translate="yes" xml:space="preserve">
           <source>Enter an API key.</source>
           <target>Sláðu inn API-lykil.</target>
@@ -194,6 +494,108 @@
           <target>Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 1427565258" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a Manor time entry.</source>
+          <target>Stofna tímafærslu í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofna tímafærslu í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType DescriptionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 848472796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid input or expectedCount; 401/403 includes the required permission, 404 means missing resource, 422 means Manor rejected the data. Provider text is not echoed.</source>
+          <target>Ógild gögn eða expectedCount; 401/403 nefnir nauðsynlega heimild, 404 merkir að gögn vanti, 422 merkir að Manor hafnaði gögnunum. Texti þjónustuveitanda er ekki endurbirtur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ógild gögn eða expectedCount; 401/403 nefnir nauðsynlega heimild, 404 merkir að gögn vanti, 422 merkir að Manor hafnaði gögnunum. Texti þjónustuveitanda er ekki endurbirtur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType ErrorTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 1419098945" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct the parameter, permission or Manor data. Inspect Manor before retrying a failed create.</source>
+          <target>Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Leiðréttu færibreytu, heimild eða gögn í Manor. Athugaðu Manor áður en misheppnuð stofnun er reynd aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType FixTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 1255087830" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor, create, billable, dry run</source>
+          <target>Manor, stofna, reikningsfærsla, prufukeyrsla</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor, stofna, reikningsfærsla, prufukeyrsla</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType KeywordsTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 774924109" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requires set_alternative_user_of_times. expectedCount is always 1. No project/user pre-reads. Creates cannot be undone through Bifrost; correct them in Manor before invoicing. Closed projects are rejected by Manor. Mileage is not supported. Creates are not retried automatically.</source>
+          <target>Krefst set_alternative_user_of_times. expectedCount er alltaf 1. Verk og notendur eru ekki lesin fyrirfram. Ekki er hægt að afturkalla stofnun í Bifröst; leiðréttu í Manor fyrir reikningsfærslu. Manor hafnar lokuðum verkum. Akstur er ekki studdur. Stofnun er ekki endurreynd sjálfkrafa.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Krefst set_alternative_user_of_times. expectedCount er alltaf 1. Verk og notendur eru ekki lesin fyrirfram. Ekki er hægt að afturkalla stofnun í Bifröst; leiðréttu í Manor fyrir reikningsfærslu. Manor hafnar lokuðum verkum. Akstur er ekki studdur. Stofnun er ekki endurreynd sjálfkrafa.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType NotesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 952012419" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor project ID; no project or user pre-read.</source>
+          <target>Auðkenni verks í Manor; verk og notendur eru ekki lesin fyrirfram.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni verks í Manor; verk og notendur eru ekki lesin fyrirfram.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter0Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 258855692" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Internal note, never printed for the client.</source>
+          <target>Innri athugasemd sem birtist aldrei viðskiptavininum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Innri athugasemd sem birtist aldrei viðskiptavininum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter10Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 4221071364" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Must be 1, including dry run; checked before any Manor call.</source>
+          <target>Verður að vera 1, einnig í prufukeyrslu; athugað áður en kallað er á Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Verður að vera 1, einnig í prufukeyrslu; athugað áður en kallað er á Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter1Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 3557852997" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Return the exact POST payload without writing to Manor. Default false. Permitted rate or firm reads still run.</source>
+          <target>Skila nákvæmum POST-gögnum án þess að skrifa í Manor. Sjálfgefið false. Heimilaður lestur taxta eða fyrirtækis er samt framkvæmdur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skila nákvæmum POST-gögnum án þess að skrifa í Manor. Sjálfgefið false. Heimilaður lestur taxta eða fyrirtækis er samt framkvæmdur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter2Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 2542146310" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description printed on the work report or invoice.</source>
+          <target>Lýsing sem birtist á vinnuskýrslu eða reikningi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lýsing sem birtist á vinnuskýrslu eða reikningi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter3Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 4113982527" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor activity ID.</source>
+          <target>Auðkenni verkþáttar í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni verkþáttar í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter4Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 3088074176" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ISO 8601 timestamp with a time zone; validation uses UTC.</source>
+          <target>ISO 8601 tímastimpill með tímabelti; sannprófun notar UTC.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=ISO 8601 tímastimpill með tímabelti; sannprófun notar UTC.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter5Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 3146013057" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hours worked, greater than zero and at most 24; must not cross midnight UTC. Ending exactly at midnight is allowed.</source>
+          <target>Unnar klukkustundir, stærri en núll og mest 24; má ekki fara yfir miðnætti UTC. Má ljúka nákvæmlega á miðnætti.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Unnar klukkustundir, stærri en núll og mest 24; má ekki fara yfir miðnætti UTC. Má ljúka nákvæmlega á miðnætti.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter6Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 1409149122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Billable hours from zero through hours; omission uses Manor default (hours).</source>
+          <target>Reikningsfærðar klukkustundir frá núlli að hours; sé sleppt notar Manor sjálfgefið hours.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Reikningsfærðar klukkustundir frá núlli að hours; sé sleppt notar Manor sjálfgefið hours.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter7Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 2050379403" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enabled Manor user ID; Manor checks whether the user is enabled.</source>
+          <target>Auðkenni virks Manor-notanda; Manor kannar hvort notandinn sé virkur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni virks Manor-notanda; Manor kannar hvort notandinn sé virkur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter8Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 1387161036" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time rate ID. Reads /rate pages to find this ID and require type time (manage_rates permission). Omission uses the user/project default. Stops after 100 pages without creating if not found.</source>
+          <target>Auðkenni tímataxta. Les síður frá /rate til að finna auðkennið og krefjast tegundarinnar time (heimild manage_rates). Sé sleppt er sjálfgefinn taxti notanda/verks notaður. Stöðvar án stofnunar eftir 100 síður ef taxti finnst ekki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni tímataxta. Les síður frá /rate til að finna auðkennið og krefjast tegundarinnar time (heimild manage_rates). Sé sleppt er sjálfgefinn taxti notanda/verks notaður. Stöðvar án stofnunar eftir 100 síður ef taxti finnst ekki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType Parameter9Txt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2769345886 - NamedType 2263593789" size-unit="char" translate="yes" xml:space="preserve">
+          <source>One canonical Manor resource in result; noOfRecords=1. A dry run has dryRun=true, noOfRecords=0, empty result, method, path and the exact payload.</source>
+          <target>Ein færsla með staðlaðum Manor-reitum í result; noOfRecords=1. Prufukeyrsla hefur dryRun=true, noOfRecords=0, tómt result, method, path og nákvæm payload-gögn.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ein færsla með staðlaðum Manor-reitum í result; noOfRecords=1. Prufukeyrsla hefur dryRun=true, noOfRecords=0, tómt result, method, path og nákvæm payload-gögn.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Time Create Impl ori - NamedType ResponseTxt</note>
         </trans-unit>
         <trans-unit id="Page 1387375200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set API Key</source>

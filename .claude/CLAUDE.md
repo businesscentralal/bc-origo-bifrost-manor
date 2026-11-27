@@ -41,6 +41,13 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Codeunit | 10035654 | Manor Telemetry ori |
 | Test codeunit | 98220 | Manor Client Tst ori |
 
+| Codeunit | 10035650 | Manor Create Mgt ori |
+| Enum extension | 10035677 | Manor Message Types ori |
+| Codeunit | 10035677 | Manor Time Create Impl ori |
+| Codeunit | 10035678 | Manor Expense Create Impl ori |
+| Codeunit | 10035679 | Manor Product Create Impl ori |
+| Test codeunit | 98270 | Manor Creates Tst ori |
+
 Every new object is added to this table in the same PR.
 
 ## Product scope (Gunnar 25.11.2026: scaffold Bifrost Manor on https://api.manor.is/)

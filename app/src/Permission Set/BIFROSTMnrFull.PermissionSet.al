@@ -17,5 +17,9 @@ permissionset 10035637 "BIFROST MnrFull ori"
                   codeunit "Manor Client ori" = X,
                   codeunit "Manor Error Mapper ori" = X,
                   codeunit "Manor Query Builder ori" = X,
-                  codeunit "Manor Telemetry ori" = X;
+                  codeunit "Manor Telemetry ori" = X,
+                  codeunit "Manor Create Mgt ori" = X,
+                  codeunit "Manor Time Create Impl ori" = X,
+                  codeunit "Manor Expense Create Impl ori" = X,
+                  codeunit "Manor Product Create Impl ori" = X;
 }
