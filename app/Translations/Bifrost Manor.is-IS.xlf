@@ -417,6 +417,18 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Sendu breytuna sem einfaldan texta eða tölugildi.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Mgt ori - NamedType NotAValueNextLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3680170385 - NamedType 4046751073" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor is not set up in this company.</source>
+          <target>Manor er ekki sett upp í þessu fyrirtæki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor er ekki sett upp í þessu fyrirtæki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Mgt ori - NamedType NotSetUpErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3680170385 - NamedType 896548089" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Manor Setup, choose the environment and, for Production or Test, enter the instance and the API key.</source>
+          <target>Opnaðu uppsetningu Manor, veldu umhverfið og sláðu inn tilvikið og API-lykilinn fyrir raunumhverfi eða prófunarumhverfi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Opnaðu uppsetningu Manor, veldu umhverfið og sláðu inn tilvikið og API-lykilinn fyrir raunumhverfi eða prófunarumhverfi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Mgt ori - NamedType NotSetUpNextLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3680170385 - NamedType 1541697217" size-unit="char" translate="yes" xml:space="preserve">
           <source>exactly one of %1 and %2</source>
           <target>nákvæmlega eitt af %1 og %2</target>
@@ -434,6 +446,12 @@
           <target>Beiðnin hefur vandamál. Lagaðu tilgreindar breytur og sendu hana aftur.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Beiðnin hefur vandamál. Lagaðu tilgreindar breytur og sendu hana aftur.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Mgt ori - NamedType RequestProblemsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3680170385 - NamedType 744874901" size-unit="char" translate="yes" xml:space="preserve">
+          <source>a Manor Setup record with an environment</source>
+          <target>Manor-uppsetning með umhverfi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor-uppsetning með umhverfi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Mgt ori - NamedType SetupExpectedLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 3680170385 - NamedType 981192258" size-unit="char" translate="yes" xml:space="preserve">
           <source>Try again later.</source>
@@ -602,6 +620,18 @@
           <target>Athugaðu auðkennið eða finndu atriðið með listaskilaboðunum.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Athugaðu auðkennið eða finndu atriðið með listaskilaboðunum.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Parts ori - NamedType NotFoundFixLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4143960263 - NamedType 2613753327" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor Setup has no record for this company. Returns PreconditionFailed; Manor is not called.</source>
+          <target>Uppsetning Manor hefur enga færslu fyrir þetta fyrirtæki. Skilar PreconditionFailed; ekki er kallað í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppsetning Manor hefur enga færslu fyrir þetta fyrirtæki. Skilar PreconditionFailed; ekki er kallað í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Parts ori - NamedType NotSetUpErrLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4143960263 - NamedType 2794381913" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Manor Setup in Business Central and choose the environment.</source>
+          <target>Opnaðu uppsetningu Manor í Business Central og veldu umhverfið.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Opnaðu uppsetningu Manor í Business Central og veldu umhverfið.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Parts ori - NamedType NotSetUpFixLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 4143960263 - NamedType 286359338" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lists the activities (Verkþættir, work items) of one Manor project through the canonical activity route. Reading activities needs the Manor permission manage_activities.</source>

@@ -18,6 +18,9 @@ codeunit 10035682 "Manor Read Mgt ori"
         NeitherErr: Label 'Send %1 or %2.', Comment = '%1 = first parameter, %2 = second parameter; is-IS=Sendu %1 eða %2.';
         OneOfLbl: Label 'exactly one of %1 and %2', Comment = '%1 = first parameter, %2 = second parameter; is-IS=nákvæmlega eitt af %1 og %2';
         BothNextLbl: Label 'Send exactly one of the two identifiers and try again.', Comment = 'is-IS=Sendu nákvæmlega eitt af auðkennunum tveimur og reyndu aftur.';
+        NotSetUpErr: Label 'Manor is not set up in this company.', Comment = 'is-IS=Manor er ekki sett upp í þessu fyrirtæki.';
+        SetupExpectedLbl: Label 'a Manor Setup record with an environment', Comment = 'is-IS=Manor-uppsetning með umhverfi';
+        NotSetUpNextLbl: Label 'Open Manor Setup, choose the environment and, for Production or Test, enter the instance and the API key.', Comment = 'is-IS=Opnaðu uppsetningu Manor, veldu umhverfið og sláðu inn tilvikið og API-lykilinn fyrir raunumhverfi eða prófunarumhverfi.';
         NotAValueErr: Label 'The parameter %1 must be a single value.', Comment = '%1 = parameter name; is-IS=Breytan %1 verður að vera eitt gildi.';
         NotAValueNextLbl: Label 'Send the parameter as a plain text or number value.', Comment = 'is-IS=Sendu breytuna sem einfaldan texta eða tölugildi.';
         NotAnIdErr: Label 'The parameter %1 must be a positive whole number.', Comment = '%1 = parameter name; is-IS=Breytan %1 verður að vera jákvæð heiltala.';
@@ -206,10 +209,21 @@ codeunit 10035682 "Manor Read Mgt ori"
     procedure Fetch(var Argument: Record "Message Argument ori"; RelativePath: Text; Query: Text; NotFoundNextStep: Text; ParameterName: Text; Received: Text; var Body: Text): Boolean
     begin
         Body := '';
+        if not SetupExists() then begin
+            Argument.RespondWithError("Bifrost Error Code ori"::PreconditionFailed, NotSetUpErr, '', '', SetupExpectedLbl, NotSetUpNextLbl);
+            exit(false);
+        end;
         if TryGet(RelativePath, Query, Body) then
             exit(true);
         RespondFailure(Argument, GetLastErrorText(), NotFoundNextStep, ParameterName, Received);
         exit(false);
+    end;
+
+    local procedure SetupExists(): Boolean
+    var
+        Setup: Record "Manor Setup ori";
+    begin
+        exit(not Setup.IsEmpty());
     end;
 
     [TryFunction]

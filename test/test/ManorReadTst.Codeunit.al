@@ -256,11 +256,25 @@ codeunit 98240 "Manor Read Tst ori"
         VerifyClientListRejectedAndValidation(1039);
     end;
 
+    /// <summary>Checks MissingSetup in LCID 1033.</summary>
+    [Test]
+    procedure Scenario_MissingSetupEnglish()
+    begin
+        VerifyMissingSetup(1033);
+    end;
+
     /// <summary>Checks NoSecretInErrors in LCID 1033.</summary>
     [Test]
     procedure Scenario_NoSecretInErrorsEnglish()
     begin
         VerifyNoSecretInErrors(1033);
+    end;
+
+    /// <summary>Checks MissingSetup in LCID 1039.</summary>
+    [Test]
+    procedure Scenario_MissingSetupIcelandic()
+    begin
+        VerifyMissingSetup(1039);
     end;
 
     /// <summary>Checks NoSecretInErrors in LCID 1039.</summary>
@@ -522,6 +536,19 @@ codeunit 98240 "Manor Read Tst ori"
         Assert.IsTrue(GetText(Response, 'error').Contains('updated_since'), 'Field message.');
         Response := Run(Enum::"Message Type ori"::"Manor.Client.List", '{"perPage":500,"updatedSince":"yesterday"}');
         Assert.AreEqual('MultipleErrors', GetText(Response, 'code'), 'Two request problems.');
+        Cleanup();
+    end;
+
+    local procedure VerifyMissingSetup(LanguageId: Integer)
+    var
+        Setup: Record "Manor Setup ori";
+        Response: JsonObject;
+    begin
+        Initialize(LanguageId);
+        Setup.DeleteAll(true);
+        Response := Run(Enum::"Message Type ori"::"Manor.Client.List", '{}');
+        Assert.AreEqual('PreconditionFailed', GetText(Response, 'code'), 'No setup.');
+        Assert.AreEqual(0, Store.GetRequests().Count(), 'Manor is not called.');
         Cleanup();
     end;
 

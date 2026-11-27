@@ -45,6 +45,8 @@ codeunit 10035681 "Manor Read Parts ori"
         NationalIdNotFoundFixLbl: Label 'A missing national id does not prove the client is missing: foreign clients often have a made-up number. Search by name with Manor.Client.List.', Comment = 'is-IS=Kennitala sem finnst ekki sannar ekki að viðskiptavinurinn sé ekki til: erlendir viðskiptavinir eru oft með tilbúið númer. Leitaðu eftir nafni með Manor.Client.List.';
         AmbiguousErrLbl: Label 'More than one project has this identifier. Returns AmbiguousRecord.', Comment = 'is-IS=Fleiri en eitt verk hefur þetta auðkenni. Skilar AmbiguousRecord.';
         AmbiguousFixLbl: Label 'Find the project with Manor.Project.List and read it by projectId.', Comment = 'is-IS=Finndu verkið með Manor.Project.List og lestu það með projectId.';
+        NotSetUpErrLbl: Label 'Manor Setup has no record for this company. Returns PreconditionFailed; Manor is not called.', Comment = 'is-IS=Uppsetning Manor hefur enga færslu fyrir þetta fyrirtæki. Skilar PreconditionFailed; ekki er kallað í Manor.';
+        NotSetUpFixLbl: Label 'Open Manor Setup in Business Central and choose the environment.', Comment = 'is-IS=Opnaðu uppsetningu Manor í Business Central og veldu umhverfið.';
         RejectedErrLbl: Label 'Manor rejected the API key or its permissions (HTTP 401 or 403). Returns PermissionDenied. Activities need the Manor permission manage_activities.', Comment = 'is-IS=Manor hafnaði API-lyklinum eða heimildum hans (HTTP 401 eða 403). Skilar PermissionDenied. Verkþættir krefjast Manor-heimildarinnar manage_activities.';
         RejectedFixLbl: Label 'Check the API key and the Manor permissions of its user in Manor Setup. The key is never shown.', Comment = 'is-IS=Athugaðu API-lykilinn og Manor-heimildir notandans í uppsetningu Manor. Lykillinn er aldrei sýndur.';
         RejectedDataErrLbl: Label 'Manor rejected the values (HTTP 422). Returns InvalidParameter with the field messages.', Comment = 'is-IS=Manor hafnaði gildunum (HTTP 422). Skilar InvalidParameter með skilaboðum um reiti.';
@@ -221,6 +223,7 @@ codeunit 10035681 "Manor Read Parts ori"
         end;
         if MessageType = 'Manor.Project.Get' then
             Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::AmbiguousRecord, AmbiguousErrLbl, AmbiguousFixLbl));
+        Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::PreconditionFailed, NotSetUpErrLbl, NotSetUpFixLbl));
         Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::PermissionDenied, RejectedErrLbl, RejectedFixLbl));
         Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::InvalidParameter, RejectedDataErrLbl, RejectedDataFixLbl));
         Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::BusinessCentralError, UnavailableErrLbl, UnavailableFixLbl));
