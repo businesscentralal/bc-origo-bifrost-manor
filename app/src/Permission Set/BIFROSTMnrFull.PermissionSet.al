@@ -13,5 +13,9 @@ permissionset 10035637 "BIFROST MnrFull ori"
                   page "Manor API Key ori" = X,
                   codeunit "Manor HTTP Impl ori" = X,
                   codeunit "Manor Mock Impl ori" = X,
-                  codeunit "Manor Mock Store ori" = X;
+                  codeunit "Manor Mock Store ori" = X,
+                  codeunit "Manor Client ori" = X,
+                  codeunit "Manor Error Mapper ori" = X,
+                  codeunit "Manor Query Builder ori" = X,
+                  codeunit "Manor Telemetry ori" = X;
 }

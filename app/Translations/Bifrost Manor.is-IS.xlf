@@ -99,6 +99,66 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Primary Key - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3621208910 - NamedType 3397497252" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MaxPages must be at least 1.</source>
+          <target>Hámarksfjöldi blaðsíðna verður að vera minnst 1.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Hámarksfjöldi blaðsíðna verður að vera minnst 1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client ori - NamedType InvalidMaxPagesErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3621208910 - NamedType 3699042893" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor returned a response that is not a valid list.</source>
+          <target>Manor skilaði svari sem er ekki gild skrá.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor skilaði svari sem er ekki gild skrá.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client ori - NamedType UnexpectedResponseErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3605801948 - NamedType 3351274" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor could not find the requested resource.</source>
+          <target>Manor fann ekki umbeðið gagn.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor fann ekki umbeðið gagn.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType NotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3605801948 - NamedType 2174347907" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor returned HTTP status %1.</source>
+          <target>Manor skilaði HTTP-stöðu %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = HTTP status; is-IS=Manor skilaði HTTP-stöðu %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType OtherErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3605801948 - NamedType 2183601981" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor rejected the API key or its permissions.</source>
+          <target>Manor hafnaði API-lyklinum eða heimildum hans.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor hafnaði API-lyklinum eða heimildum hans.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType RejectedErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3605801948 - NamedType 489822524" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor rejected the API key or its permissions. Required Manor permission: %1.</source>
+          <target>Manor hafnaði API-lyklinum eða heimildum hans. Nauðsynleg heimild í Manor: %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Manor permission name; is-IS=Manor hafnaði API-lyklinum eða heimildum hans. Nauðsynleg heimild í Manor: %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType RejectedPermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3605801948 - NamedType 4114026249" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor is unavailable or busy (HTTP %1). Try again later.</source>
+          <target>Manor er ekki tiltækt eða of upptekið (HTTP %1). Reyndu aftur síðar.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = HTTP status; is-IS=Manor er ekki tiltækt eða of upptekið (HTTP %1). Reyndu aftur síðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType UnavailableErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3605801948 - NamedType 2082848491" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Could not reach Manor. Try again later.</source>
+          <target>Ekki náðist samband við Manor. Reyndu aftur síðar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ekki náðist samband við Manor. Reyndu aftur síðar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType UnreachableErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3605801948 - NamedType 3800651618" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor rejected the data: %1</source>
+          <target>Manor hafnaði gögnunum: %1</target>
+          <note from="Developer" annotates="general" priority="2">%1 = field messages; is-IS=Manor hafnaði gögnunum: %1</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType ValidationErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3605801948 - NamedType 2117745114" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor rejected the data.</source>
+          <target>Manor hafnaði gögnunum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor hafnaði gögnunum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Error Mapper ori - NamedType ValidationNoDetailErr</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1122848597 - NamedType 1849499635" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select Production or Test before using the Manor HTTP transport.</source>
           <target>Veldu raunumhverfi eða prófunarumhverfi áður en HTTP-tenging við Manor er notuð.</target>

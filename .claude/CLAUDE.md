@@ -35,6 +35,11 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Codeunit | 10035648 | Manor Secrets ori |
 | Codeunit | 10035649 | Manor Mock Store ori |
 | Test codeunit | 98202 | Manor Setup Tst ori |
+| Codeunit | 10035651 | Manor Client ori |
+| Codeunit | 10035652 | Manor Error Mapper ori |
+| Codeunit | 10035653 | Manor Query Builder ori |
+| Codeunit | 10035654 | Manor Telemetry ori |
+| Test codeunit | 98220 | Manor Client Tst ori |
 
 Every new object is added to this table in the same PR.
 
