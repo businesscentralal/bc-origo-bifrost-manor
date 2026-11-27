@@ -388,8 +388,9 @@ codeunit 98270 "Manor Creates Tst ori"
         Commit();
         LowerPermissions.SetExactPermissionSet('Manor Setup Test ori');
         LowerPermissions.AddPermissionSet('BIFROST Full ori');
-        // Foundation test subscribers require execute rights even when their override is inactive.
-        LowerPermissions.AddPermissionSet('BIFROST Tests ori');
+        // Standard platform execute rights let Foundation test subscribers run; data rights remain the real Full roles.
+        // VerifyReadRole resets to exact permissions without All Objects before checking the write boundary.
+        LowerPermissions.AddPermissionSet('All Objects');
         LowerPermissions.AddPermissionSet('BIFROST MnrFull ori');
     end;
 
