@@ -99,6 +99,132 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Aðallykill</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Manor Setup ori - Field Primary Key - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1655902966 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates an activity (work item) in a Manor project (POST /project/{projectId}/activity).</source>
+          <target>Stofnar verkþátt í verkefni í Manor (POST /project/{projectId}/activity).</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar verkþátt í verkefni í Manor (POST /project/{projectId}/activity).</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity Create Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1655902966 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>create Manor activity, add work item, new activity, project budget</source>
+          <target>stofna verkþátt í Manor, bæta við verkþætti, nýr verkþáttur, fjárhagsáætlun verkefnis</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=stofna verkþátt í Manor, bæta við verkþætti, nýr verkþáttur, fjárhagsáætlun verkefnis</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity Create Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4084192792 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists the activities (work items) of one Manor project, one page at a time.</source>
+          <target>Listar verkþætti eins verks í Manor, eina blaðsíðu í einu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Listar verkþætti eins verks í Manor, eina blaðsíðu í einu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4084192792 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>manor activities, list activities, project activities, work items, project work items, verkþættir</source>
+          <target>manor verkþættir, lista verkþætti, verkþættir verks, vinnuliðir, vinnuliðir verks, activities</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=manor verkþættir, lista verkþætti, verkþættir verks, vinnuliðir, vinnuliðir verks, activities</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4084192792 - NamedType 4115570904" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Required parameter projectId is missing.</source>
+          <target>Nauðsynlega breytu projectId vantar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Nauðsynlega breytu projectId vantar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType MissingProjectErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4084192792 - NamedType 3683680000" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find the project with Manor.Project.List and send its id as projectId.</source>
+          <target>Finndu verkið með Manor.Project.List og sendu auðkenni þess sem projectId.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Finndu verkið með Manor.Project.List og sendu auðkenni þess sem projectId.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType MissingProjectNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4084192792 - NamedType 2824518802" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check the project id, or find the project with Manor.Project.List.</source>
+          <target>Athugaðu auðkenni verks eða finndu verkið með Manor.Project.List.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Athugaðu auðkenni verks eða finndu verkið með Manor.Project.List.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType NotFoundNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4084192792 - NamedType 1711921931" size-unit="char" translate="yes" xml:space="preserve">
+          <source>the Manor project id</source>
+          <target>auðkenni verks í Manor</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=auðkenni verks í Manor</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType ProjectExpectedLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4084192792 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists the activities of one Manor project; reading them needs the Manor permission manage_activities.</source>
+          <target>Listar verkþætti eins verks í Manor; til að lesa þá þarf Manor-heimildina manage_activities.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Listar verkþætti eins verks í Manor; til að lesa þá þarf Manor-heimildina manage_activities.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType SelectionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1770614921 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Updates an activity (work item) in a Manor project (PUT /project/{projectId}/activity/{activityId}).</source>
+          <target>Uppfærir verkþátt í verkefni í Manor (PUT /project/{projectId}/activity/{activityId}).</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppfærir verkþátt í verkefni í Manor (PUT /project/{projectId}/activity/{activityId}).</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity Update Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1770614921 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>update Manor activity, change work item, close activity, activity budget</source>
+          <target>uppfæra verkþátt í Manor, breyta verkþætti, loka verkþætti, fjárhagsáætlun verkþáttar</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=uppfæra verkþátt í Manor, breyta verkþætti, loka verkþætti, fjárhagsáætlun verkþáttar</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity Update Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 925872634 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates a Manor client (POST /client). Refuses a duplicate national_id and names the existing client id.</source>
+          <target>Skapar viðskiptavin í Manor (POST /client). Hafnar tvíteknu national_id og nefnir auðkenni núverandi viðskiptavinar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skapar viðskiptavin í Manor (POST /client). Hafnar tvíteknu national_id og nefnir auðkenni núverandi viðskiptavinar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Create Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 925872634 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>create Manor client, new customer in Manor, add client, national id</source>
+          <target>stofna viðskiptavin í Manor, nýr viðskiptavinur, bæta við viðskiptavini, kennitala</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=stofna viðskiptavin í Manor, nýr viðskiptavinur, bæta við viðskiptavini, kennitala</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Create Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3790855880 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads one Manor client by its id or by its national id (kennitala).</source>
+          <target>Les einn viðskiptavin í Manor eftir auðkenni eða kennitölu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les einn viðskiptavin í Manor eftir auðkenni eða kennitölu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3790855880 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>manor client, get client, client by id, client by kennitala, client by national id, viðskiptavinur</source>
+          <target>manor viðskiptavinur, sækja viðskiptavin, viðskiptavinur eftir auðkenni, viðskiptavinur eftir kennitölu, viðskiptavinur eftir kennitölu í manor, client</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=manor viðskiptavinur, sækja viðskiptavin, viðskiptavinur eftir auðkenni, viðskiptavinur eftir kennitölu, viðskiptavinur eftir kennitölu í manor, client</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3790855880 - NamedType 1263754247" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A missing national id does not prove the client is missing: foreign clients often have a made-up number. Search by name with Manor.Client.List.</source>
+          <target>Kennitala sem finnst ekki sannar ekki að viðskiptavinurinn sé ekki til: erlendir viðskiptavinir eru oft með tilbúið númer. Leitaðu eftir nafni með Manor.Client.List.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Kennitala sem finnst ekki sannar ekki að viðskiptavinurinn sé ekki til: erlendir viðskiptavinir eru oft með tilbúið númer. Leitaðu eftir nafni með Manor.Client.List.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType NationalIdNotFoundNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3790855880 - NamedType 2824518802" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check the client id, or find the client with Manor.Client.List.</source>
+          <target>Athugaðu auðkenni viðskiptavinar eða finndu hann með Manor.Client.List.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Athugaðu auðkenni viðskiptavinar eða finndu hann með Manor.Client.List.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType NotFoundNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3790855880 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads one Manor client by clientId or nationalId; use Manor.Client.List to search by name.</source>
+          <target>Les einn viðskiptavin í Manor eftir clientId eða nationalId; notaðu Manor.Client.List til að leita eftir nafni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les einn viðskiptavin í Manor eftir clientId eða nationalId; notaðu Manor.Client.List til að leita eftir nafni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType SelectionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1146221924 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists Manor clients one page at a time, optionally only those changed since a time.</source>
+          <target>Listar viðskiptavini í Manor eina blaðsíðu í einu, ef vill aðeins þá sem breyttust eftir ákveðinn tíma.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Listar viðskiptavini í Manor eina blaðsíðu í einu, ef vill aðeins þá sem breyttust eftir ákveðinn tíma.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client List Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1146221924 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>manor clients, list clients, find client, customers in manor, clients changed since, viðskiptavinir</source>
+          <target>manor viðskiptavinir, lista viðskiptavini, finna viðskiptavin, viðskiptavinir í manor, breyttir viðskiptavinir, customers</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=manor viðskiptavinir, lista viðskiptavini, finna viðskiptavin, viðskiptavinir í manor, breyttir viðskiptavinir, customers</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client List Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1146221924 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists Manor clients page by page; use Manor.Client.Get to read one client by id or national id.</source>
+          <target>Listar viðskiptavini í Manor eftir blaðsíðum; notaðu Manor.Client.Get til að lesa einn viðskiptavin eftir auðkenni eða kennitölu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Listar viðskiptavini í Manor eftir blaðsíðum; notaðu Manor.Client.Get til að lesa einn viðskiptavin eftir auðkenni eða kennitölu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client List Impl ori - NamedType SelectionLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3621208910 - NamedType 3397497252" size-unit="char" translate="yes" xml:space="preserve">
           <source>MaxPages must be at least 1.</source>
           <target>Hámarksfjöldi blaðsíðna verður að vera minnst 1.</target>
@@ -110,6 +236,18 @@
           <target>Manor skilaði svari sem er ekki gild skrá.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Manor skilaði svari sem er ekki gild skrá.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client ori - NamedType UnexpectedResponseErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2257375029 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Updates a Manor client (PUT /client/{clientId}). Changing currency_code needs confirmCurrencyChange=true.</source>
+          <target>Uppfærir viðskiptavin í Manor (PUT /client/{clientId}). Breyting á currency_code krefst confirmCurrencyChange=true.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppfærir viðskiptavin í Manor (PUT /client/{clientId}). Breyting á currency_code krefst confirmCurrencyChange=true.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Update Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2257375029 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>update Manor client, change client details, client email, client currency</source>
+          <target>uppfæra viðskiptavin í Manor, breyta upplýsingum viðskiptavinar, netfang viðskiptavinar, gjaldmiðill viðskiptavinar</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=uppfæra viðskiptavin í Manor, breyta upplýsingum viðskiptavinar, netfang viðskiptavinar, gjaldmiðill viðskiptavinar</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Update Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 3479431181 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
           <source>Number of rows returned after local filtering.</source>
@@ -206,6 +344,120 @@
           <target>Sendið annaðhvort userId eða email.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Sendið annaðhvort userId eða email.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Connection Test Impl ori - NamedType UserTargetErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 1426732725" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Whole number of 1 or more, or null. Budgets must not overlap those of ancestors or children.</source>
+          <target>Heil tala, 1 eða hærri, eða null. Fjárhagsáætlanir mega ekki skarast við áætlanir yfir- eða undirverkþátta.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Heil tala, 1 eða hærri, eða null. Fjárhagsáætlanir mega ekki skarast við áætlanir yfir- eða undirverkþátta.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ActivityBudgetHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 2773895867" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date. ends_at must be after begins_at.</source>
+          <target>Dagsetning. ends_at verður að vera á eftir begins_at.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Dagsetning. ends_at verður að vera á eftir begins_at.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ActivityDatesHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 3118379309" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor activity (work item, Verkþáttur) id.</source>
+          <target>Auðkenni verkþáttar í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni verkþáttar í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ActivityIdHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 2089487718" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parent activity id: same project, and not a milestone. internal must match the top-level parent. An activity cannot move to another project; settlement projects refuse activity changes.</source>
+          <target>Auðkenni yfirverkþáttar: sama verkefni og ekki áfangi. internal verður að passa við efsta yfirverkþátt. Verkþáttur flyst ekki í annað verkefni; uppgjörsverkefni hafna breytingum á verkþáttum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni yfirverkþáttar: sama verkefni og ekki áfangi. internal verður að passa við efsta yfirverkþátt. Verkþáttur flyst ekki í annað verkefni; uppgjörsverkefni hafna breytingum á verkþáttum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ActivityParentHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 26586148" size-unit="char" translate="yes" xml:space="preserve">
+          <source>enabled, internal or sensitive. sensitive hides entries from users without that permission. Default enabled. Any other value is refused.</source>
+          <target>enabled, internal eða sensitive. sensitive felur færslur fyrir notendum án þeirrar heimildar. Sjálfgefið enabled. Öðrum gildum er hafnað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=enabled, internal eða sensitive. sensitive felur færslur fyrir notendum án þeirrar heimildar. Sjálfgefið enabled. Öðrum gildum er hafnað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType BillingHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 1952379909" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Buyer reference number, printed on invoices including e-invoices.</source>
+          <target>Tilvísunarnúmer kaupanda, prentað á reikninga, einnig rafræna reikninga.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilvísunarnúmer kaupanda, prentað á reikninga, einnig rafræna reikninga.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType BuyerRefHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 2844866961" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor client id.</source>
+          <target>Auðkenni viðskiptavinar í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni viðskiptavinar í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ClientIdHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 497433004" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comment stored when a project is closed.</source>
+          <target>Athugasemd sem vistast þegar verkefni er lokað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Athugasemd sem vistast þegar verkefni er lokað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ClosingHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 2799123611" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Must be true when currency_code is sent in an update; otherwise the update is refused and nothing changes.</source>
+          <target>Verður að vera true þegar currency_code er sendur í uppfærslu; annars er uppfærslu hafnað og engu breytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Verður að vera true þegar currency_code er sendur í uppfærslu; annars er uppfærslu hafnað og engu breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ConfirmHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 3747725488" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency code. A strong setting: it applies to all the client's projects and invoices. In an update it needs confirmCurrencyChange=true.</source>
+          <target>Gjaldmiðilskóði. Sterk stilling: gildir um öll verkefni og reikninga viðskiptavinarins. Í uppfærslu þarf confirmCurrencyChange=true.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Gjaldmiðilskóði. Sterk stilling: gildir um öll verkefni og reikninga viðskiptavinarins. Í uppfærslu þarf confirmCurrencyChange=true.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType CurrencyHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 2958240474" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of records the caller expects to write. Must equal the number of records in the request; on a mismatch nothing is sent to Manor.</source>
+          <target>Fjöldi færslna sem sá sem kallar býst við að skrifa. Verður að vera jafn fjölda færslna í beiðninni; ef ekki er ekkert sent til Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi færslna sem sá sem kallar býst við að skrifa. Verður að vera jafn fjölda færslna í beiðninni; ef ekki er ekkert sent til Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ExpectedCountHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 3273059374" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor field of the same name, sent as given. Manor validates it and returns 422 errors per record.</source>
+          <target>Reitur í Manor með sama nafni, sendur óbreyttur. Manor staðfestir hann og skilar villum (422) per færslu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Reitur í Manor með sama nafni, sendur óbreyttur. Manor staðfestir hann og skilar villum (422) per færslu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType GenericHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 871512356" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kennitala. Foreign clients usually have none: Manor accepts any number with a warning, but it must match the accounting system; some systems use a ten-digit number starting with 99.</source>
+          <target>Kennitala. Erlendir viðskiptavinir hafa yfirleitt enga: Manor tekur við hvaða númeri sem er með viðvörun, en það þarf að passa við bókhaldskerfið; sum kerfi nota tíu stafa númer sem byrjar á 99.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Kennitala. Erlendir viðskiptavinir hafa yfirleitt enga: Manor tekur við hvaða númeri sem er með viðvörun, en það þarf að passa við bókhaldskerfið; sum kerfi nota tíu stafa númer sem byrjar á 99.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType NationalIdHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Submit to POST /queues. Writes need the permission set BIFROST MnrFull ori. Manor 422 field errors are returned per record in results[].error. There are no delete message types. Never send an API key; it is kept in Manor setup. Data in Manor is created in the instance and environment chosen in Manor setup.</source>
+          <target>Sendu á POST /queues. Skrif krefjast heimildasafnsins BIFROST MnrFull ori. Villur frá Manor (422) um reiti koma per færslu í results[].error. Engar skilaboðagerðir eyða gögnum. Sendu aldrei API-lykil; hann er geymdur í uppsetningu Manor. Gögn eru stofnuð í því tilviki og umhverfi sem er valið í uppsetningu Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu á POST /queues. Skrif krefjast heimildasafnsins BIFROST MnrFull ori. Villur frá Manor (422) um reiti koma per færslu í results[].error. Engar skilaboðagerðir eyða gögnum. Sendu aldrei API-lykil; hann er geymdur í uppsetningu Manor. Gögn eru stofnuð í því tilviki og umhverfi sem er valið í uppsetningu Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 3476534729" size-unit="char" translate="yes" xml:space="preserve">
+          <source>true or false. Setting false closes the project and blocks ALL new entries on it for everyone; nothing is deleted and unbilled entries stay billable. Setting true reopens it; Bifrost adds no owner check, Manor may refuse.</source>
+          <target>true eða false. false lokar verkefninu og hindrar ALLAR nýjar færslur fyrir alla; engu er eytt og óreikningsfærðar færslur haldast reikningshæfar. true opnar það aftur; Bifröst bætir ekki við eigandaathugun, Manor getur hafnað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=true eða false. false lokar verkefninu og hindrar ALLAR nýjar færslur fyrir alla; engu er eytt og óreikningsfærðar færslur haldast reikningshæfar. true opnar það aftur; Bifröst bætir ekki við eigandaathugun, Manor getur hafnað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType OpenHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 1114728614" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Responsible person (Ábyrgðarmaður): a Manor user with the owns_projects permission.</source>
+          <target>Ábyrgðarmaður: notandi í Manor með heimildina owns_projects.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ábyrgðarmaður: notandi í Manor með heimildina owns_projects.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType OwnerHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 35942317" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor project id.</source>
+          <target>Auðkenni verkefnis í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Auðkenni verkefnis í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType ProjectIdHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 1221570279" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Optional array of records. Without it, the other fields of data describe one record. Each record uses the fields below.</source>
+          <target>Valfrjáls listi færslna. Án hans lýsa aðrir reitir data einni færslu. Hver færsla notar reitina hér á eftir.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Valfrjáls listi færslna. Án hans lýsa aðrir reitir data einni færslu. Hver færsla notar reitina hér á eftir.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType RecordsHelpLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 717780255 - NamedType 2317388572" size-unit="char" translate="yes" xml:space="preserve">
+          <source>true or false. False unless the instance always applies VAT and client and owner are in the same country. Must be right for invoicing to work.</source>
+          <target>true eða false. False nema tilvikið beiti alltaf VSK og viðskiptavinur og ábyrgðarmaður séu í sama landi. Þarf að vera rétt til að reikningagerð virki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=true eða false. False nema tilvikið beiti alltaf VSK og viðskiptavinur og ábyrgðarmaður séu í sama landi. Þarf að vera rétt til að reikningagerð virki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Contract Parts ori - NamedType VatHelpLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 3605801948 - NamedType 3351274" size-unit="char" translate="yes" xml:space="preserve">
           <source>Manor could not find the requested resource.</source>
@@ -339,443 +591,17 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Sláðu inn Manor-tilvikið í uppsetningu Manor.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor HTTP Impl ori - NamedType MissingInstanceErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Number of rows returned after local filtering.</source>
-          <target>Fjöldi skilaðra færslna eftir staðbundna síun.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi skilaðra færslna eftir staðbundna síun.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType CountLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lists Manor rates; prices exclude client and project special terms.</source>
-          <target>Sýnir taxta í Manor; verð inniheldur ekki sérkjör viðskiptavina og verkefna.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sýnir taxta í Manor; verð inniheldur ekki sérkjör viðskiptavina og verkefna.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 1113862135" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reads Manor only; the connection test also records its successful time in setup.</source>
-          <target>Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType EffectLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>list manor rates, time rates, mileage rates</source>
-          <target>sýna Manor taxta, tímataxtar, aksturstextar</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=sýna Manor taxta, tímataxtar, aksturstextar</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 1239929961" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Source-page metadata for lists; absent for single reads and ping.</source>
-          <target>Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType MetaLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Requires manage_rates (Manor administrator role). price is the base price; latest_price is the current price period. Special terms can override both, so neither is necessarily the billed price. Mileage uses the canonical type travel.</source>
-          <target>Krefst manage_rates (Stjórnandi í Manor). price er grunnverð; latest_price er núverandi verðtímabil. Sérkjör geta yfirskrifað bæði og því er hvorugt endilega innheimt verð. Akstur notar staðlaða gerðina travel.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Krefst manage_rates (Stjórnandi í Manor). price er grunnverð; latest_price er núverandi verðtímabil. Sérkjör geta yfirskrifað bæði og því er hvorugt endilega innheimt verð. Akstur notar staðlaða gerðina travel.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType NotesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 3992535379" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Page number, at least 1. Default 1.</source>
-          <target>Blaðsíðunúmer, minnst 1. Sjálfgefið 1.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Blaðsíðunúmer, minnst 1. Sjálfgefið 1.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType pageLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 3633081650" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Rows per page, 1 to 100. Default 100.</source>
-          <target>Færslur á blaðsíðu, 1 til 100. Sjálfgefið 100.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Færslur á blaðsíðu, 1 til 100. Sjálfgefið 100.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType perPageLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The result array contains canonical Manor fields. noOfRecords counts returned rows; meta describes the source page before local filtering.</source>
-          <target>Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType ResponseLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 3691381949" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Rates with id, name, type, price and latest_price. Special terms are not exposed by Manor.</source>
-          <target>Taxtar með id, name, type, price og latest_price. Manor birtir ekki sérkjör.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Taxtar með id, name, type, price og latest_price. Manor birtir ekki sérkjör.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType ResultLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 4089568054" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Rate type: time, travel (mileage), product or per_diem. Applied in Business Central.</source>
-          <target>Gerð taxta: time (vinna), travel (akstur), product (söluvara) eða per_diem (dagpeningar). Síað í Business Central.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Gerð taxta: time (vinna), travel (akstur), product (söluvara) eða per_diem (dagpeningar). Síað í Business Central.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType typeLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2398527077 - NamedType 4196491823" size-unit="char" translate="yes" xml:space="preserve">
-          <source>ISO 8601 timestamp for incremental reads, inclusive.</source>
-          <target>ISO 8601 tímastimpill fyrir breytingalestur, að tímanum meðtöldum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=ISO 8601 tímastimpill fyrir breytingalestur, að tímanum meðtöldum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType updatedsinceLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3219478106 - NamedType 2637544473" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Enter an API key.</source>
-          <target>Sláðu inn API-lykil.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sláðu inn API-lykil.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType EmptyKeyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3219478106 - NamedType 1575191754" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Set the API key in Manor Setup.</source>
-          <target>Stilltu API-lykilinn í uppsetningu Manor.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Stilltu API-lykilinn í uppsetningu Manor.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType MissingKeyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3219478106 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
-          <source>You need permission to edit Manor Setup to manage or use its API key.</source>
-          <target>Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType PermissionErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3219478106 - NamedType 1087724232" size-unit="char" translate="yes" xml:space="preserve">
-          <source>You need permission to read Manor Setup to use its API key for a read.</source>
-          <target>Þú þarft lesheimild á uppsetningu Manor til að nota API-lykilinn fyrir lestur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft lesheimild á uppsetningu Manor til að nota API-lykilinn fyrir lestur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType ReadPermissionErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Number of rows returned after local filtering.</source>
-          <target>Fjöldi skilaðra færslna eftir staðbundna síun.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi skilaðra færslna eftir staðbundna síun.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType CountLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reads one Manor employee by user ID or email address.</source>
-          <target>Les einn starfsmann í Manor eftir notandaauðkenni eða netfangi.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Les einn starfsmann í Manor eftir notandaauðkenni eða netfangi.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 1113862135" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reads Manor only; the connection test also records its successful time in setup.</source>
-          <target>Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType EffectLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 3296239594" size-unit="char" translate="yes" xml:space="preserve">
-          <source>User email. Send exactly one of userId and email.</source>
-          <target>Netfang notanda. Sendið annaðhvort userId eða email.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Netfang notanda. Sendið annaðhvort userId eða email.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType emailLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>get manor user, find employee, user by email</source>
-          <target>sækja Manor notanda, finna starfsmann, notandi eftir netfangi</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=sækja Manor notanda, finna starfsmann, notandi eftir netfangi</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 1239929961" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Source-page metadata for lists; absent for single reads and ping.</source>
-          <target>Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType MetaLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Only enabled users can receive time entries. Project owners need owns_projects=true.</source>
-          <target>Aðeins virkir notendur geta fengið tímafærslur. Verkefnaeigendur þurfa owns_projects=true.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins virkir notendur geta fengið tímafærslur. Verkefnaeigendur þurfa owns_projects=true.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType NotesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The result array contains canonical Manor fields. noOfRecords counts returned rows; meta describes the source page before local filtering.</source>
-          <target>Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType ResponseLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 3691381949" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Employees with id, name, email, enabled, owns_projects and approves_invoices.</source>
-          <target>Starfsmenn með id, name, email, enabled, owns_projects og approves_invoices.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Starfsmenn með id, name, email, enabled, owns_projects og approves_invoices.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType ResultLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1830140304 - NamedType 980464186" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Positive Manor user ID. Send exactly one of userId and email.</source>
-          <target>Jákvætt notandaauðkenni í Manor. Sendið annaðhvort userId eða email.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Jákvætt notandaauðkenni í Manor. Sendið annaðhvort userId eða email.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType userIdLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 354614640" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filter by permission to approve inbound invoices; omitted means all.</source>
-          <target>Sía eftir heimild til að samþykkja móttekna reikninga; ótilgreint sýnir alla.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sía eftir heimild til að samþykkja móttekna reikninga; ótilgreint sýnir alla.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType approvesinvoicesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Number of rows returned after local filtering.</source>
-          <target>Fjöldi skilaðra færslna eftir staðbundna síun.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi skilaðra færslna eftir staðbundna síun.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType CountLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lists Manor employees, optionally filtered by permissions and enabled status.</source>
-          <target>Sýnir starfsmenn í Manor, valfrjálst síaða eftir heimildum og virkni.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sýnir starfsmenn í Manor, valfrjálst síaða eftir heimildum og virkni.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 1113862135" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reads Manor only; the connection test also records its successful time in setup.</source>
-          <target>Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType EffectLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 3866190517" size-unit="char" translate="yes" xml:space="preserve">
-          <source>True keeps only enabled users in Business Central; default false.</source>
-          <target>True heldur aðeins virkum notendum í Business Central; sjálfgefið false.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=True heldur aðeins virkum notendum í Business Central; sjálfgefið false.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType enabledOnlyLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>list manor users, enabled employees, project owners</source>
-          <target>sýna Manor notendur, virkir starfsmenn, eigendur verkefna</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=sýna Manor notendur, virkir starfsmenn, eigendur verkefna</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 1239929961" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Source-page metadata for lists; absent for single reads and ping.</source>
-          <target>Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType MetaLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Only enabled users can receive time entries. Project owners need owns_projects=true. Omitted filters do not filter; enabledOnly=false also leaves all users.</source>
-          <target>Aðeins virkir notendur geta fengið tímafærslur. Verkefnaeigendur þurfa owns_projects=true. Ótilgreindar síur sía ekki; enabledOnly=false sýnir einnig alla notendur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins virkir notendur geta fengið tímafærslur. Verkefnaeigendur þurfa owns_projects=true. Ótilgreindar síur sía ekki; enabledOnly=false sýnir einnig alla notendur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType NotesLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 839233411" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filter by permission to own projects; omitted means all.</source>
-          <target>Sía eftir heimild til að eiga verkefni; ótilgreint sýnir alla.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sía eftir heimild til að eiga verkefni; ótilgreint sýnir alla.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType ownsprojectsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 3992535379" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Page number, at least 1. Default 1.</source>
-          <target>Blaðsíðunúmer, minnst 1. Sjálfgefið 1.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Blaðsíðunúmer, minnst 1. Sjálfgefið 1.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType pageLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 3633081650" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Rows per page, 1 to 100. Default 100.</source>
-          <target>Færslur á blaðsíðu, 1 til 100. Sjálfgefið 100.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Færslur á blaðsíðu, 1 til 100. Sjálfgefið 100.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType perPageLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The result array contains canonical Manor fields. noOfRecords counts returned rows; meta describes the source page before local filtering.</source>
-          <target>Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType ResponseLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 3691381949" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Employees with id, name, email, enabled, owns_projects and approves_invoices.</source>
-          <target>Starfsmenn með id, name, email, enabled, owns_projects og approves_invoices.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Starfsmenn með id, name, email, enabled, owns_projects og approves_invoices.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType ResultLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1340315596 - NamedType 4196491823" size-unit="char" translate="yes" xml:space="preserve">
-          <source>ISO 8601 timestamp for incremental reads, inclusive.</source>
-          <target>ISO 8601 tímastimpill fyrir breytingalestur, að tímanum meðtöldum.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=ISO 8601 tímastimpill fyrir breytingalestur, að tímanum meðtöldum.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType updatedsinceLbl</note>
-        </trans-unit>
-        <trans-unit id="Page 1387375200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Set API Key</source>
-          <target>Stilla API-lykil</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Stilla API-lykil</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1387375200 - Control 2293178051 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the new API key. The stored key is never displayed.</source>
-          <target>Tilgreinir nýja API-lykilinn. Vistaði lykillinn er aldrei birtur.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir nýja API-lykilinn. Vistaði lykillinn er aldrei birtur.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Control ApiKeyInput - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1387375200 - Control 2293178051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>API Key</source>
-          <target>API-lykill</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=API-lykill</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Control ApiKeyInput - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Manor Setup</source>
-          <target>Uppsetning Manor</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Uppsetning Manor</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>General</source>
-          <target>Almennt</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Almennt</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control General - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Control 4229563359 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies whether an API key is stored for this company.</source>
-          <target>Tilgreinir hvort API-lykill sé vistaður fyrir þetta fyrirtæki.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir hvort API-lykill sé vistaður fyrir þetta fyrirtæki.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control HasApiKey - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Control 4229563359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Has API Key</source>
-          <target>API-lykill til staðar</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=API-lykill til staðar</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control HasApiKey - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Action 3370348682 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Removes the API key stored for this company.</source>
-          <target>Fjarlægir API-lykilinn sem vistaður er fyrir þetta fyrirtæki.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fjarlægir API-lykilinn sem vistaður er fyrir þetta fyrirtæki.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action ClearApiKey - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Action 3370348682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Clear API Key</source>
-          <target>Fjarlægja API-lykil</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Fjarlægja API-lykil</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action ClearApiKey - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Action 926141975 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Stores a new API key for this company without showing the existing key.</source>
-          <target>Vistar nýjan API-lykil fyrir þetta fyrirtæki án þess að birta eldri lykil.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Vistar nýjan API-lykil fyrir þetta fyrirtæki án þess að birta eldri lykil.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action SetApiKey - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Action 926141975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Set API Key</source>
-          <target>Stilla API-lykil</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Stilla API-lykil</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action SetApiKey - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1256322096 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Process</source>
-          <target>Vinna</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Vinna</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action Category_Process - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 689737130 - EnumValue 1417814126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Mock</source>
-          <target>Sýndarumhverfi</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Sýndarumhverfi</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Mock - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 689737130 - EnumValue 1065337893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Production</source>
-          <target>Raunumhverfi</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Raunumhverfi</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Production - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 689737130 - EnumValue 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Test</source>
-          <target>Prófunarumhverfi</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Prófunarumhverfi</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Test - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 3604939376 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Manor</source>
-          <target>Bifröst - Manor</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Manor ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 1678782083 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Manor Full</source>
-          <target>Bifröst - Manor (fullt)</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor (fullt)</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST MnrFull ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PermissionSet 826421492 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bifrost Manor Read</source>
-          <target>Bifröst - Manor (lestur)</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor (lestur)</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST MnrRead ori - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 4084192792 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lists the activities (work items) of one Manor project, one page at a time.</source>
-          <target>Listar verkþætti eins verks í Manor, eina blaðsíðu í einu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Listar verkþætti eins verks í Manor, eina blaðsíðu í einu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 4084192792 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>manor activities, list activities, project activities, work items, project work items, verkþættir</source>
-          <target>manor verkþættir, lista verkþætti, verkþættir verks, vinnuliðir, vinnuliðir verks, activities</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=manor verkþættir, lista verkþætti, verkþættir verks, vinnuliðir, vinnuliðir verks, activities</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 4084192792 - NamedType 4115570904" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Required parameter projectId is missing.</source>
-          <target>Nauðsynlega breytu projectId vantar.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Nauðsynlega breytu projectId vantar.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType MissingProjectErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 4084192792 - NamedType 3683680000" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Find the project with Manor.Project.List and send its id as projectId.</source>
-          <target>Finndu verkið með Manor.Project.List og sendu auðkenni þess sem projectId.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Finndu verkið með Manor.Project.List og sendu auðkenni þess sem projectId.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType MissingProjectNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 4084192792 - NamedType 2824518802" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Check the project id, or find the project with Manor.Project.List.</source>
-          <target>Athugaðu auðkenni verks eða finndu verkið með Manor.Project.List.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Athugaðu auðkenni verks eða finndu verkið með Manor.Project.List.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType NotFoundNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 4084192792 - NamedType 1711921931" size-unit="char" translate="yes" xml:space="preserve">
-          <source>the Manor project id</source>
-          <target>auðkenni verks í Manor</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=auðkenni verks í Manor</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType ProjectExpectedLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 4084192792 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lists the activities of one Manor project; reading them needs the Manor permission manage_activities.</source>
-          <target>Listar verkþætti eins verks í Manor; til að lesa þá þarf Manor-heimildina manage_activities.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Listar verkþætti eins verks í Manor; til að lesa þá þarf Manor-heimildina manage_activities.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Activity List Impl ori - NamedType SelectionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3790855880 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reads one Manor client by its id or by its national id (kennitala).</source>
-          <target>Les einn viðskiptavin í Manor eftir auðkenni eða kennitölu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Les einn viðskiptavin í Manor eftir auðkenni eða kennitölu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3790855880 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>manor client, get client, client by id, client by kennitala, client by national id, viðskiptavinur</source>
-          <target>manor viðskiptavinur, sækja viðskiptavin, viðskiptavinur eftir auðkenni, viðskiptavinur eftir kennitölu, viðskiptavinur eftir kennitölu í manor, client</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=manor viðskiptavinur, sækja viðskiptavin, viðskiptavinur eftir auðkenni, viðskiptavinur eftir kennitölu, viðskiptavinur eftir kennitölu í manor, client</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3790855880 - NamedType 1263754247" size-unit="char" translate="yes" xml:space="preserve">
-          <source>A missing national id does not prove the client is missing: foreign clients often have a made-up number. Search by name with Manor.Client.List.</source>
-          <target>Kennitala sem finnst ekki sannar ekki að viðskiptavinurinn sé ekki til: erlendir viðskiptavinir eru oft með tilbúið númer. Leitaðu eftir nafni með Manor.Client.List.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Kennitala sem finnst ekki sannar ekki að viðskiptavinurinn sé ekki til: erlendir viðskiptavinir eru oft með tilbúið númer. Leitaðu eftir nafni með Manor.Client.List.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType NationalIdNotFoundNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3790855880 - NamedType 2824518802" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Check the client id, or find the client with Manor.Client.List.</source>
-          <target>Athugaðu auðkenni viðskiptavinar eða finndu hann með Manor.Client.List.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Athugaðu auðkenni viðskiptavinar eða finndu hann með Manor.Client.List.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType NotFoundNextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3790855880 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Reads one Manor client by clientId or nationalId; use Manor.Client.List to search by name.</source>
-          <target>Les einn viðskiptavin í Manor eftir clientId eða nationalId; notaðu Manor.Client.List til að leita eftir nafni.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Les einn viðskiptavin í Manor eftir clientId eða nationalId; notaðu Manor.Client.List til að leita eftir nafni.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client Get Impl ori - NamedType SelectionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1146221924 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lists Manor clients one page at a time, optionally only those changed since a time.</source>
-          <target>Listar viðskiptavini í Manor eina blaðsíðu í einu, ef vill aðeins þá sem breyttust eftir ákveðinn tíma.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Listar viðskiptavini í Manor eina blaðsíðu í einu, ef vill aðeins þá sem breyttust eftir ákveðinn tíma.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client List Impl ori - NamedType DescriptionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1146221924 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
-          <source>manor clients, list clients, find client, customers in manor, clients changed since, viðskiptavinir</source>
-          <target>manor viðskiptavinir, lista viðskiptavini, finna viðskiptavin, viðskiptavinir í manor, breyttir viðskiptavinir, customers</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=manor viðskiptavinir, lista viðskiptavini, finna viðskiptavin, viðskiptavinir í manor, breyttir viðskiptavinir, customers</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client List Impl ori - NamedType KeywordsLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1146221924 - NamedType 895773054" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lists Manor clients page by page; use Manor.Client.Get to read one client by id or national id.</source>
-          <target>Listar viðskiptavini í Manor eftir blaðsíðum; notaðu Manor.Client.Get til að lesa einn viðskiptavin eftir auðkenni eða kennitölu.</target>
-          <note from="Developer" annotates="general" priority="2">is-IS=Listar viðskiptavini í Manor eftir blaðsíðum; notaðu Manor.Client.Get til að lesa einn viðskiptavin eftir auðkenni eða kennitölu.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Client List Impl ori - NamedType SelectionLbl</note>
+        <trans-unit id="Codeunit 345367598 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creates a Manor project (POST /project). billing is enabled, internal or sensitive.</source>
+          <target>Stofnar verkefni í Manor (POST /project). billing er enabled, internal eða sensitive.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stofnar verkefni í Manor (POST /project). billing er enabled, internal eða sensitive.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Project Create Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 345367598 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>create Manor project, new matter, add project, project owner</source>
+          <target>stofna verkefni í Manor, nýtt mál, bæta við verkefni, ábyrgðarmaður verkefnis</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=stofna verkefni í Manor, nýtt mál, bæta við verkefni, ábyrgðarmaður verkefnis</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Project Create Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 2338717884 - NamedType 4148992451" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 projects have this external number (identifier), and it is not unique in Manor.</source>
@@ -848,6 +674,90 @@
           <target>Sendu open, closed eða all, eða slepptu status fyrir opin verk.</target>
           <note from="Developer" annotates="general" priority="2">is-IS=Sendu open, closed eða all, eða slepptu status fyrir opin verk.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Project List Impl ori - NamedType StatusNextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2029520705 - NamedType 3569966352" maxwidth="250" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Updates a Manor project (PUT /project/{projectId}). open=false closes the project and blocks all new entries; open=true reopens it.</source>
+          <target>Uppfærir verkefni í Manor (PUT /project/{projectId}). open=false lokar verkefni og hindrar allar nýjar færslur; open=true opnar það aftur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppfærir verkefni í Manor (PUT /project/{projectId}). open=false lokar verkefni og hindrar allar nýjar færslur; open=true opnar það aftur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Project Update Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2029520705 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>update Manor project, close project, reopen project, change billing</source>
+          <target>uppfæra verkefni í Manor, loka verkefni, opna verkefni aftur, breyta reikningagerð</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=uppfæra verkefni í Manor, loka verkefni, opna verkefni aftur, breyta reikningagerð</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Project Update Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of rows returned after local filtering.</source>
+          <target>Fjöldi skilaðra færslna eftir staðbundna síun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi skilaðra færslna eftir staðbundna síun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType CountLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists Manor rates; prices exclude client and project special terms.</source>
+          <target>Sýnir taxta í Manor; verð inniheldur ekki sérkjör viðskiptavina og verkefna.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sýnir taxta í Manor; verð inniheldur ekki sérkjör viðskiptavina og verkefna.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 1113862135" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads Manor only; the connection test also records its successful time in setup.</source>
+          <target>Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType EffectLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>list manor rates, time rates, mileage rates</source>
+          <target>sýna Manor taxta, tímataxtar, aksturstextar</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=sýna Manor taxta, tímataxtar, aksturstextar</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 1239929961" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source-page metadata for lists; absent for single reads and ping.</source>
+          <target>Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType MetaLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requires manage_rates (Manor administrator role). price is the base price; latest_price is the current price period. Special terms can override both, so neither is necessarily the billed price. Mileage uses the canonical type travel.</source>
+          <target>Krefst manage_rates (Stjórnandi í Manor). price er grunnverð; latest_price er núverandi verðtímabil. Sérkjör geta yfirskrifað bæði og því er hvorugt endilega innheimt verð. Akstur notar staðlaða gerðina travel.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Krefst manage_rates (Stjórnandi í Manor). price er grunnverð; latest_price er núverandi verðtímabil. Sérkjör geta yfirskrifað bæði og því er hvorugt endilega innheimt verð. Akstur notar staðlaða gerðina travel.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 3992535379" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page number, at least 1. Default 1.</source>
+          <target>Blaðsíðunúmer, minnst 1. Sjálfgefið 1.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Blaðsíðunúmer, minnst 1. Sjálfgefið 1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType pageLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 3633081650" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rows per page, 1 to 100. Default 100.</source>
+          <target>Færslur á blaðsíðu, 1 til 100. Sjálfgefið 100.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslur á blaðsíðu, 1 til 100. Sjálfgefið 100.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType perPageLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The result array contains canonical Manor fields. noOfRecords counts returned rows; meta describes the source page before local filtering.</source>
+          <target>Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType ResponseLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 3691381949" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rates with id, name, type, price and latest_price. Special terms are not exposed by Manor.</source>
+          <target>Taxtar með id, name, type, price og latest_price. Manor birtir ekki sérkjör.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Taxtar með id, name, type, price og latest_price. Manor birtir ekki sérkjör.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType ResultLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 4089568054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rate type: time, travel (mileage), product or per_diem. Applied in Business Central.</source>
+          <target>Gerð taxta: time (vinna), travel (akstur), product (söluvara) eða per_diem (dagpeningar). Síað í Business Central.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Gerð taxta: time (vinna), travel (akstur), product (söluvara) eða per_diem (dagpeningar). Síað í Business Central.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType typeLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2398527077 - NamedType 4196491823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ISO 8601 timestamp for incremental reads, inclusive.</source>
+          <target>ISO 8601 tímastimpill fyrir breytingalestur, að tímanum meðtöldum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=ISO 8601 tímastimpill fyrir breytingalestur, að tímanum meðtöldum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Rate List Impl ori - NamedType updatedsinceLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 3680170385 - NamedType 1689413328" size-unit="char" translate="yes" xml:space="preserve">
           <source>Send either %1 or %2, not both.</source>
@@ -1335,6 +1245,240 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Þegar það er satt fylgja verkþættir hverju verki. Sjálfgefið ósatt.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Parts ori - NamedType WithActivitiesLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3219478106 - NamedType 2637544473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter an API key.</source>
+          <target>Sláðu inn API-lykil.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sláðu inn API-lykil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType EmptyKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3219478106 - NamedType 1575191754" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set the API key in Manor Setup.</source>
+          <target>Stilltu API-lykilinn í uppsetningu Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stilltu API-lykilinn í uppsetningu Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType MissingKeyErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3219478106 - NamedType 315309378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You need permission to edit Manor Setup to manage or use its API key.</source>
+          <target>Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType PermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3219478106 - NamedType 1087724232" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You need permission to read Manor Setup to use its API key for a read.</source>
+          <target>Þú þarft lesheimild á uppsetningu Manor til að nota API-lykilinn fyrir lestur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Þú þarft lesheimild á uppsetningu Manor til að nota API-lykilinn fyrir lestur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Secrets ori - NamedType ReadPermissionErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of rows returned after local filtering.</source>
+          <target>Fjöldi skilaðra færslna eftir staðbundna síun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi skilaðra færslna eftir staðbundna síun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType CountLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads one Manor employee by user ID or email address.</source>
+          <target>Les einn starfsmann í Manor eftir notandaauðkenni eða netfangi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les einn starfsmann í Manor eftir notandaauðkenni eða netfangi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 1113862135" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads Manor only; the connection test also records its successful time in setup.</source>
+          <target>Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType EffectLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 3296239594" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User email. Send exactly one of userId and email.</source>
+          <target>Netfang notanda. Sendið annaðhvort userId eða email.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Netfang notanda. Sendið annaðhvort userId eða email.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType emailLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>get manor user, find employee, user by email</source>
+          <target>sækja Manor notanda, finna starfsmann, notandi eftir netfangi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=sækja Manor notanda, finna starfsmann, notandi eftir netfangi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 1239929961" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source-page metadata for lists; absent for single reads and ping.</source>
+          <target>Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType MetaLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only enabled users can receive time entries. Project owners need owns_projects=true.</source>
+          <target>Aðeins virkir notendur geta fengið tímafærslur. Verkefnaeigendur þurfa owns_projects=true.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins virkir notendur geta fengið tímafærslur. Verkefnaeigendur þurfa owns_projects=true.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The result array contains canonical Manor fields. noOfRecords counts returned rows; meta describes the source page before local filtering.</source>
+          <target>Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType ResponseLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 3691381949" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Employees with id, name, email, enabled, owns_projects and approves_invoices.</source>
+          <target>Starfsmenn með id, name, email, enabled, owns_projects og approves_invoices.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Starfsmenn með id, name, email, enabled, owns_projects og approves_invoices.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType ResultLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1830140304 - NamedType 980464186" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positive Manor user ID. Send exactly one of userId and email.</source>
+          <target>Jákvætt notandaauðkenni í Manor. Sendið annaðhvort userId eða email.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Jákvætt notandaauðkenni í Manor. Sendið annaðhvort userId eða email.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User Get Impl ori - NamedType userIdLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 354614640" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter by permission to approve inbound invoices; omitted means all.</source>
+          <target>Sía eftir heimild til að samþykkja móttekna reikninga; ótilgreint sýnir alla.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sía eftir heimild til að samþykkja móttekna reikninga; ótilgreint sýnir alla.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType approvesinvoicesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 3071622107" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of rows returned after local filtering.</source>
+          <target>Fjöldi skilaðra færslna eftir staðbundna síun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi skilaðra færslna eftir staðbundna síun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType CountLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists Manor employees, optionally filtered by permissions and enabled status.</source>
+          <target>Sýnir starfsmenn í Manor, valfrjálst síaða eftir heimildum og virkni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sýnir starfsmenn í Manor, valfrjálst síaða eftir heimildum og virkni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 1113862135" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads Manor only; the connection test also records its successful time in setup.</source>
+          <target>Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les aðeins Manor; tengiprófið skráir einnig tíma heppnaðrar prófunar í uppsetningu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType EffectLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 3866190517" size-unit="char" translate="yes" xml:space="preserve">
+          <source>True keeps only enabled users in Business Central; default false.</source>
+          <target>True heldur aðeins virkum notendum í Business Central; sjálfgefið false.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=True heldur aðeins virkum notendum í Business Central; sjálfgefið false.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType enabledOnlyLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>list manor users, enabled employees, project owners</source>
+          <target>sýna Manor notendur, virkir starfsmenn, eigendur verkefna</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=sýna Manor notendur, virkir starfsmenn, eigendur verkefna</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 1239929961" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source-page metadata for lists; absent for single reads and ping.</source>
+          <target>Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lýsigögn upprunalegrar síðu fyrir lista; vantar við stakan lestur og tengipróf.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType MetaLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 2344026547" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only enabled users can receive time entries. Project owners need owns_projects=true. Omitted filters do not filter; enabledOnly=false also leaves all users.</source>
+          <target>Aðeins virkir notendur geta fengið tímafærslur. Verkefnaeigendur þurfa owns_projects=true. Ótilgreindar síur sía ekki; enabledOnly=false sýnir einnig alla notendur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins virkir notendur geta fengið tímafærslur. Verkefnaeigendur þurfa owns_projects=true. Ótilgreindar síur sía ekki; enabledOnly=false sýnir einnig alla notendur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType NotesLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 839233411" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter by permission to own projects; omitted means all.</source>
+          <target>Sía eftir heimild til að eiga verkefni; ótilgreint sýnir alla.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sía eftir heimild til að eiga verkefni; ótilgreint sýnir alla.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType ownsprojectsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 3992535379" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page number, at least 1. Default 1.</source>
+          <target>Blaðsíðunúmer, minnst 1. Sjálfgefið 1.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Blaðsíðunúmer, minnst 1. Sjálfgefið 1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType pageLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 3633081650" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rows per page, 1 to 100. Default 100.</source>
+          <target>Færslur á blaðsíðu, 1 til 100. Sjálfgefið 100.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslur á blaðsíðu, 1 til 100. Sjálfgefið 100.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType perPageLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 2676460995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The result array contains canonical Manor fields. noOfRecords counts returned rows; meta describes the source page before local filtering.</source>
+          <target>Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fylkið result inniheldur staðlaða Manor-reiti. noOfRecords telur skilaðar færslur; meta lýsir upprunalegri síðu fyrir staðbundna síun.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType ResponseLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 3691381949" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Employees with id, name, email, enabled, owns_projects and approves_invoices.</source>
+          <target>Starfsmenn með id, name, email, enabled, owns_projects og approves_invoices.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Starfsmenn með id, name, email, enabled, owns_projects og approves_invoices.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType ResultLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1340315596 - NamedType 4196491823" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ISO 8601 timestamp for incremental reads, inclusive.</source>
+          <target>ISO 8601 tímastimpill fyrir breytingalestur, að tímanum meðtöldum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=ISO 8601 tímastimpill fyrir breytingalestur, að tímanum meðtöldum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor User List Impl ori - NamedType updatedsinceLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 2251795955" size-unit="char" translate="yes" xml:space="preserve">
+          <source>billing must be one of: enabled, internal, sensitive.</source>
+          <target>billing verður að vera eitt af: enabled, internal, sensitive.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=billing verður að vera eitt af: enabled, internal, sensitive.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType BillingLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 4048987456" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The field %1 must be true or false.</source>
+          <target>Reiturinn %1 verður að vera true eða false.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = field name; is-IS=Reiturinn %1 verður að vera true eða false.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType BooleanFieldLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 801050659" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Changing currency_code needs confirmCurrencyChange=true. The currency applies to all the client's projects and invoices. Nothing was updated.</source>
+          <target>Til að breyta currency_code þarf confirmCurrencyChange=true. Gjaldmiðillinn gildir um öll verkefni og reikninga viðskiptavinarins. Engu var breytt.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Til að breyta currency_code þarf confirmCurrencyChange=true. Gjaldmiðillinn gildir um öll verkefni og reikninga viðskiptavinarins. Engu var breytt.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType CurrencyFlagLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 4071748223" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A Manor client with national_id %1 already exists (client id %2). Nothing was created.</source>
+          <target>Viðskiptavinur í Manor með national_id %1 er þegar til (auðkenni %2). Engu var stofnað.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = national id; %2 = client id; is-IS=Viðskiptavinur í Manor með national_id %1 er þegar til (auðkenni %2). Engu var stofnað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType DuplicateLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 3964732765" size-unit="char" translate="yes" xml:space="preserve">
+          <source>expectedCount is %1 but the request contains %2 record(s). Nothing was sent to Manor.</source>
+          <target>expectedCount er %1 en beiðnin inniheldur %2 færslur. Ekkert var sent til Manor.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = expected; %2 = actual; is-IS=expectedCount er %1 en beiðnin inniheldur %2 færslur. Ekkert var sent til Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType ExpectedCountMismatchLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 3383048717" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send expectedCount as a whole number of 1 or more.</source>
+          <target>Sendu expectedCount sem heila tölu, 1 eða hærri.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sendu expectedCount sem heila tölu, 1 eða hærri.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType ExpectedCountMissingLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 899879488" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The field %1 is required.</source>
+          <target>Reiturinn %1 er nauðsynlegur.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = field name; is-IS=Reiturinn %1 er nauðsynlegur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType MissingFieldLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 3538048070" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Read the message contract with get_message_type_help and correct the request.</source>
+          <target>Lestu skilgreiningu skilaboðagerðarinnar með get_message_type_help og leiðréttu beiðnina.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lestu skilgreiningu skilaboðagerðarinnar með get_message_type_help og leiðréttu beiðnina.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType ReadContractLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 2291302137" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The request contains no records.</source>
+          <target>Beiðnin inniheldur engar færslur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Beiðnin inniheldur engar færslur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType RequestMissingLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 1972921799" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The field %1 must be text.</source>
+          <target>Reiturinn %1 verður að vera texti.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = field name; is-IS=Reiturinn %1 verður að vera texti.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType TextFieldLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 140479506 - NamedType 2904544100" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The field %1 is not accepted by this message type.</source>
+          <target>Þessi skilaboðagerð tekur ekki við reitnum %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = field name; is-IS=Þessi skilaboðagerð tekur ekki við reitnum %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Write Handler ori - NamedType UnknownFieldLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3185300046 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lists accepted or updated inbound invoices. Updated mode optionally filters status locally and de-duplicates by id.</source>
           <target>Sýnir samþykkta eða uppfærða innkaupareikninga. Uppfærsluhamur getur síað stöðu staðbundið og fjarlægir tvítekningar eftir auðkenni.</target>
@@ -1700,6 +1844,114 @@
           <target>tímafærslur, verktímar, tímar til greiðslu</target>
           <note from="Developer" annotates="general" priority="2">is-IS=tímafærslur, verktímar, tímar til greiðslu</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 1387375200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set API Key</source>
+          <target>Stilla API-lykil</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stilla API-lykil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1387375200 - Control 2293178051 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the new API key. The stored key is never displayed.</source>
+          <target>Tilgreinir nýja API-lykilinn. Vistaði lykillinn er aldrei birtur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir nýja API-lykilinn. Vistaði lykillinn er aldrei birtur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Control ApiKeyInput - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1387375200 - Control 2293178051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Key</source>
+          <target>API-lykill</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=API-lykill</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor API Key ori - Control ApiKeyInput - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor Setup</source>
+          <target>Uppsetning Manor</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppsetning Manor</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target>Almennt</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Almennt</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Control 4229563359 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether an API key is stored for this company.</source>
+          <target>Tilgreinir hvort API-lykill sé vistaður fyrir þetta fyrirtæki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreinir hvort API-lykill sé vistaður fyrir þetta fyrirtæki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control HasApiKey - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Control 4229563359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Has API Key</source>
+          <target>API-lykill til staðar</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=API-lykill til staðar</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Control HasApiKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 3370348682 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Removes the API key stored for this company.</source>
+          <target>Fjarlægir API-lykilinn sem vistaður er fyrir þetta fyrirtæki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjarlægir API-lykilinn sem vistaður er fyrir þetta fyrirtæki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action ClearApiKey - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 3370348682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear API Key</source>
+          <target>Fjarlægja API-lykil</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjarlægja API-lykil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action ClearApiKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 926141975 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stores a new API key for this company without showing the existing key.</source>
+          <target>Vistar nýjan API-lykil fyrir þetta fyrirtæki án þess að birta eldri lykil.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Vistar nýjan API-lykil fyrir þetta fyrirtæki án þess að birta eldri lykil.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action SetApiKey - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 926141975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set API Key</source>
+          <target>Stilla API-lykil</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Stilla API-lykil</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action SetApiKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1256322096 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <target>Vinna</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Vinna</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Manor Setup ori - Action Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 689737130 - EnumValue 1417814126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mock</source>
+          <target>Sýndarumhverfi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sýndarumhverfi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Mock - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 689737130 - EnumValue 1065337893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Production</source>
+          <target>Raunumhverfi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Raunumhverfi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Production - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 689737130 - EnumValue 3732224266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test</source>
+          <target>Prófunarumhverfi</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Prófunarumhverfi</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Manor Environment ori - EnumValue Test - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 3604939376 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Manor</source>
+          <target>Bifröst - Manor</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST Manor ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 1678782083 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Manor Full</source>
+          <target>Bifröst - Manor (fullt)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor (fullt)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST MnrFull ori - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 826421492 - Property 2879900210" maxwidth="30" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bifrost Manor Read</source>
+          <target>Bifröst - Manor (lestur)</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Bifröst - Manor (lestur)</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet BIFROST MnrRead ori - Property Caption</note>
         </trans-unit>
       </group>
     </body>
