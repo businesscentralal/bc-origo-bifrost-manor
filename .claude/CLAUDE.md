@@ -85,6 +85,9 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Test table | 98251 | Manor Read Fixture ori |
 | Test codeunit | 98252 | Manor Mock Fixture Sub ori |
 
+| Test codeunit | 98280 | Manor Contract Tst ori |
+| Test codeunit | 98281 | Manor Contract Run ori |
+
 Every new object is added to this table in the same PR.
 
 ## Product scope (Gunnar 25.11.2026: scaffold Bifrost Manor on https://api.manor.is/)
