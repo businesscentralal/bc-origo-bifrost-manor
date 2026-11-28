@@ -56,6 +56,15 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Codeunit | 10035678 | Manor Expense Create Impl ori |
 | Codeunit | 10035679 | Manor Product Create Impl ori |
 | Test codeunit | 98270 | Manor Creates Tst ori |
+| Enum extension | 10035666 | Manor Read Types ori |
+| Codeunit | 10035666 | Mnr Time List Impl ori |
+| Codeunit | 10035667 | Mnr Product List Impl ori |
+| Codeunit | 10035668 | Mnr Invoice List Impl ori |
+| Codeunit | 10035669 | Mnr Invoice Get Impl ori |
+| Codeunit | 10035670 | Mnr Inbound List Impl ori |
+| Test codeunit | 98250 | Manor Read Types Tst ori |
+| Test table | 98251 | Manor Read Fixture ori |
+| Test codeunit | 98252 | Manor Mock Fixture Sub ori |
 
 Every new object is added to this table in the same PR.
 
