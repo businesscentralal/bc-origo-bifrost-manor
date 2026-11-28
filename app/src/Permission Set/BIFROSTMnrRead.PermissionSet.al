@@ -13,5 +13,19 @@ permissionset 10035638 "BIFROST MnrRead ori"
                   tabledata "Manor Setup ori" = R,
                   page "Manor Setup ori" = X,
                   codeunit "Manor Secrets ori" = X,
-                  codeunit "Manor Response ori" = X;
+                  codeunit "Manor Response ori" = X,
+                  codeunit "Manor HTTP Impl ori" = X,
+                  codeunit "Manor Mock Impl ori" = X,
+                  codeunit "Manor Mock Store ori" = X,
+                  codeunit "Manor Client ori" = X,
+                  codeunit "Manor Error Mapper ori" = X,
+                  codeunit "Manor Query Builder ori" = X,
+                  codeunit "Manor Telemetry ori" = X,
+                  codeunit "Manor Read Mgt ori" = X,
+                  codeunit "Manor Read Parts ori" = X,
+                  codeunit "Manor Client List Impl ori" = X,
+                  codeunit "Manor Client Get Impl ori" = X,
+                  codeunit "Manor Project List Impl ori" = X,
+                  codeunit "Manor Project Get Impl ori" = X,
+                  codeunit "Manor Activity List Impl ori" = X;
 }
