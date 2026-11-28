@@ -40,6 +40,15 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Codeunit | 10035653 | Manor Query Builder ori |
 | Codeunit | 10035654 | Manor Telemetry ori |
 | Test codeunit | 98220 | Manor Client Tst ori |
+| Codeunit | 10035661 | Manor Client List Impl ori |
+| Codeunit | 10035662 | Manor Client Get Impl ori |
+| Codeunit | 10035663 | Manor Project List Impl ori |
+| Codeunit | 10035664 | Manor Project Get Impl ori |
+| Codeunit | 10035665 | Manor Activity List Impl ori |
+| Enum extension | 10035680 | Manor Read Msg Type ori |
+| Codeunit | 10035681 | Manor Read Parts ori |
+| Codeunit | 10035682 | Manor Read Mgt ori |
+| Test codeunit | 98240 | Manor Read Msg Tst ori |
 
 | Enum extension | 10035666 | Manor Read Types ori |
 | Codeunit | 10035666 | Mnr Time List Impl ori |

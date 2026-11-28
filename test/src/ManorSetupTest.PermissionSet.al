@@ -23,6 +23,7 @@ permissionset 98201 "Manor Setup Test ori"
         codeunit "Manor Read Types Tst ori" = X,
         codeunit "Manor Mock Fixture Sub ori" = X,
         tabledata "Manor Read Fixture ori" = RIMD,
+        codeunit "Manor Read Msg Tst ori" = X,
         codeunit "Library Assert" = X,
         codeunit "Library - Lower Permissions" = X,
         codeunit "Permissions Mock" = X;

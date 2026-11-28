@@ -25,5 +25,12 @@ permissionset 10035638 "BIFROST MnrRead ori"
                   codeunit "Mnr Product List Impl ori" = X,
                   codeunit "Mnr Invoice List Impl ori" = X,
                   codeunit "Mnr Invoice Get Impl ori" = X,
-                  codeunit "Mnr Inbound List Impl ori" = X;
+                  codeunit "Mnr Inbound List Impl ori" = X,
+                  codeunit "Manor Read Mgt ori" = X,
+                  codeunit "Manor Read Parts ori" = X,
+                  codeunit "Manor Client List Impl ori" = X,
+                  codeunit "Manor Client Get Impl ori" = X,
+                  codeunit "Manor Project List Impl ori" = X,
+                  codeunit "Manor Project Get Impl ori" = X,
+                  codeunit "Manor Activity List Impl ori" = X;
 }
