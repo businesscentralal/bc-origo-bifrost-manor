@@ -1335,6 +1335,372 @@
           <note from="Developer" annotates="general" priority="2">is-IS=Þegar það er satt fylgja verkþættir hverju verki. Sjálfgefið ósatt.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Manor Read Parts ori - NamedType WithActivitiesLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3185300046 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists accepted or updated inbound invoices. Updated mode optionally filters status locally and de-duplicates by id.</source>
+          <target>Sýnir samþykkta eða uppfærða innkaupareikninga. Uppfærsluhamur getur síað stöðu staðbundið og fjarlægir tvítekningar eftir auðkenni.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sýnir samþykkta eða uppfærða innkaupareikninga. Uppfærsluhamur getur síað stöðu staðbundið og fjarlægir tvítekningar eftir auðkenni.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Inbound List Impl ori - Method GetDescription - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3185300046 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>inbound invoices, pending approval, supplier invoices</source>
+          <target>innkaupareikningar, bíður samþykktar, birgjareikningar</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=innkaupareikningar, bíður samþykktar, birgjareikningar</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Inbound List Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3525611518 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reads one invoice by its id or by firm id and invoice number. Beta endpoint.</source>
+          <target>Les einn reikning eftir auðkenni eða auðkenni stofu og reikningsnúmeri. Beta-endapunktur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Les einn reikning eftir auðkenni eða auðkenni stofu og reikningsnúmeri. Beta-endapunktur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Invoice Get Impl ori - Method GetDescription - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3525611518 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>invoice detail, invoice number, credit note</source>
+          <target>reikningsupplýsingar, reikningsnúmer, kreditreikningur</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=reikningsupplýsingar, reikningsnúmer, kreditreikningur</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Invoice Get Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3784483906 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists invoices visible to the current Manor user. Beta endpoint; the upstream contract may change.</source>
+          <target>Sýnir reikninga sem notandi Manor má sjá. Beta-endapunktur; samningur Manor getur breyst.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sýnir reikninga sem notandi Manor má sjá. Beta-endapunktur; samningur Manor getur breyst.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Invoice List Impl ori - Method GetDescription - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3784483906 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>invoices, credit notes, invoice list</source>
+          <target>reikningar, kreditreikningar, reikningalisti</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=reikningar, kreditreikningar, reikningalisti</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Invoice List Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 860454080 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists products for one project. Requires the Manor permission manage_products.</source>
+          <target>Sýnir vörur eins verks. Krefst heimildarinnar manage_products í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sýnir vörur eins verks. Krefst heimildarinnar manage_products í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Product List Impl ori - Method GetDescription - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 860454080 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>products, special price, billable quantity</source>
+          <target>vörur, sérverð, magn til greiðslu</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=vörur, sérverð, magn til greiðslu</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Product List Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3119431345" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accepted mode uses from and to; status and updatedSince are not supported.</source>
+          <target>Samþykktarhamur notar from og to; status og updatedSince eru ekki studd.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Samþykktarhamur notar from og to; status og updatedSince eru ekki studd.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType AcceptedFiltersErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1118469185" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Required in accepted mode: start date, YYYY-MM-DD.</source>
+          <target>Skylda í samþykktarham: upphafsdagur, YYYY-MM-DD.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skylda í samþykktarham: upphafsdagur, YYYY-MM-DD.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType AcceptedFromTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3571707222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Required in accepted mode: end date, YYYY-MM-DD; must not precede from.</source>
+          <target>Skylda í samþykktarham: lokadagur, YYYY-MM-DD; má ekki vera á undan from.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skylda í samþykktarham: lokadagur, YYYY-MM-DD; má ekki vera á undan from.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType AcceptedToTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 862142230" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Billable hours; may be less than hours.</source>
+          <target>Tímar til greiðslu; geta verið færri en skráðir tímar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tímar til greiðslu; geta verið færri en skráðir tímar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType BillableHoursTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3086109622" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity to bill.</source>
+          <target>Magn til greiðslu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Magn til greiðslu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType BillableQuantityTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3054993558" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor JSON with canonical field names, preserved without legacy alias mapping.</source>
+          <target>JSON frá Manor með gildandi reitaheitum, varðveitt án vörpunar á eldri samheiti.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=JSON frá Manor með gildandi reitaheitum, varðveitt án vörpunar á eldri samheiti.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType CanonicalTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3154282853" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of returned rows after local filtering and de-duplication where applicable.</source>
+          <target>Fjöldi skilaðra færslna eftir staðbundna síun og fjarlægingu tvítekninga þar sem við á.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Fjöldi skilaðra færslna eftir staðbundna síun og fjarlægingu tvítekninga þar sem við á.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType CountTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1492863324" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ISO 8601 UTC timestamp ending in Z, sent as created_since.</source>
+          <target>ISO 8601 UTC-tímastimpill sem endar á Z, sendur sem created_since.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=ISO 8601 UTC-tímastimpill sem endar á Z, sendur sem created_since.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType CreatedTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1282664687" size-unit="char" translate="yes" xml:space="preserve">
+          <source>True for a credit note.</source>
+          <target>Satt fyrir kreditreikning.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Satt fyrir kreditreikning.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType CreditTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 2154816665" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Client currency.</source>
+          <target>Gjaldmiðill viðskiptamanns.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Gjaldmiðill viðskiptamanns.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType CurrencyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1477128594" size-unit="char" translate="yes" xml:space="preserve">
+          <source>from must be on or before to.</source>
+          <target>from verður að vera á undan eða sama dag og to.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=from verður að vera á undan eða sama dag og to.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType DateRangeErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 350441376" size-unit="char" translate="yes" xml:space="preserve">
+          <source>One day, YYYY-MM-DD. Sent directly to Manor. For several days, call once per day.</source>
+          <target>Einn dagur, YYYY-MM-DD. Sent beint til Manor. Fyrir marga daga, kallaðu einu sinni á dag.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Einn dagur, YYYY-MM-DD. Sent beint til Manor. Fyrir marga daga, kallaðu einu sinni á dag.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType DateTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1427565258" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text printed on the work report.</source>
+          <target>Texti í vinnuskýrslu.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Texti í vinnuskýrslu.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType DescriptionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3590137975" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discount percentage.</source>
+          <target>Afsláttarprósenta.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Afsláttarprósenta.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType DiscountTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3289633945" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check parameters. For products grant manage_products; for inbound invoices grant manage_inbound_invoices. Check key permissions for 401/403, the identifier for 404 and input for 422.</source>
+          <target>Athugaðu stikur. Fyrir vörur veittu manage_products; fyrir innkaupareikninga manage_inbound_invoices. Athugaðu lykilheimildir fyrir 401/403, auðkenni fyrir 404 og gögn fyrir 422.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Athugaðu stikur. Fyrir vörur veittu manage_products; fyrir innkaupareikninga manage_inbound_invoices. Athugaðu lykilheimildir fyrir 401/403, auðkenni fyrir 404 og gögn fyrir 422.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ErrorFixTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1752865317" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid/missing input; HTTP 401/403 (key or permissions), 404 (not found), 422 (validation).</source>
+          <target>Ógild/ótilgreind gögn; HTTP 401/403 (lykill eða heimildir), 404 (fannst ekki), 422 (gagnaprófun).</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Ógild/ótilgreind gögn; HTTP 401/403 (lykill eða heimildir), 404 (fannst ekki), 422 (gagnaprófun).</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ErrorsTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3923927800" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Validation runs before transport. Manor errors are mapped by the shared client; no credentials or upstream response body are included.</source>
+          <target>Gagnaprófun fer fram fyrir flutning. Sameiginlegur biðlari varpar Manor-villum; engar aðgangsupplýsingar eða hrátt villusvar fylgja.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Gagnaprófun fer fram fyrir flutning. Sameiginlegur biðlari varpar Manor-villum; engar aðgangsupplýsingar eða hrátt villusvar fylgja.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ErrorWhenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3642584667" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exchange rate against the firm default currency.</source>
+          <target>Gengi miðað við sjálfgefinn gjaldmiðil stofunnar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Gengi miðað við sjálfgefinn gjaldmiðil stofunnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ExchangeRateTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3105350031" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positive Manor firm id. Invoice.Get requires this with invoiceNumber, unless invoiceId is used.</source>
+          <target>Jákvætt auðkenni stofu í Manor. Invoice.Get krefst þess með invoiceNumber nema invoiceId sé notað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Jákvætt auðkenni stofu í Manor. Invoice.Get krefst þess með invoiceNumber nema invoiceId sé notað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType FirmIdTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 2094240698" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start date, YYYY-MM-DD, sent as from.</source>
+          <target>Upphafsdagur, YYYY-MM-DD, sendur sem from.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Upphafsdagur, YYYY-MM-DD, sendur sem from.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType FromTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 820278149" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Recorded hours.</source>
+          <target>Skráðir tímar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skráðir tímar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType HoursTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1821060290" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requires manage_inbound_invoices. Updated mode is inclusive: duplicate ids across pages collapse to the last occurrence before optional status filtering in BC. Without status all states are returned. Poll from the last updated_at and de-duplicate ids across separate calls too. Accepted mode requires from/to and does not accept status or updatedSince.</source>
+          <target>Krefst manage_inbound_invoices. Uppfærsluhamur tekur upphafsgildi með: tvítekin auðkenni á síðum falla saman í síðustu færslu áður en valfrjáls stöðusía er keyrð í BC. Án status fylgja allar stöður. Sæktu frá síðasta updated_at og fjarlægðu tvítekin auðkenni milli aðskildra kalla líka. Samþykktarhamur krefst from/to og tekur ekki við status eða updatedSince.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Krefst manage_inbound_invoices. Uppfærsluhamur tekur upphafsgildi með: tvítekin auðkenni á síðum falla saman í síðustu færslu áður en valfrjáls stöðusía er keyrð í BC. Án status fylgja allar stöður. Sæktu frá síðasta updated_at og fjarlægðu tvítekin auðkenni milli aðskildra kalla líka. Samþykktarhamur krefst from/to og tekur ekki við status eða updatedSince.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType InboundNotesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1190103473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Internal note, never printed on invoices or work reports.</source>
+          <target>Innri athugasemd, aldrei birt á reikningum eða vinnuskýrslum.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Innri athugasemd, aldrei birt á reikningum eða vinnuskýrslum.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType InternalNoteTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 559516744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positive invoice id; mutually exclusive with firmId and invoiceNumber.</source>
+          <target>Jákvætt reikningsauðkenni; má ekki nota með firmId eða invoiceNumber.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Jákvætt reikningsauðkenni; má ekki nota með firmId eða invoiceNumber.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType InvoiceIdTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 892988862" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Beta: Manor may change this endpoint contract. Only invoices visible to the key user are returned. One invoice has one payer; summarised lines do not map to individual time entries. is_credit identifies credit notes; original_invoice_number references the original invoice. Invoice.Get uses invoiceId alone or firmId with invoiceNumber.</source>
+          <target>Beta: Manor getur breytt samningi endapunktsins. Aðeins reikningum sem notandi lykilsins má sjá er skilað. Einn reikningur hefur einn greiðanda; samanteknar línur tengjast ekki einstökum tímafærslum. is_credit auðkennir kreditreikninga; original_invoice_number vísar á upphaflegan reikning. Invoice.Get notar aðeins invoiceId eða firmId með invoiceNumber.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Beta: Manor getur breytt samningi endapunktsins. Aðeins reikningum sem notandi lykilsins má sjá er skilað. Einn reikningur hefur einn greiðanda; samanteknar línur tengjast ekki einstökum tímafærslum. is_credit auðkennir kreditreikninga; original_invoice_number vísar á upphaflegan reikning. Invoice.Get notar aðeins invoiceId eða firmId með invoiceNumber.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType InvoiceNotesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1351099406" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positive invoice number. Requires firmId, without invoiceId.</source>
+          <target>Jákvætt reikningsnúmer. Krefst firmId, án invoiceId.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Jákvætt reikningsnúmer. Krefst firmId, án invoiceId.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType InvoiceNumberTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1479871107" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Supply invoiceId alone, or both firmId and invoiceNumber.</source>
+          <target>Tilgreindu aðeins invoiceId eða bæði firmId og invoiceNumber.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tilgreindu aðeins invoiceId eða bæði firmId og invoiceNumber.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType InvoiceSelectorErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 2706729743" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice lines may be itemised or summarised by rate; summarised lines do not identify individual time entries.</source>
+          <target>Reikningslínur geta verið sundurliðaðar eða teknar saman eftir taxta; samanteknar línur auðkenna ekki einstakar tímafærslur.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Reikningslínur geta verið sundurliðaðar eða teknar saman eftir taxta; samanteknar línur auðkenna ekki einstakar tímafærslur.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType LinesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3340553496" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Maximum pages, 1..1000; default 100. Exceeding the limit fails without returning partial data.</source>
+          <target>Hámarksfjöldi síðna, 1..1000; sjálfgefið 100. Ef mörkum er náð er villu skilað án ófullkominna gagna.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Hámarksfjöldi síðna, 1..1000; sjálfgefið 100. Ef mörkum er náð er villu skilað án ófullkominna gagna.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType MaxPagesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3702260186" size-unit="char" translate="yes" xml:space="preserve">
+          <source>mode must be accepted or updated.</source>
+          <target>mode verður að vera accepted eða updated.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=mode verður að vera accepted eða updated.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ModeErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 4037599533" size-unit="char" translate="yes" xml:space="preserve">
+          <source>accepted or updated. Requires manage_inbound_invoices in Manor.</source>
+          <target>accepted eða updated. Krefst manage_inbound_invoices í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=accepted eða updated. Krefst manage_inbound_invoices í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ModeTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 699367244" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Original invoice number for a credit note.</source>
+          <target>Númer upphaflegs reiknings fyrir kreditreikning.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Númer upphaflegs reiknings fyrir kreditreikning.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType OriginalInvoiceTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1391197565" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor has more than %1 pages. Narrow the filters or increase maxPages; no partial result was returned.</source>
+          <target>Manor hefur fleiri en %1 blaðsíður. Þrengdu síur eða hækkaðu maxPages; engin ófullkomin niðurstaða var skilað.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = page limit; is-IS=Manor hefur fleiri en %1 blaðsíður. Þrengdu síur eða hækkaðu maxPages; engin ófullkomin niðurstaða var skilað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType PageLimitErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1666570330" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists read all pages, preserving canonical JSON. perPage defaults to 100 (1..100); maxPages defaults to 100 (1..1000). The page limit fails without partial results. Unknown parameters are refused.</source>
+          <target>Listar lesa allar síður og varðveita gildandi JSON. perPage er sjálfgefið 100 (1..100); maxPages er sjálfgefið 100 (1..1000). Síðutakmörk valda villu án ófullkominna niðurstaðna. Óþekktum stikum er hafnað.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Listar lesa allar síður og varðveita gildandi JSON. perPage er sjálfgefið 100 (1..100); maxPages er sjálfgefið 100 (1..1000). Síðutakmörk valda villu án ófullkominna niðurstaðna. Óþekktum stikum er hafnað.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType PagingTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invalid or missing parameter: %1.</source>
+          <target>Ógild eða ótilgreind stika: %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name; is-IS=Ógild eða ótilgreind stika: %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 276584392" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rows per upstream page, 1..100; default 100. All pages are read.</source>
+          <target>Færslur á síðu í Manor, 1..100; sjálfgefið 100. Allar síður eru lesnar.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Færslur á síðu í Manor, 1..100; sjálfgefið 100. Allar síður eru lesnar.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType PerPageTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1228694775" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Special unit price when set.</source>
+          <target>Sérverð á einingu þegar tilgreint.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sérverð á einingu þegar tilgreint.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType PriceTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 904211724" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requires manage_products in Manor. Negative quantities are valid. price is a special unit price; custom_discount is a percentage.</source>
+          <target>Krefst manage_products í Manor. Neikvætt magn er gilt. price er sérverð á einingu; custom_discount er prósenta.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Krefst manage_products í Manor. Neikvætt magn er gilt. price er sérverð á einingu; custom_discount er prósenta.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ProductNotesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 4005370148" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Positive Manor project id.</source>
+          <target>Jákvætt auðkenni verks í Manor.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Jákvætt auðkenni verks í Manor.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ProjectIdTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 1019493597" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity; negative quantities can deduct prepayments on a final invoice.</source>
+          <target>Magn; neikvætt magn getur dregið fyrirframgreiðslur frá lokareikningi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Magn; neikvætt magn getur dregið fyrirframgreiðslur frá lokareikningi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType QuantityTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 2717262602" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manor returned an invalid read response.</source>
+          <target>Manor skilaði ógildu lestrarsvari.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Manor skilaði ógildu lestrarsvari.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ResponseErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3152294443" size-unit="char" translate="yes" xml:space="preserve">
+          <source>status must be not_assigned, pending, accepted or rejected.</source>
+          <target>status verður að vera not_assigned, pending, accepted eða rejected.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=status verður að vera not_assigned, pending, accepted eða rejected.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType StatusErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 2444345320" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Updated mode only: not_assigned (unassigned), pending (awaiting approval), accepted (approved), rejected (refused). Filtered in BC after de-duplication. Omit for all statuses.</source>
+          <target>Aðeins í uppfærsluham: not_assigned (óúthlutað), pending (bíður samþykktar), accepted (samþykkt), rejected (hafnað). Síað í BC eftir að tvítekningar eru fjarlægðar. Sleppt fyrir allar stöður.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins í uppfærsluham: not_assigned (óúthlutað), pending (bíður samþykktar), accepted (samþykkt), rejected (hafnað). Síað í BC eftir að tvítekningar eru fjarlægðar. Sleppt fyrir allar stöður.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType StatusTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3937011365" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Success.</source>
+          <target>Tókst.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Tókst.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType SuccessTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3331878522" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only entries visible to the key user are returned; limited project access may show only own entries. No invoiced flag is returned, so billed and unbilled time cannot be distinguished. Invoiced entries are locked in Manor; payroll confirmation does not lock them. No date range: call once per day.</source>
+          <target>Aðeins færslum sem notandi lykilsins má sjá er skilað; takmarkaður verkaaðgangur getur aðeins sýnt eigin færslur. Engin reikningsstaða fylgir svo ekki má greina reikningsfært frá óreikningsfærðu. Reikningsfærðar færslur eru læstar í Manor; launastaðfesting læsir þeim ekki. Ekkert dagabil: kallaðu einu sinni á dag.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Aðeins færslum sem notandi lykilsins má sjá er skilað; takmarkaður verkaaðgangur getur aðeins sýnt eigin færslur. Engin reikningsstaða fylgir svo ekki má greina reikningsfært frá óreikningsfærðu. Reikningsfærðar færslur eru læstar í Manor; launastaðfesting læsir þeim ekki. Ekkert dagabil: kallaðu einu sinni á dag.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType TimeNotesTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3532142925" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End date, YYYY-MM-DD, sent as to. Must not precede from.</source>
+          <target>Lokadagur, YYYY-MM-DD, sendur sem to. Má ekki vera á undan from.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Lokadagur, YYYY-MM-DD, sendur sem to. Má ekki vera á undan from.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType ToTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3788215960" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown parameter: %1.</source>
+          <target>Óþekkt stika: %1.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = parameter name; is-IS=Óþekkt stika: %1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType UnknownParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3427990757" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Updated mode uses updatedSince, not from or to.</source>
+          <target>Uppfærsluhamur notar updatedSince, ekki from eða to.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Uppfærsluhamur notar updatedSince, ekki from eða to.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType UpdatedFiltersErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 3717877800" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Required in updated mode: ISO 8601 UTC timestamp ending in Z. Inclusive updated_since.</source>
+          <target>Skylda í uppfærsluham: ISO 8601 UTC-tímastimpill sem endar á Z. updated_since er með upphafsgildi.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Skylda í uppfærsluham: ISO 8601 UTC-tímastimpill sem endar á Z. updated_since er með upphafsgildi.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType UpdatedRequiredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 2738999831" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ISO 8601 UTC timestamp ending in Z, sent as updated_since.</source>
+          <target>ISO 8601 UTC-tímastimpill sem endar á Z, sendur sem updated_since.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=ISO 8601 UTC-tímastimpill sem endar á Z, sendur sem updated_since.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType UpdatedTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - NamedType 2659934912" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Optional positive Manor user id, sent as user_id.</source>
+          <target>Valfrjálst jákvætt notandaauðkenni í Manor, sent sem user_id.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Valfrjálst jákvætt notandaauðkenni í Manor, sent sem user_id.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - NamedType UserIdTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - Method 4077369804 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lists visible time entries for one project. The date filter is one day; invoiced state is not returned.</source>
+          <target>Sýnir sýnilegar tímafærslur eins verks. Dagsetningarsía nær yfir einn dag; reikningsstaða fylgir ekki.</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=Sýnir sýnilegar tímafærslur eins verks. Dagsetningarsía nær yfir einn dag; reikningsstaða fylgir ekki.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - Method GetDescription - NamedType DescriptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1691528878 - Method 1027590672 - NamedType 1290244428" size-unit="char" translate="yes" xml:space="preserve">
+          <source>time entries, project hours, billable time</source>
+          <target>tímafærslur, verktímar, tímar til greiðslu</target>
+          <note from="Developer" annotates="general" priority="2">is-IS=tímafærslur, verktímar, tímar til greiðslu</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mnr Time List Impl ori - Method GetKeywords - NamedType KeywordsLbl</note>
+        </trans-unit>
       </group>
     </body>
   </file>

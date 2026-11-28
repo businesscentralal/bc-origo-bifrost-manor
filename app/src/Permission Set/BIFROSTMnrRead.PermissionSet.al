@@ -1,7 +1,7 @@
 namespace Origo.Bifrost.Manor;
 
 /// <summary>
-/// Read-only Bifrost Manor role. Grants setup read access without key management. The connection test can update its timestamp indirectly.
+/// Read-only Bifrost Manor role. Grants setup read access and execution of the approved read message types; no key management. The connection test can update its timestamp indirectly.
 /// </summary>
 permissionset 10035638 "BIFROST MnrRead ori"
 {
@@ -26,6 +26,11 @@ permissionset 10035638 "BIFROST MnrRead ori"
                   codeunit "Manor Error Mapper ori" = X,
                   codeunit "Manor Query Builder ori" = X,
                   codeunit "Manor Telemetry ori" = X,
+                  codeunit "Mnr Time List Impl ori" = X,
+                  codeunit "Mnr Product List Impl ori" = X,
+                  codeunit "Mnr Invoice List Impl ori" = X,
+                  codeunit "Mnr Invoice Get Impl ori" = X,
+                  codeunit "Mnr Inbound List Impl ori" = X,
                   codeunit "Manor Read Mgt ori" = X,
                   codeunit "Manor Read Parts ori" = X,
                   codeunit "Manor Client List Impl ori" = X,

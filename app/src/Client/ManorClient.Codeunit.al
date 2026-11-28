@@ -14,11 +14,11 @@ codeunit 10035651 "Manor Client ori"
 
     /// <summary>Reads one resource or one page.</summary>
     /// <param name="RelativePath">The path below /external-api/v1, without host or query.</param>
-    /// <param name="Query">The URL query without a leading question mark, built with Manor Query Builder ori.</param>
+    /// <param name="Query">The URL query without a leading question mark, built with Manor QueryBuilder Builder ori.</param>
     /// <returns>The response body.</returns>
-    procedure Get(RelativePath: Text; Query: Text): Text
+    procedure Get(RelativePath: Text; QueryBuilder: Text): Text
     begin
-        exit(Execute('GET', RelativePath, Query, ''));
+        exit(Execute('GET', RelativePath, QueryBuilder, ''));
     end;
 
     /// <summary>Reads every page of a list and merges the data arrays. Stops at meta.last_page or MaxPages.</summary>
@@ -26,7 +26,7 @@ codeunit 10035651 "Manor Client ori"
     /// <param name="Query">The URL query; page is replaced and per_page is capped at 100 (default 100).</param>
     /// <param name="MaxPages">The maximum number of pages to read (at least 1).</param>
     /// <returns>All data items of the pages read.</returns>
-    procedure GetAll(RelativePath: Text; Query: Text; MaxPages: Integer): JsonArray
+    procedure GetAll(RelativePath: Text; QueryBuilder: Text; MaxPages: Integer): JsonArray
     var
         Result: JsonArray;
         PageJson: JsonObject;
@@ -35,15 +35,15 @@ codeunit 10035651 "Manor Client ori"
         LastToken: JsonToken;
         Item: JsonToken;
         BaseQuery: Text;
-        Page: Integer;
+        PageNo: Integer;
         LastPage: Integer;
     begin
         if MaxPages < 1 then
             Error(InvalidMaxPagesErr);
-        BaseQuery := NormalizePagingQuery(Query);
-        Page := 1;
+        BaseQuery := NormalizePagingQuery(QueryBuilder);
+        PageNo := 1;
         repeat
-            if not PageJson.ReadFrom(Execute('GET', RelativePath, BaseQuery + '&page=' + Format(Page, 0, 9), '')) then
+            if not PageJson.ReadFrom(Execute('GET', RelativePath, BaseQuery + '&page=' + Format(PageNo, 0, 9), '')) then
                 Error(UnexpectedResponseErr);
             if not (PageJson.Get('data', DataToken) and DataToken.IsArray()) then
                 Error(UnexpectedResponseErr);
@@ -53,8 +53,8 @@ codeunit 10035651 "Manor Client ori"
             if PageJson.Get('meta', MetaToken) and MetaToken.IsObject() then
                 if MetaToken.AsObject().Get('last_page', LastToken) and LastToken.IsValue() then
                     LastPage := LastToken.AsValue().AsInteger();
-            Page += 1;
-        until (Page > LastPage) or (Page > MaxPages);
+            PageNo += 1;
+        until (PageNo > LastPage) or (PageNo > MaxPages);
         exit(Result);
     end;
 
@@ -85,12 +85,12 @@ codeunit 10035651 "Manor Client ori"
         exit(Execute('GET', RelativePath, Query, '', true));
     end;
 
-    local procedure Execute(Method: Text; RelativePath: Text; Query: Text; Body: Text): Text
+    local procedure Execute(Method: Text; RelativePath: Text; QueryBuilder: Text; Body: Text): Text
     begin
-        exit(Execute(Method, RelativePath, Query, Body, false));
+        exit(Execute(Method, RelativePath, QueryBuilder, Body, false));
     end;
 
-    local procedure Execute(Method: Text; RelativePath: Text; Query: Text; Body: Text; SanitizeReadErrors: Boolean): Text
+    local procedure Execute(Method: Text; RelativePath: Text; QueryBuilder: Text; Body: Text; SanitizeReadErrors: Boolean): Text
     var
         Setup: Record "Manor Setup ori";
         Mapper: Codeunit "Manor Error Mapper ori";
@@ -102,7 +102,7 @@ codeunit 10035651 "Manor Client ori"
         Setup.Get();
         Transport := Setup.Environment;
         for Attempt := 1 to 2 do begin
-            if Transport.Send(Method, RelativePath, Query, Body, Response) then;
+            if Transport.Send(Method, RelativePath, QueryBuilder, Body, Response) then;
             Telemetry.LogCall(Method, RelativePath, Response.GetStatusCode());
             if (Response.GetStatusCode() >= 200) and (Response.GetStatusCode() < 300) then
                 exit(Response.GetBody());
@@ -114,9 +114,22 @@ codeunit 10035651 "Manor Client ori"
                 // Read errors need no server-supplied validation text, which may echo credentials.
                 if SanitizeReadErrors and (Response.GetStatusCode() = 422) then
                     Mapper.RaiseError(422, '{}');
-                Mapper.RaiseError(Response.GetStatusCode(), Response.GetBody());
+                RaiseMappedError(Mapper, RelativePath, Response);
             end;
         end;
+    end;
+
+    local procedure RaiseMappedError(var Mapper: Codeunit "Manor Error Mapper ori"; Path: Text; var Response: Codeunit "Manor Response ori")
+    begin
+        if (Response.GetStatusCode() = 401) or (Response.GetStatusCode() = 403) then begin
+            if Path.Contains('/product') then
+                Mapper.RaiseError(Response.GetStatusCode(), 'manage_products');
+            if Path.StartsWith('/inbound-invoice/') then
+                Mapper.RaiseError(Response.GetStatusCode(), 'manage_inbound_invoices');
+        end;
+        if (Path.StartsWith('/invoice')) or (Path.StartsWith('/inbound-invoice/')) or Path.EndsWith('/time') or Path.Contains('/product') then
+            Mapper.RaiseError(Response.GetStatusCode(), '');
+        Mapper.RaiseError(Response.GetStatusCode(), Response.GetBody());
     end;
 
     local procedure GetBackoff(): Integer
@@ -124,14 +137,14 @@ codeunit 10035651 "Manor Client ori"
         exit(500);
     end;
 
-    local procedure NormalizePagingQuery(Query: Text): Text
+    local procedure NormalizePagingQuery(QueryBuilder: Text): Text
     var
         Part: Text;
         PerPage: Integer;
         Result: Text;
     begin
         PerPage := 100;
-        foreach Part in Query.Split('&') do
+        foreach Part in QueryBuilder.Split('&') do
             case true of
                 Part = '':
                     ;

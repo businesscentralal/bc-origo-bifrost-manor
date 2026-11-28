@@ -14,7 +14,7 @@ codeunit 10035652 "Manor Error Mapper ori"
         UnavailableErr: Label 'Manor is unavailable or busy (HTTP %1). Try again later.', Comment = '%1 = HTTP status; is-IS=Manor er ekki tiltækt eða of upptekið (HTTP %1). Reyndu aftur síðar.';
         UnreachableErr: Label 'Could not reach Manor. Try again later.', Comment = 'is-IS=Ekki náðist samband við Manor. Reyndu aftur síðar.';
         OtherErr: Label 'Manor returned HTTP status %1.', Comment = '%1 = HTTP status; is-IS=Manor skilaði HTTP-stöðu %1.';
-        PermissionNamesTxt: Label 'manage_activities,manage_inbound_invoices,manage_rates,set_alternative_user_of_times', Locked = true;
+        PermissionNamesTxt: Label 'manage_activities,manage_inbound_invoices,manage_rates,set_alternative_user_of_times,manage_products', Locked = true;
 
     /// <summary>True for transport failures, 429 and 5xx, which are retried once.</summary>
     procedure IsRetryable(StatusCode: Integer): Boolean
