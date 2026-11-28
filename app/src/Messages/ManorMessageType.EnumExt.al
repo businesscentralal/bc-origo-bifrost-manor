@@ -3,7 +3,7 @@ namespace Origo.Bifrost.Manor;
 using Origo.Bifrost;
 
 /// <summary>Registers the six Manor write message types.</summary>
-enumextension 10035677 "Manor Message Type ori" extends "Message Type ori"
+enumextension 10035677 "Manor Write Msg Type ori" extends "Message Type ori"
 {
     /// <summary>Creates a Manor client (POST /client). Refuses a duplicate national_id and names the existing client id.</summary>
     value(10035671; "Manor.Client.Create")

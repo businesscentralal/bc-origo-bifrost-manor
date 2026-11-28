@@ -215,12 +215,11 @@ codeunit 10035681 "Manor Read Parts ori"
         if MessageType = 'Manor.Activity.List' then
             Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::MissingParameter, RequiredErrLbl, RequiredFixLbl));
         Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::InvalidParameterFormat, FormatErrLbl, FormatFixLbl));
-        if MessageType in ['Manor.Client.Get', 'Manor.Project.Get', 'Manor.Activity.List'] then begin
+        if MessageType in ['Manor.Client.Get', 'Manor.Project.Get', 'Manor.Activity.List'] then
             if MessageType = 'Manor.Client.Get' then
                 Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::RecordNotFound, NotFoundErrLbl, NationalIdNotFoundFixLbl))
             else
                 Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::RecordNotFound, NotFoundErrLbl, NotFoundFixLbl));
-        end;
         if MessageType = 'Manor.Project.Get' then
             Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::AmbiguousRecord, AmbiguousErrLbl, AmbiguousFixLbl));
         Errors.Add(ContractMgt.ErrorEntry("Bifrost Error Code ori"::PreconditionFailed, NotSetUpErrLbl, NotSetUpFixLbl));
