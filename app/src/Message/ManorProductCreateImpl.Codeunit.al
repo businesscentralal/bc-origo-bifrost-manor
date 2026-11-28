@@ -3,7 +3,7 @@ namespace Origo.Bifrost.Manor;
 using Origo.Bifrost;
 
 /// <summary>Create a Manor product entry. Implements execution, bilingual discovery and the contract chapters.</summary>
-codeunit 10035679 "Manor Product Create Impl ori" implements "Msg Interface ori", "Msg Discovery ori", "Msg Contract ori"
+codeunit 10035684 "Manor Product Create Impl ori" implements "Msg Interface ori", "Msg Discovery ori", "Msg Contract ori"
 {
     Access = Internal;
 

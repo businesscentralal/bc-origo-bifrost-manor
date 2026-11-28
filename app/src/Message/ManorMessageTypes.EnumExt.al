@@ -3,7 +3,7 @@ namespace Origo.Bifrost.Manor;
 using Origo.Bifrost;
 
 /// <summary>Registers the three Manor creates approved by Gunnar on 25 November 2026.</summary>
-enumextension 10035677 "Manor Message Types ori" extends "Message Type ori"
+enumextension 10035683 "Manor Message Types ori" extends "Message Type ori"
 {
     value(10035677; "Manor.TimeEntry.Create")
     {

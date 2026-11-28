@@ -22,6 +22,14 @@ codeunit 10035652 "Manor Error Mapper ori"
         exit((StatusCode = 0) or (StatusCode = 429) or (StatusCode >= 500));
     end;
 
+    /// <summary>Tells whether an error text is the mapped Manor "not found" message.</summary>
+    /// <param name="MessageText">The error text, normally GetLastErrorText().</param>
+    /// <returns>True when Manor answered 404.</returns>
+    procedure IsNotFoundMessage(MessageText: Text): Boolean
+    begin
+        exit(MessageText = NotFoundErr);
+    end;
+
     /// <summary>Raises the documented error for a failed response.</summary>
     procedure RaiseError(StatusCode: Integer; Body: Text)
     begin
@@ -32,7 +40,7 @@ codeunit 10035652 "Manor Error Mapper ori"
                 RaiseRejected(Body);
             StatusCode = 404:
                 Error(NotFoundErr);
-            StatusCode = 422:
+            (StatusCode = 400) or (StatusCode = 422):
                 RaiseValidation(Body);
             IsRetryable(StatusCode):
                 Error(UnavailableErr, StatusCode);

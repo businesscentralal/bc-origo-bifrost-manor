@@ -21,6 +21,8 @@ permissionset 98201 "Manor Setup Test ori"
         codeunit "Manor Scaffold Tst ori" = X,
         codeunit "Manor Client Tst ori" = X,
         codeunit "Manor Creates Tst ori" = X,
+        codeunit "Manor Write Tst ori" = X,
+        codeunit "Msg Contract Mgt ori" = X,
         codeunit "Manor Read Tst ori" = X,
         codeunit "Manor Read Probe ori" = X,
         codeunit "Manor Read Types Tst ori" = X,

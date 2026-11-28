@@ -3,7 +3,7 @@ namespace Origo.Bifrost.Manor;
 using Origo.Bifrost;
 
 /// <summary>Create a Manor expense. Implements execution, bilingual discovery and the contract chapters.</summary>
-codeunit 10035678 "Manor Expense Create Impl ori" implements "Msg Interface ori", "Msg Discovery ori", "Msg Contract ori"
+codeunit 10035683 "Manor Expense Create Impl ori" implements "Msg Interface ori", "Msg Discovery ori", "Msg Contract ori"
 {
     Access = Internal;
 
