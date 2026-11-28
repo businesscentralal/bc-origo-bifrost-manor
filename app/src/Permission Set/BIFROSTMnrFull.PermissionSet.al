@@ -11,6 +11,10 @@ permissionset 10035637 "BIFROST MnrFull ori"
     IncludedPermissionSets = "BIFROST MnrRead ori";
     Permissions = tabledata "Manor Setup ori" = RIMD,
                   page "Manor API Key ori" = X,
+                  codeunit "Manor Create Mgt ori" = X,
+                  codeunit "Manor Time Create Impl ori" = X,
+                  codeunit "Manor Expense Create Impl ori" = X,
+                  codeunit "Manor Product Create Impl ori" = X,
                   codeunit "Manor Client Create Impl ori" = X,
                   codeunit "Manor Client Update Impl ori" = X,
                   codeunit "Manor Project Create Impl ori" = X,

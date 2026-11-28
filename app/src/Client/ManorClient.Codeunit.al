@@ -67,6 +67,24 @@ codeunit 10035651 "Manor Client ori"
         exit(Execute('POST', RelativePath, '', Body));
     end;
 
+    /// <summary>Creates once, with a safe operation-specific permission hint. A create is never retried automatically.</summary>
+    procedure Post(RelativePath: Text; Body: Text; RequiredPermission: Text): Text
+    var
+        Setup: Record "Manor Setup ori";
+        Mapper: Codeunit "Manor Error Mapper ori";
+        Telemetry: Codeunit "Manor Telemetry ori";
+        Response: Codeunit "Manor Response ori";
+        Transport: Interface "Manor Transport ori";
+    begin
+        Setup.Get();
+        Transport := Setup.Environment;
+        if Transport.Send('POST', RelativePath, '', Body, Response) then;
+        Telemetry.LogCall('POST', RelativePath, Response.GetStatusCode());
+        if (Response.GetStatusCode() >= 200) and (Response.GetStatusCode() < 300) then
+            exit(Response.GetBody());
+        Mapper.RaiseCreateError(Response.GetStatusCode(), RequiredPermission);
+    end;
+
     /// <summary>Updates data with a JSON body.</summary>
     /// <param name="RelativePath">The path below /external-api/v1.</param>
     /// <param name="Body">The JSON request body.</param>

@@ -49,6 +49,15 @@ codeunit 10035652 "Manor Error Mapper ori"
         end;
     end;
 
+    /// <summary>Returns localised create errors without copying provider text, request values or credentials.</summary>
+    procedure RaiseCreateError(StatusCode: Integer; RequiredPermission: Text)
+    begin
+        if StatusCode in [401, 403] then
+            Error(RejectedPermissionErr, RequiredPermission);
+        // Empty provider text deliberately prevents reflected secrets in validation errors.
+        RaiseError(StatusCode, '');
+    end;
+
     /// <summary>Classifies the text of an error raised by <see cref="RaiseError"/> in the current language.</summary>
     /// <param name="ErrorText">The error text, as returned by GetLastErrorText.</param>
     /// <returns>403 for a rejected key or permission, 404 for not found, 422 for rejected data, 503 for an unavailable or unreachable Manor, otherwise 0.</returns>

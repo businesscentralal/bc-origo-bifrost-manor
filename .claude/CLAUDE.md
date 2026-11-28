@@ -60,6 +60,12 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Codeunit | 10035682 | Manor Read Mgt ori |
 | Test codeunit | 98240 | Manor Read Msg Tst ori |
 
+| Codeunit | 10035650 | Manor Create Mgt ori |
+| Enum extension | 10035683 | Manor Message Types ori |
+| Codeunit | 10035677 | Manor Time Create Impl ori |
+| Codeunit | 10035683 | Manor Expense Create Impl ori |
+| Codeunit | 10035684 | Manor Product Create Impl ori |
+| Test codeunit | 98270 | Manor Creates Tst ori |
 | Enum extension | 10035655 | Manor Message Type ori |
 | Codeunit | 10035656 | Manor Connection Test Impl ori |
 | Codeunit | 10035657 | Manor Firm List Impl ori |
