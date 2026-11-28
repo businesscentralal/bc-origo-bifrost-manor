@@ -76,7 +76,21 @@ codeunit 10035651 "Manor Client ori"
         exit(Execute('PUT', RelativePath, '', Body));
     end;
 
+    /// <summary>Reads for a message handler without echoing upstream validation details.</summary>
+    /// <param name="RelativePath">The approved read endpoint.</param>
+    /// <param name="Query">The encoded query.</param>
+    /// <returns>The response body.</returns>
+    procedure GetRead(RelativePath: Text; Query: Text): Text
+    begin
+        exit(Execute('GET', RelativePath, Query, '', true));
+    end;
+
     local procedure Execute(Method: Text; RelativePath: Text; QueryBuilder: Text; Body: Text): Text
+    begin
+        exit(Execute(Method, RelativePath, QueryBuilder, Body, false));
+    end;
+
+    local procedure Execute(Method: Text; RelativePath: Text; QueryBuilder: Text; Body: Text; SanitizeReadErrors: Boolean): Text
     var
         Setup: Record "Manor Setup ori";
         Mapper: Codeunit "Manor Error Mapper ori";
@@ -94,8 +108,14 @@ codeunit 10035651 "Manor Client ori"
                 exit(Response.GetBody());
             if (Attempt = 1) and Mapper.IsRetryable(Response.GetStatusCode()) then
                 Sleep(GetBackoff())
-            else
+            else begin
+                if (RelativePath = 'rate') and (Response.GetStatusCode() = 403) then
+                    Mapper.RaiseError(403, 'manage_rates');
+                // Read errors need no server-supplied validation text, which may echo credentials.
+                if SanitizeReadErrors and (Response.GetStatusCode() = 422) then
+                    Mapper.RaiseError(422, '{}');
                 RaiseMappedError(Mapper, RelativePath, Response);
+            end;
         end;
     end;
 

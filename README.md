@@ -31,6 +31,10 @@ The test app targets OnPrem because AL's native `HttpClientHandler` is available
 
 ## Read message types
 
+The approved connection, firm, user and rate reads are documented in [English](docs/manor-read-messages.en-US.md) and [Icelandic](docs/manor-read-messages.is-IS.md). Use `BIFROST MnrRead ori` to invoke them; setup and API-key editing require the Full role. Lists return one page with Manor metadata. Local filters apply to that page, so an empty filtered result can still have a next page.
+
+The time entry, product and invoice reads:
+
 ```json
 {"type":"Manor.TimeEntry.List","data":{"projectId":42,"date":"2026-01-15"}}
 ```

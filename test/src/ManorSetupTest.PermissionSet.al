@@ -20,6 +20,8 @@ permissionset 98201 "Manor Setup Test ori"
         codeunit "Manor Setup Tst ori" = X,
         codeunit "Manor Scaffold Tst ori" = X,
         codeunit "Manor Client Tst ori" = X,
+        codeunit "Manor Read Tst ori" = X,
+        codeunit "Manor Read Probe ori" = X,
         codeunit "Manor Read Types Tst ori" = X,
         codeunit "Manor Mock Fixture Sub ori" = X,
         tabledata "Manor Read Fixture ori" = RIMD,

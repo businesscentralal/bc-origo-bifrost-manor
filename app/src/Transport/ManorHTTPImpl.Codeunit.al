@@ -1,5 +1,7 @@
 namespace Origo.Bifrost.Manor;
 
+using System.Reflection;
+
 /// <summary>Shared Production/Test transport; the host is fixed and credentials stay SecretText.</summary>
 codeunit 10035644 "Manor HTTP Impl ori" implements "Manor Transport ori"
 {
@@ -48,7 +50,10 @@ codeunit 10035644 "Manor HTTP Impl ori" implements "Manor Transport ori"
         Request.SetSecretRequestUri(SecretUrl);
         Request.Method := Method;
         Request.GetHeaders(Headers);
-        Secrets.AddAuthorization(Headers);
+        if UpperCase(Method) = 'GET' then
+            Secrets.AddReadAuthorization(Headers)
+        else
+            Secrets.AddAuthorization(Headers);
         Headers.Add('Accept', 'application/json');
         if Body <> '' then begin
             Content.WriteFrom(Body);
@@ -69,9 +74,33 @@ codeunit 10035644 "Manor HTTP Impl ori" implements "Manor Transport ori"
         if (RelativePath = '') or (CopyStr(RelativePath, 1, 1) = '/') or
            (StrPos(RelativePath, '..') > 0) or (StrPos(RelativePath, ':') > 0) or
            (StrPos(RelativePath, '?') > 0) or (StrPos(RelativePath, '#') > 0) or
-           (StrPos(RelativePath, '%') > 0) or (StrPos(RelativePath, '\') > 0) or
+           ((StrPos(RelativePath, '%') > 0) and not IsEncodedUserEmailPath(RelativePath)) or (StrPos(RelativePath, '\') > 0) or
            (StrPos(Query, '#') > 0)
         then
             Error(InvalidPathErr);
+    end;
+
+    local procedure IsEncodedUserEmailPath(RelativePath: Text): Boolean
+    var
+        TypeHelper: Codeunit "Type Helper";
+        Encoded: Text;
+        Email: Text;
+        Index: Integer;
+        AtPosition: Integer;
+    begin
+        if CopyStr(RelativePath, 1, 5) <> 'user/' then
+            exit(false);
+        Encoded := CopyStr(RelativePath, 6);
+        Email := Encoded;
+        Email := TypeHelper.UrlDecode(Email);
+        AtPosition := StrPos(Email, '@');
+        if (AtPosition <= 1) or (AtPosition = StrLen(Email)) then
+            exit(false);
+        if StrPos(CopyStr(Email, AtPosition + 1), '@') > 0 then
+            exit(false);
+        for Index := 1 to StrLen(Email) do
+            if (Email[Index] <= 32) or (StrPos('/\?#:%', CopyStr(Email, Index, 1)) > 0) then
+                exit(false);
+        exit(TypeHelper.UriEscapeDataString(Email) = Encoded);
     end;
 }
