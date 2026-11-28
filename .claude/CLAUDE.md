@@ -56,6 +56,15 @@ Tests: 98200-98299 (workbook sheet Test App Ranges, row 99015)
 | Codeunit | 10035678 | Manor Expense Create Impl ori |
 | Codeunit | 10035679 | Manor Product Create Impl ori |
 | Test codeunit | 98270 | Manor Creates Tst ori |
+| Enum extension | 10035655 | Manor Message Type ori |
+| Codeunit | 10035656 | Manor Connection Test Impl ori |
+| Codeunit | 10035657 | Manor Firm List Impl ori |
+| Codeunit | 10035658 | Manor User List Impl ori |
+| Codeunit | 10035659 | Manor User Get Impl ori |
+| Codeunit | 10035660 | Manor Rate List Impl ori |
+| Test codeunit | 98230 | Manor Read Tst ori |
+| Test enum extension | 98231 | Manor Read Probe Type ori |
+| Test fixture codeunit | 98232 | Manor Read Probe ori |
 | Enum extension | 10035666 | Manor Read Types ori |
 | Codeunit | 10035666 | Mnr Time List Impl ori |
 | Codeunit | 10035667 | Mnr Product List Impl ori |

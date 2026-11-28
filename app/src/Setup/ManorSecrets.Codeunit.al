@@ -8,6 +8,7 @@ codeunit 10035648 "Manor Secrets ori"
     var
         StorageKeyTok: Label 'Manor.ApiKey', Locked = true;
         PermissionErr: Label 'You need permission to edit Manor Setup to manage or use its API key.', Comment = 'is-IS=Þú þarft heimild til að breyta uppsetningu Manor til að stjórna eða nota API-lykilinn.';
+        ReadPermissionErr: Label 'You need permission to read Manor Setup to use its API key for a read.', Comment = 'is-IS=Þú þarft lesheimild á uppsetningu Manor til að nota API-lykilinn fyrir lestur.';
         EmptyKeyErr: Label 'Enter an API key.', Comment = 'is-IS=Sláðu inn API-lykil.';
         MissingKeyErr: Label 'Set the API key in Manor Setup.', Comment = 'is-IS=Stilltu API-lykilinn í uppsetningu Manor.';
 
@@ -36,10 +37,25 @@ codeunit 10035648 "Manor Secrets ori"
 
     /// <summary>Adds the credential directly to request headers without exposing plain text.</summary>
     internal procedure AddAuthorization(var Headers: HttpHeaders)
+    begin
+        CheckWritePermission();
+        AddStoredAuthorization(Headers);
+    end;
+
+    /// <summary>Uses the stored key for a transport-verified GET; grants no key-management or write permission.</summary>
+    internal procedure AddReadAuthorization(var Headers: HttpHeaders)
+    var
+        Setup: Record "Manor Setup ori";
+    begin
+        if not Setup.ReadPermission() then
+            Error(ReadPermissionErr);
+        AddStoredAuthorization(Headers);
+    end;
+
+    local procedure AddStoredAuthorization(var Headers: HttpHeaders)
     var
         ApiKey: SecretText;
     begin
-        CheckWritePermission();
         if not IsolatedStorage.Get(StorageKeyTok, DataScope::Company, ApiKey) then
             Error(MissingKeyErr);
         Headers.Add('Authorization', SecretStrSubstNo('Bearer %1', ApiKey));
